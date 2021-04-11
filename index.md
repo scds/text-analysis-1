@@ -36,8 +36,8 @@ By the end of the module, you will be able to:
   * Basic tokenization (i.e. to work with unstructured text)
   * Regular Expressions (for consistent errors and removing unwanted characters)
   * Faceting and clustering (for slight misspellings and normalization)
-1. VIDEO: Structuring text with TEI
-1. Behind the interface: data ‘cleaning’ and the anglo-centric bias of NLP
+5. VIDEO: Structuring text with TEI (optional)
+6. Behind the interface: data ‘cleaning’ and the anglo-centric bias of NLP
 
 
 
