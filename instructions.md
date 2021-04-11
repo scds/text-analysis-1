@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Getting Started
+title: Post-OCR Error Correction
 nav_order: 3
 has_children: true
 has_toc: false
