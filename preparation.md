@@ -8,7 +8,7 @@ nav_order: 2
 
 # Workshop preparation 
 
-Preparing for the lesson involves:
+Preparing for the lesson requires that you:
 
 <!--
 ## Get the data
@@ -23,6 +23,7 @@ OCR output is rarely free of errors. The OCR engine may misinterpret characters,
 We will be using [**OpenRefine**](https://www.openrefine.org/), an open-source spreadsheet-like software, for our post-OCR error correction in the lesson. Please download OpenRefine and use the instructions provided to guide you through installation.
 
 [Download OpenRefine](https://openrefine.org/download.html)
+
 [OpenRefine installation instructions](https://docs.openrefine.org/manual/installing)
 
 Please contact the [Sherman Centre](mailto:scds@mcmaster.ca) if you have any difficulties downloading or opening the software.
