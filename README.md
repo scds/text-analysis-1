@@ -1,5 +1,5 @@
-# Pre-processing Textual Data
-Materials for the DMDS workshop: **Pre-procesing Textual Data**  
+# Pre-Processing Textual Data
+Materials for the DMDS workshop: **Pre-Processing Textual Data**  
 
 This repository contains workshop files, as well as files used to create the [workshop webpage](https://scds.github.io/text-analysis-1) with GitHub Pages   
 
