@@ -10,7 +10,8 @@ nav_order: 1
 <!--
 <img src="assets/img/dmds-tableau.png" alt="Workshop Title Slide" width="720"> -->
 
-# Welcome to Pre-Processing Textual Data (in development)
+# Welcome to Pre-Processing Textual Data 
+# (in development)
 
 **Pre-Processing Textual Data belongs to a series of workshops on computational text analysis.**
 
