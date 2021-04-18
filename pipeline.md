@@ -1,7 +1,7 @@
 ---
 layout: default
 title: An Overview of the Textual Analysis Pipeline
-parent: Post-OCR Error Correction
+parent: Lesson
 nav_order: 1
 ---
 
