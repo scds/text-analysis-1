@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Data Provenance
-parent: Post-OCR Error Correction
+parent: Lesson
 nav_order: 3
 ---
 
