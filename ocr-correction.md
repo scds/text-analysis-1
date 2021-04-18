@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Correcting OCR Errors
-parent: Post-OCR Error Correction
+parent: Lesson
 nav_order: 4
 ---
 
