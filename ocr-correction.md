@@ -19,7 +19,7 @@ In the lesson that follows, we use OpenRefine - a spreadsheet-like software - to
 
 VIDEO HERE
 
-The video goes through the steps of the lesson using the sample corpus provided on the [Preparation](/preparation.html) page. If you prefer written instructions to a video lesson, follow the steps and strategies in the section below with the sample corpus.
+The video goes through the steps of the lesson using the sample corpus provided on the [Preparation](/text-analysis-1/preparation.html) page. If you prefer written instructions to a video lesson, follow the steps and strategies in the section below with the sample corpus.
 
 ## Now, With Your Own Data...
 
@@ -64,7 +64,7 @@ Fro
 
 Find-and-replace is at the heart of the other post-OCR error correction strategies discussed in the lesson.
 
-#### STRATEGY: Regular Expressions (RegEx)
+### STRATEGY: Regular Expressions (RegEx)
 
 ### STRATEGY: Cluster and Edit
 
