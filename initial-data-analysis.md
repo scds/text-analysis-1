@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Initial Data Analysis
-parent: Post-OCR Error Correction
+parent: Lesson
 nav_order: 2
 ---
 
