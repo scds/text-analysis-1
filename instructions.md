@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Post-OCR Error Correction
+title: Lesson
 nav_order: 3
 has_children: true
 has_toc: false
