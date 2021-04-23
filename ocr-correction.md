@@ -31,15 +31,17 @@ Recall that you will probably be working with a subset of your entire corpus to 
 
 Begin by opening OpenRefine; it will open in your default web browser and prompt you to create a project. Click or tap on the "Browse..." button to locate your text files. OpenRefine will allow you to upload .txt files, treating each line of the text document as a new row.
 
-Exclude blank rows
+Import options:
+* Store blank rows - OpenRefine has a ceiling on the number of rows you can work with, so uncheck to exclude blank rows 
+* Store file source (if using multiple documents) - if you wish to "re-constitute" your documents later (i.e. output them as separate documents), leave checked 
 
-Exclude/include document name
+Give your project a name and Create Project >>
 
-Name file
+### STEP 2: Initial Data Analysis
 
-The first time you upload your text files to OpenRefine, you will likely learn something new about how they are structured - e.g. where line breaks occur or how characters might be interpreted differently in OpenRefine from the text editor you used for initial data analysis. This can have consequences for the pre-processing steps you undertake, so take some time to review the data in OpenRefine before performing any transformations. You may discover that you need to do some pre-processing tasks with the .txt files in a text editor before uploading them to OpenRefine.
+The first time you upload your text files to OpenRefine, you will likely learn something new about how they are structured - e.g. where line breaks occur or how characters might be interpreted differently in OpenRefine from the text editor you used for any earlier initial data analysis. This can have consequences for the pre-processing steps you undertake, so take some time to review the data in OpenRefine before performing any transformations. You may discover that you need to do some pre-processing tasks with the .txt files in a text editor before re-uploading them to OpenRefine.
 
-### STEP 2: Tokenize
+### STEP 3: Tokenize
 
 Tokenization - in the context of computational text analysis - is the splitting of unstructured text into individual words, or *tokens*. Because OpenRefine works most effectively with tabular data (i.e. data stored in tables, like in a spreadsheet), we are artificially creating a tabular structure by putting each word on its own row. This achieves the same effect as tokenization and allows us to group identical or similar words in OpenRefine.
 
