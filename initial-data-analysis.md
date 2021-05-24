@@ -45,7 +45,7 @@ With the Zwick.txt file open, go to the Macros in MS Word.
 
 Copy the macro code from the , written by Allan Wyatt (https://word.tips.net/T001465_Pulling_Out_Spelling_Errors.html)).
 
-If you are using OpenOffice, you should be able to similarly create a macro using the same code.
+If you are using OpenOffice, you should be able to similarly [create a macro using the same code](https://wiki.openoffice.org/wiki/Documentation/OOoAuthors_User_Manual/Getting_Started/Creating_a_simple_macro).
 
 In [Correcting OCR Errors with OpenRefine](https://scds.github.io/text-analysis-1/ocr-correction.html), we will use the "Word Facet" option in OpenRefine to group the same misspellings together so that each error only appears once in the list.
 
