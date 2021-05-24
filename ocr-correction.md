@@ -5,26 +5,34 @@ parent: Lesson
 nav_order: 4
 ---
 
-# Correcting OCR Errors with OpenRefine
+# Correcting OCR Errors
 
-Correcting OCR Errors is a significant dimension of the data pre-processing stage when working with scanned documents that have had optical character recognition performed on them.
+Correcting OCR Errors is usually the largest task of the data pre-processing stage when working with scanned documents that have had optical character recognition performed on them.
 
 Presently, the only way to achieve 100% accuracy with OCR text output is to manually correct each misspelled word. If your purposes can allow for some margin of error, however, the trade-offs of time vs accuracy afforded by automated approaches are worthwhile. Numerous tools and strategies exist, requiring various levels of programming expertise. 
 
 In the lesson that follows, we use OpenRefine - a spreadsheet-like software - to assist with identifying and correcting errors (i.e. still requires human ingenuity, but warp-powered).
 
-> *There is no need to worry about overwriting your data in the event that you accidentally introduce new errors while correcting the existing ones (provided that you discover them!): OpenRefine works on a copy of your data rather than directly on the original file. And it shows a history of your transformations so you can easily narrow in on the step you want to undo.*  
+There is no need to worry about overwriting your data in the event that you accidentally introduce new errors while correcting the existing ones (provided that you discover them!): OpenRefine works on a copy of your data rather than directly on the original file. And it shows a history of your transformations so you can easily narrow in on the step you want to undo.  
 
 > ***Errors in Large Text Corpora***
 
-> *Because many computational analysis methods for texts ultimately involve counting words, a misspelling here or there is not likely to impact your results significantly. Or if an error is consistent, it will become evident in the exploratory data analysis phase. It is important to acknowledge the limitations of not thoroughly correcting errors in the source texts, however.*
+> *Because many computational analysis methods for texts ultimately involve counting words, a misspelling here or there is not likely to impact your results significantly. Or if an error is significant and consistent, it will likely become evident in the exploratory data analysis phase. It is important to acknowledge the limitations of not thoroughly correcting errors in the source texts, however.*
 
 
-## Now, With Your Own Data...
+## Using OpenRefine to Correct OCR Errors
 
-The following lesson will be demonstrated with a sample corpus, which you may wish to use initially to become familiar with the workflow tasks. Then, reinforce and build upon your learning by replicating the steps you completed in the videos using the sample corpus with your own data.
+The following lesson will be demonstrated with sample corpus A, which you may wish to use initially to become familiar with the workflow tasks. Then, reinforce and build upon your learning by replicating the steps you completed in the videos using the sample corpus with your own data.
 
 Recall that you will probably be working with a subset of your entire corpus to start with, unless your corpus is already relatively small - and a subset that is hopefully representative of the larger whole. When working with your own data, you will find that it has idiosyncratic features which require you to design your own workflow or improvise other error correction strategies not discussed in the lesson. Computational text analysis is definitely a skill you learn by doing, and working with numerous distinct corpora will help to enrich your understanding of it.
+
+### Overview of lesson tasks
+
+Using OpenRefine to correct OCR errors involves:
+* Importing your text file(s)
+* Breaking down the unstructured text into words that we can operate on individually (tokenization) 
+* Correcting individual words using a variety of correction strategies
+* "Reconstituting" the words into a text file that can be used for computation analysis or another purpose
 
 ### STEP 1: Import your texts
 
@@ -34,23 +42,35 @@ Begin by opening OpenRefine; it will open in your default web browser and prompt
 
 Import options:
 * Store blank rows - OpenRefine has a ceiling on the number of rows you can work with, so uncheck to exclude blank rows 
-* Store file source (if using multiple documents) - if you wish to "re-constitute" your documents later (i.e. output them as separate documents), leave checked 
+* Store file source (if using multiple documents) - if you wish to "reconstitute" your documents later (i.e. output them as separate documents), leave checked 
 
 Give your project a name and Create Project >>
 
 ### STEP 2: Initial Data Analysis
 
-The first time you upload your text files to OpenRefine, you will likely learn something new about how they are structured - e.g. where line breaks occur or how characters might be interpreted differently in OpenRefine from the text editor you used for any earlier initial data analysis. This can have consequences for the pre-processing steps you undertake, so take some time to review the data in OpenRefine before performing any transformations. You may discover that you need to do some pre-processing tasks with the .txt files in a text editor before re-uploading them to OpenRefine.
+Although you will already have done some initial data analysis in another tool, you will likely learn something new about how your text files are structured when you upload them to OpenRefine - e.g. where line breaks occur or how characters might be interpreted differently in OpenRefine from the text editor you used for any earlier initial data analysis. There can be consequences for the pre-processing steps you undertake, so take some time to review the data in OpenRefine before performing any transformations. You may discover that you need to do some pre-processing tasks with the .txt files in a text editor before re-uploading them to OpenRefine.
 
-For example, longer words in newspapers and other texts will frequently be split over two lines separated with a hyphen or dash - 
+For example, longer words in newspapers and other typeset texts will frequently be split over two lines separated with a hyphen or dash - reconnect them in a text editor like TextEdit or Notepad++ before uploading to OpenRefine --> Instructions on split words ^^^create resource.
+
+Once you have performed any additional (pre-)pre-processing steps outside of OpenRefine and re-uploaded your text file(s), rename the column with the contents of your text "Tokens" by visiting the column menu - which can be accessed through the small downward arrow to the left of the column - and selecting Edit column > Rename.
+
+\[screenshot of expanded menu and renamed column]
 
 ### STEP 3: Tokenize
 
-Tokenization - in the context of computational text analysis - is the splitting of unstructured text into individual words, or *tokens*. Because OpenRefine works most effectively with tabular data (i.e. data stored in tables, like in a spreadsheet), we are artificially creating a tabular structure by putting each word on its own row. This achieves the same effect as tokenization and allows us to group identical or similar words in OpenRefine.
+Tokenization - in the context of computational text analysis - is the dividing of unstructured text into individual words, or *tokens*. Because OpenRefine works most effectively with tabular data (i.e. data stored in tables, like in a spreadsheet), we are artificially creating a tabular structure by putting each word on its own row. This achieves the same effect as tokenization and allows us to group identical or similar words in OpenRefine.
 
-Split column We will use the and . Although we can probably think of cases in which a space does not indicate a new word, .  
+\[video: Tokenizing ]
 
-For now, we will leave in punctuation. Computational text analysis tools will typically remove the punctuation for us, and we may want the punctuation to remain if we are exporting a copy. Bear in mind that OpenRefine will view "elephant" and "elephant." as two distinct entities, however. 
+In the "Tokens" column of your OpenRefine file, open the column menu using the small downward arrow to the left of the column title. From the column menu, select Edit cells > Split multi-valued cells....
+
+\[screenshot]
+
+By default, the recommended separator character will be a comma (i.e. for comma-separated value, or CSV, files) - delete the comma and hit the space bar once to specify the space character as the separator. We are indicating to OpenRefine to split each cell every time it encounters a space in the text. Although we can think of cases in which a space does not indicate a new word, we will be putting the text back together again with the spaces restored when we have finished with error correction.  
+
+For now, we will leave in punctuation. Computational text analysis tools will typically remove the punctuation for us, and we may want the punctuation to remain if we are exporting a copy. Bear in mind that OpenRefine will view "banana" and "banana!" as two distinct entities, however. 
+
+> *You can optionally split any punctuation into its own cell to simplify error correction by repeating the steps above using the separator ^^^ with ^^^regex checked off. But you may not wish to if you intend to "reconstitute" the text for purposes other than computational analysis (i.e. to provide a corrected copy of the text to users). Much of OCR error correction, and data pre-processing in general, is being able to consider the entire data analysis workflow and to anticipate how you might be shooting yourself in the foot.*
 
 ### STEP 3: Remove blank rows and whitespaces
 
@@ -68,6 +88,6 @@ Find-and-replace is at the heart of the other post-OCR error correction strategi
 
 ### STRATEGY: Cluster and Edit
 
-
+## Now, With Your Own Data...
 
 
