@@ -76,13 +76,11 @@ For now, we will leave in punctuation. Computational text analysis tools will ty
 
 ### STEP 4: Remove whitespaces and blank rows
 
-Much like punctuation, whitespaces in front of or behind a word will prevent it from being grouped with other instances of the same word in OpenRefine. Although there are ways to normalize the data in OpenRefine through the "Cluster and Edit" function, we can easily remove them using the "Remove trailing whitespaces" function.
+Much like punctuation, whitespaces in front of or behind a word will prevent it from being grouped with other instances of the same word in OpenRefine. Although there are ways to normalize the data in OpenRefine through the "Cluster and Edit" function, we can easily remove them using the "Remove leading and trailing whitespaces" function.
 
-It is possible that no rows will be 
+It is possible that no rows will be affected by removing leading and trailing whitespaces. 
 
-Optionally, you may also wish to remove blank rows in the dataset. Blank - Blank rows are not relevant to our error correction tasks in OpenRefine and
-
-Remove trailing whitespaces - reduces the likelihood that , but think through before doing.
+Optionally, you may also wish to remove blank rows in the dataset. Blank rows are not relevant to our error correction tasks in OpenRefine and, as OpenRefine does have a ceiling on the number of rows it can work with, you may wish to delete. 
 
 ### STRATEGY: Find-and-Replace
 
@@ -97,7 +95,7 @@ Find-and-replace is at the heart of the other post-OCR error correction strategi
 
 ### STRATEGY: Regular Expressions (RegEx)
 
-We can build on our find-and-replace 
+We can build on our find-and-replace tactic by incorporating regular expressions, or matching sequences of characters.
 
 ### STRATEGY: Write an Error-Correction Program
 
