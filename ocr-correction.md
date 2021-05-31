@@ -70,23 +70,38 @@ By default, the recommended separator character will be a comma (i.e. for comma-
 
 For now, we will leave in punctuation. Computational text analysis tools will typically remove the punctuation for us, and we may want the punctuation to remain if we are exporting a copy. Bear in mind that OpenRefine will view "banana" and "banana!" as two distinct entities, however. 
 
-> *You can optionally split any punctuation into its own cell to simplify error correction by repeating the steps above using the separator ^^^ with ^^^regex checked off. But you may not wish to if you intend to "reconstitute" the text for purposes other than computational analysis (i.e. to provide a corrected copy of the text to users). Much of OCR error correction, and data pre-processing in general, is being able to consider the entire data analysis workflow and to anticipate how you might be shooting yourself in the foot.*
+> *You can optionally split any punctuation into its own cell to simplify error correction by repeating the steps above using the separator ^^^ with ^^^regex checked off. But you may not wish to if you intend to "reconstitute" the text for purposes other than computational analysis (i.e. to provide a corrected copy of the text to users). When we recombine the text, we will use a space to separate each cell (word) - meaning there will be a space in front of all punctuation marks.
+> 
+> Much of OCR error correction, and data pre-processing in general, is being able to consider the entire data analysis workflow and to anticipate ^^^.*
 
-### STEP 3: Remove blank rows and whitespaces
+### STEP 4: Remove whitespaces and blank rows
 
-Remove blank rows - Blank rows are not relevant to our error correction tasks in OpenRefine and
+Much like punctuation, whitespaces in front of or behind a word will prevent it from being grouped with other instances of the same word in OpenRefine. Although there are ways to normalize the data in OpenRefine through the "Cluster and Edit" function, we can easily remove them using the "Remove trailing whitespaces" function.
+
+It is possible that no rows will be 
+
+Optionally, you may also wish to remove blank rows in the dataset. Blank - Blank rows are not relevant to our error correction tasks in OpenRefine and
 
 Remove trailing whitespaces - reduces the likelihood that , but think through before doing.
 
 ### STRATEGY: Find-and-Replace
 
-Fro
+There are numerous ways to approach the correction of OCR errors: ^^^. 
 
-Find-and-replace is at the heart of the other post-OCR error correction strategies discussed in the lesson.
+Text filters in OpenRefine allow us to apply find-and-replace transformations in a targeted manner. 
+
+Find-and-replace is at the heart of the other post-OCR error correction strategies discussed in the lesson. Before working through your error list with "Replace," however, there is an alternative - and arguably better - approach. Read on...
+
+### STRATEGY: Find-and-Replace with GREL (Google/General Refine Expression Language)
+
 
 ### STRATEGY: Regular Expressions (RegEx)
 
-### STRATEGY: Cluster and Edit
+We can build on our find-and-replace 
+
+### STRATEGY: Write an Error-Correction Program
+
+In addition to working on the full text of the documents we are correcting, we can also bring the subset of errors (the error list we created in the Initial Data Analysis) into OpenRefine. Although it does not  and correct the  Depending on the length of your error list, .
 
 ## Now, With Your Own Data...
 
