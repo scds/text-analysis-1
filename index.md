@@ -28,5 +28,7 @@ By the end of the module, you will be able to:
 * Identify an appropriate data pre-processing approach
 * Encode unstructured textual data using [TEI markup](https://tei-c.org/guidelines/Customization/Lite/) (optional)
 
+Next -> [Preparation](preparation.html) 
+
 
 
