@@ -6,11 +6,10 @@ nav_order: 2
 
 
 # Workshop preparation 
-
+<br />
 Preparing for the lesson requires you to:
 
 ## 1. Get the data
-
 The document we will be working with in the lesson is "[Zwick's Island landfill environmental investigations](https://archive.org/details/zwicksislandland00ontauoft/page/12/mode/2up)" created by the provincial government of Ontario in 1991 (the Sherman Centre is located in Ontario, Canada), which is available on the Internet Archive. The report was scanned from a paper version and then processed through optical character recognition (OCR) to transform the image into text data. <!-- If you would like to read more about how OCR works, read …. -->
 
 OCR output is rarely free of errors: the OCR engine may misinterpret characters, even with scanned documents that appear indistingushable from born-digital PDFs.  The error rate increases when working with documents that are hand-written, have low contrast between foreground text or are in languages with less robust OCR support.<!-- (read more at [behind the interface])--> The "Zwick's Island" document is no exception; like many documents on the Internet Archive and other repositories for digitized texts, access is prioritized over accuracy - meaning that there is an abundance of sources for us to practice with! The accuracy of the post-OCR text of the "Zwick's Island" document is close to an impressive 99%, however. 
@@ -24,7 +23,6 @@ Because applying OCR to a scanned document is outside of the scope of the lesson
 **Note that the document is under [Crown copyright](https://www.ontario.ca/page/copyright-information-c-queens-printer-ontario)** (i.e. © Queen’s Printer for Ontario,  1991); please do not reproduce the text outside of the purposes of the lesson unless you have determined your use falls under an applicable copyright exception.
 
 ## 2. Get the software
-
 We will be using [**OpenRefine**](https://www.openrefine.org/), an open-source spreadsheet-like software, for our post-OCR error correction in the lesson. Please download OpenRefine and use the instructions provided to guide you through installation.
 
    [Download OpenRefine](https://openrefine.org/download.html)
@@ -34,7 +32,6 @@ We will be using [**OpenRefine**](https://www.openrefine.org/), an open-source s
 Please contact the [Sherman Centre](mailto:scds@mcmaster.ca) if you have any difficulties downloading or opening the software.
 
 ## 3. Assemble your own corpus (optional)
-
 In advance of the workshop, we also recommend that you assemble a collection of documents to work with for the *Try it with your data* sections. We will use the text collection, or corpus, provided above to practice the techniques demonstrated in the lesson but each dataset brings its own unique set of challenges. Even if you are not going through the lesson with a specific project in mind, having a different corpus to experiment with will help to reinforce the concepts and enrich your knowledge of the topic.
 
 Before applying OCR, you may wish to optimize the quality of your image as a clearer image will result in more accurate results. Regardless of the ability to automate some of the tasks, error correction is time-consuming; preventing errors earlier in the workflow will save considerable labour later on. For advice on improving image quality for OCR, consult the guides provided by the [Illinois Library](https://guides.library.illinois.edu/OCR/bestpractices) and [Tesseract](https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html), an open-source OCR engine.
