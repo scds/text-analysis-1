@@ -21,7 +21,7 @@ Because applying OCR to a scanned document is outside of the scope of the lesson
 2. Copy the text (ctrl/cmd + A to select all, then ctrl/cmd + C to copy) and,
 3. Paste into a text file (create one using Notepad on a Windows OS or TextEdit on a Mac and then ctrl/cmd + V to paste) and save with a .txt extension as Zwick.txt.
 
-**Note that the document is under [Crown copyright](https://www.ontario.ca/page/copyright-information-c-queens-printer-ontario)** (i.e. © Queen’s Printer for Ontario,  1991); please do not reproduce the text outside of your personal use for the purposes of the lesson.
+**Note that the document is under [Crown copyright](https://www.ontario.ca/page/copyright-information-c-queens-printer-ontario)** (i.e. © Queen’s Printer for Ontario,  1991); please do not reproduce the text outside of the purposes of the lesson unless you have determined your use falls under an applicable copyright exception.
 
 ## 2. Get the software
 
@@ -41,4 +41,4 @@ Before applying OCR, you may wish to optimize the quality of your image as a cle
 
 The lesson assumes that your corpus is comprised of a collection of text (.txt file extension) files, which will not always be the case. If you have one long document (like a manuscript), you may find it easier if you create subsets of pages to work with. OpenRefine works best with [fewer than a million rows](https://groups.google.com/g/openrefine/c/-loChQe4CNg/m/eroRAq9_BwAJ); because each word will be its own row, the upper bound of the word count in each subset should be approximately 500,000 - 750,000 words. But, as that upper bound will depend on a number of resource factors (e.g. available memory), it's best to do a test run before dividing up your entire corpus!
 
-
+Next -> [An Overview of the Textual Analysis Workflow](pipleline.html)
