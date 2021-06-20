@@ -38,4 +38,4 @@ Before applying OCR, you may wish to optimize the quality of your image as a cle
 
 The lesson assumes that your corpus is comprised of a collection of text (.txt file extension) files, which will not always be the case. If you have one long document (like a manuscript), you may find it easier if you create subsets of pages to work with. OpenRefine works best with [fewer than a million rows](https://groups.google.com/g/openrefine/c/-loChQe4CNg/m/eroRAq9_BwAJ); because each word will be its own row, the upper bound of the word count in each subset should be approximately 500,000 - 750,000 words. But, as that upper bound will depend on a number of resource factors (e.g. available memory), it's best to do a test run before dividing up your entire corpus!
 
-Next -> [An Overview of the Textual Analysis Workflow](pipleline.html)
+Next -> [An Overview of the Textual Analysis Workflow](pipeline.html)
