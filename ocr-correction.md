@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Correcting OCR Errors
+title: Correcting OCR Errors with OpenRefine
 parent: Lesson
 nav_order: 4
 ---
 
-# Correcting OCR Errors
-
+# Correcting OCR Errors with OpenRefine
+<br />
 Correcting OCR Errors is usually the largest task of the data pre-processing stage when working with scanned documents that have had optical character recognition performed on them.
 
 Presently, the only way to achieve 100% accuracy with OCR text output is to manually correct each misspelled word. If your purposes can allow for some margin of error, however, the trade-offs of time vs accuracy afforded by automated approaches are worthwhile. Numerous tools and strategies exist, requiring various levels of programming expertise. 
