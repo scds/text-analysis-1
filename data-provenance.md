@@ -17,4 +17,4 @@ If you are using a tool like OpenRefine for pre-processing, some of the document
 
 A more detailed discussion of data provenance is outside of the scope of the current lesson, but if you wish to pursue the topic further you can explore Paolo Missier's "[Provenance Standards](http://homepages.cs.ncl.ac.uk/paolo.missier/doc/Provenance-standards.pdf)" and the [Provenance Tools page](https://projects.iq.harvard.edu/provenance-at-harvard/tools) created by the Provenance@Harvard group at Harvard University.
 
-Next -> [Correcting OCR Errors with OpenRefine](ocr-correction.html)
+Next -> [Initial Data Analysis](initial-data-analysis.html)
