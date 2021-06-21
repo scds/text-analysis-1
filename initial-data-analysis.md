@@ -49,6 +49,4 @@ If you are using OpenOffice, you should be able to similarly [create a macro usi
 
 In [Correcting OCR Errors with OpenRefine](https://scds.github.io/text-analysis-1/ocr-correction.html), we will use the "Word Facet" option in OpenRefine to group the same misspellings together so that each error only appears once in the list.
 
-But first, we will take a moment to discuss data provenance...
-
-Next --> [Data Provenance](https://scds.github.io/text-analysis-1/data-provenance.html)
+Next -> [Correcting OCR Errors with OpenRefine](https://scds.github.io/text-analysis-1/ocr-correction.html)
