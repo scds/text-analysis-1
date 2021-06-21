@@ -9,12 +9,12 @@ has_toc: false
 <!-- Edit the content below for the workshop in question. Once you're ready to publish, remove the comment characters e.g. "<!--" at the start and end -->
 
 
-## Lesson Roadmap
+# Lesson Roadmap
 
 1. An overview of the textual data analysis pipeline
-1. Initial Data Analysis (IDA) and Exploratory Data Analysis (EDA)
-1. Data provenance
-1. VIDEO: Correcting OCR errors with scanned texts with OpenRefine
+2. Data provenance
+3. Initial Data Analysis
+4. VIDEO: Correcting OCR errors with scanned texts with OpenRefine
   * Basic tokenization (i.e. to work with unstructured text)
   * Regular Expressions (for consistent errors and removing unwanted characters)
   * Faceting and clustering (for slight misspellings and normalization)
