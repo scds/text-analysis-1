@@ -18,7 +18,7 @@ The textual data analysis workflow below describes the stages of taking textual 
 
 Acquisition/Input: the text corpus is assembled in a datafied form that can be operated upon computationally. This may involve running optical character recognition (OCR) on scanned physical texts or downloading from an API.
 
-Initial data analysis (IDA): in the initial data analysis stage, we are attending to the potential errors in the data primarily;  to inform the steps of the pre-processing stage and . Numerous tools depending on the type of data and . In the lesson, we use 
+Initial data analysis (IDA): in the initial data analysis stage, we are attending to potential errors in the data for the most part; that is, to identify features of the data that may impact how we work with it and to inform the steps of the pre-processing stage. Numerous tools exist to support IDA, depending on the type of data you are working with and the kinds of errors you are trying to find. Even ; in the lesson that follows, we use a ubiquitous word processing software to perform IDA (with a little help from a macro). 
 
 Pre-processing:
 
