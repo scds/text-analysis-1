@@ -82,11 +82,13 @@ In your initial data analysis, try to identify patterns within the errors:
 * is one or a set of characters regularly substituted for another ("oim" for "oun" in the sample text)?
 * does an error often occur in relation to another character or characters (like "m" for "in" when following "f" or "tiy" for "tly" in the sample text)?
 * etc.
-chal
-Error words are likely to duplicated - in fact, we are depending on the same words being misspelled in the same ways for the error correction techniques we will be using shortly. If IDA becomes challenging because there are so many duplicates, you can bring the error list into OpenRefine and use the "Word Facet" option to group the same misspellings together as [Correcting OCR Errors with OpenRefine](https://scds.github.io/text-analysis-1/ocr-correction.html).
+  
+Error words are likely to duplicated - in fact, we are depending on the same words being misspelled in the same ways for the error correction techniques we will be using shortly. If IDA becomes challenging because there are so many duplicates, however, you can use the "Word Facet" option in OpenRefine to group the same misspellings together which will be described in [Correcting OCR Errors with OpenRefine](https://scds.github.io/text-analysis-1/ocr-correction.html).
 
-The idea 
+While it may be tempting to create a table containing the misspelled word and its corrected version for use with a find-and-replace technique, a manual approach will be unsustainable for all but the smallest of datasets. We will instead focus our efforts on misspelled groups of letters repeated across numerous words and allow for some margin of error.
 
-Document your observations as completely as possible to help to make your error correction tasks more efficient and less likely to introduce new errors. 
+One exception to the above is any words that are particularly significant to your analysis; you can safely ignore misspellings of "the," "this," and other commonly used words but, to take an example from our dataset, you would probably want to correct "Mimicipal."
+
+Document your observations as completely as possible to help to make your error correction tasks more efficient and less likely to introduce new errors.
 
 Next -> [Correcting OCR Errors with OpenRefine](https://scds.github.io/text-analysis-1/ocr-correction.html)
