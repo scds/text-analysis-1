@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Strategies for Error Correction
+title: Strategies for Error Correction in OpenRefine
 parent: Lesson
 nav_order: 6
 ---
