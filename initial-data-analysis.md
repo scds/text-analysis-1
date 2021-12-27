@@ -15,9 +15,9 @@ For example, if you notice that errors in the document tend to be consistent and
 
 ## Initial Data Analysis (IDA) and Exploratory Data Analysis (EDA)
 
-Typically, initial data analysis informs the pre-processing stage while exploratory data analysis concerns testing hypotheses and identifying salient features of the data to communicate in the output stage.
+Initial data analysis informs the pre-processing stage while exploratory data analysis concerns testing hypotheses and identifying salient features of the data to communicate in the output stage.
 
-The two are not neatly separated; you are likely to notice some features and characteristics of the data as you are performing your initial data analysis. But generally, exploratory data analysis will largely occur in the later stages of the workflow when we are performing natural language processing tasks such as named entity recognition and topic modelling.
+The two are not neatly separated, however; you are likely to notice some features and characteristics of the data as you are performing your initial data analysis (and in other stages of the workflow). But generally, exploratory data analysis will largely occur towards the end of the workflow when we are performing natural language processing tasks such as named entity recognition and topic modelling.
 
 ## Performing Initial Data Analysis with Microsoft Word
 
