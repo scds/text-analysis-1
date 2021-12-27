@@ -85,7 +85,7 @@ In your initial data analysis, try to identify patterns within the errors:
   
 Error words are likely to duplicated - in fact, we are depending on the same words being misspelled in the same ways for the error correction techniques we will be using shortly. If IDA becomes challenging because there are so many duplicates, however, you can use the "Word Facet" option in OpenRefine to group the same misspellings together which will be described in [Correcting OCR Errors with OpenRefine](https://scds.github.io/text-analysis-1/ocr-correction.html).
 
-While it may be tempting to create a table containing the misspelled word and its corrected version for use with a find-and-replace technique, a manual approach will be unsustainable for all but the smallest of datasets. We will instead focus our efforts on misspelled groups of letters repeated across numerous words and allow for some margin of error.
+While it may be tempting to create a table containing the misspelled word and its corrected version for use with a find-and-replace technique, a manual approach will be unsustainable for all but the smallest of datasets. We will instead focus our efforts on misspelled groups of letters repeated across numerous words and not let perfect be the enemy of good.
 
 One exception to the above is any words that are particularly significant to your analysis; you can safely ignore misspellings of "the," "this," and other commonly used words but - to take an example from our Zwick dataset - you would probably want to correct "Mimicipal."
 
