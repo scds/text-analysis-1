@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Preparing the Data
+title: Preparing the Data in OpenRefine
 parent: Lesson
 nav_order: 5
 ---
