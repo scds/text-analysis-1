@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Advanced OCR Error Correction with Python
+title: OpenRefine: Strategies for Error Correction
 parent: Lesson
 nav_order: 6
 ---
