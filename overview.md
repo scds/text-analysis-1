@@ -29,8 +29,6 @@ The textual data analysis workflow below describes the stages of taking textual 
 
 >Share (Output): once you have analyzed to the data in the EDA stage, the next stage is to communicating your findings. The output can take the form of a processed dataset, visualization, interactive website and so on. 
 
-Of course, the various stages of the workflow may overlap: when we are doing our initial data analysis and pre-processing, we are likely to observe characteristics of the data that are sought in the exploratory data analysis phase.
-
 In the current lesson, we will focus on the second and third stages – initial data analysis and pre-processing - to prepare the text for EDA, which will be the focus of the lessons that follow. Pre-processing is unglamorous work, but critically important to ensuring that your EDA stage is not ridden with noisy errors. Pre-processing is also time-consuming relative to the rest of the workflow - it can amount to 70% or 80% of the total labour involve - so remember to account for it when planning a computational text analysis project!
 
 Each stage of the workflow that involves a data transformation (Acquire, Pre-Processing, Output; any data analysis should be performed on a copy of the original dataset to avoid unintentionally transforming the data) holds the potential to introduce errors that often have consequences for later stages of the workflow, which may not become evident until you actually arrive at that stage. It is therefore important to document the transformations you perform so that errors can be traced back and corrected. This documentation also contributes to the record of its origins, or its **data provenance**.
