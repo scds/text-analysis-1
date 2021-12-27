@@ -16,9 +16,7 @@ We will become more familiar with what is involved in transforming texts into da
 
 The textual data analysis workflow below describes the stages of taking textual data from its source - be it a scanned document or born-digital data retrieved from an application programming interface (API) - to an output from a computational process. It is a simiplified overview; each stage can be articulated as a series of tasks that will vary depending on the project.
 
-<img src="assets/img/overview-workflow.png" style="padding: 10px" />
-
-![Graphic depicting high-level computational text analysis workflow; from left: Acquire, Initial Data Analysis, Pre-Processing, Exploratory Data Analysis, Share](assets/img/overview-workflow.png)
+![Graphic depicting high-level computational text analysis workflow; from left: Acquire, Initial Data Analysis, Pre-Processing, Exploratory Data Analysis, Share](assets/img/overview-workflow-pad.svg)
 
 
 >Acquisition (Input): the text corpus is assembled in a datafied form that can be operated upon computationally. This may involve running optical character recognition (OCR) on scanned physical texts or downloading from an API.
