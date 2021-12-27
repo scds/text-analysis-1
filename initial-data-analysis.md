@@ -37,7 +37,7 @@ We are using Word because it will highlight errors for us and we can export a li
 
 Once you have made spelling errors visible in your document, take a bit of time to review them - they are now easy to find! Although we are about to export a list of misspelled words, it is helpful to see the errors in context as it can at times be difficult to infer the correct spelling of the error without knowing how they are being used.
 
-### Create a macro to export an OCR error list
+### IDA Step 3: Create a macro to export an OCR error list
 
 Although seeing the errors in context is helpful, it is of course also useful to isolate the errors. We can create a list of OCR errors using a macro in MS Word.
 
@@ -73,9 +73,9 @@ Typing the "Run Macro" shortcut key (```F5```) again will run the Macro - you sh
 
 If you are using OpenOffice, you should be able to similarly [create a macro](https://wiki.openoffice.org/wiki/Documentation/OOoAuthors_User_Manual/Getting_Started/Creating_a_simple_macro) using the same code.
 
-### Review the OCR error list to inform the design of your pre-processing stage
+### IDA Step 4: Review the OCR error list to inform the design of your pre-processing stage
 
-Now that you have the errors separated out from the text, review your data closely. You can toggle back and forth between the error list and the full document, Zwick.txt, if the correct spelling of some misspelled words is difficult to guess.
+Now that you have the errors separated out from the text, review your data closely. You can toggle back and forth between the error list and the full document, Zwick.txt, if the correct spelling of some misspelled words is difficult to guess. You may also wish to employ a text analysis tool like [Voyant Tools](https://voyant-tools.org/).
 
 In your initial data analysis, try to identify patterns within the errors:
 * is one character frequently the source of errors (such as "m" in the sample text)?
