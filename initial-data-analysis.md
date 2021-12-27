@@ -19,7 +19,7 @@ Initial data analysis informs the pre-processing stage while exploratory data an
 
 The two are not neatly separated, however; you are likely to notice some features and characteristics of the data as you are performing your initial data analysis (and in other stages of the workflow). But generally, exploratory data analysis will largely occur towards the end of the workflow when we are performing natural language processing tasks such as named entity recognition and topic modelling.
 
-## Performing Initial Data Analysis with Microsoft Word
+## Performing Initial Data Analysis (IDA) with Microsoft Word
 
 VIDEO
 
@@ -35,15 +35,7 @@ Consider doing the same with any other dataset you plan to analyze: remove block
 
 We are using Word because it will highlight errors for us and we can export a list of misspelled words from it using a macro. The software, however, may not recognize errors automatically when working with a .txt file; if you are running MS Word on either a Windows or Mac operating system, refer to the [Microsoft documentation](https://support.microsoft.com/en-us/office/check-spelling-and-grammar-in-office-5cdeced7-d81d-47de-9096-efd0ee909227) ("Turn the automatic spelling and grammar checker on or off"). 
 
-Once you have made spelling errors visible in your document, take some time to review them - they are now easy to find! Although we are about to export a list of misspelled words, it is helpful to see the errors in context as it can at times be difficult to infer the correct spelling of the error without knowing how they are being used.
-
-In your initial data analysis, try to identify patterns within the errors:
-* is one character frequently the source of errors (such as "m" in the sample text)?
-* is one or a set of characters regularly substituted for another ("oim" for "oun" in the sample text)?
-* does an error often occur in relation to another character or characters (like "m" for "in" when following "f" or "tiy" for "tly" in the sample text)?
-* etc.
-
-Document your observations as completely as possible to help to make your error correction tasks more efficient and less likely to introduce new errors. 
+Once you have made spelling errors visible in your document, take a bit of time to review them - they are now easy to find! Although we are about to export a list of misspelled words, it is helpful to see the errors in context as it can at times be difficult to infer the correct spelling of the error without knowing how they are being used.
 
 ### Create a macro to export an OCR error list
 
@@ -79,10 +71,22 @@ End Sub
 
 Typing the "Run Macro" shortcut key (```F5```) again will run the Macro - you should now have a second MS Word document open that contains the errors words only.
 
-If you are using OpenOffice, you should be able to similarly [create a macro using the same code](https://wiki.openoffice.org/wiki/Documentation/OOoAuthors_User_Manual/Getting_Started/Creating_a_simple_macro).
+If you are using OpenOffice, you should be able to similarly [create a macro](https://wiki.openoffice.org/wiki/Documentation/OOoAuthors_User_Manual/Getting_Started/Creating_a_simple_macro) using the same code.
 
 ### Review the OCR error list to inform the design of your pre-processing stage
 
-In [Correcting OCR Errors with OpenRefine](https://scds.github.io/text-analysis-1/ocr-correction.html), we will use the "Word Facet" option in OpenRefine to group the same misspellings together so that each error only appears once in the list.
+Now that you have the errors separated out from the text, review your data closely. You can toggle back and forth between the error list and the full document, Zwick.txt, if the correct spelling of some misspelled words is difficult to guess.
+
+In your initial data analysis, try to identify patterns within the errors:
+* is one character frequently the source of errors (such as "m" in the sample text)?
+* is one or a set of characters regularly substituted for another ("oim" for "oun" in the sample text)?
+* does an error often occur in relation to another character or characters (like "m" for "in" when following "f" or "tiy" for "tly" in the sample text)?
+* etc.
+chal
+Error words are likely to duplicated - in fact, we are depending on the same words being misspelled in the same ways for the error correction techniques we will be using shortly. If IDA becomes challenging because there are so many duplicates, you can bring the error list into OpenRefine and use the "Word Facet" option to group the same misspellings together as [Correcting OCR Errors with OpenRefine](https://scds.github.io/text-analysis-1/ocr-correction.html).
+
+The idea 
+
+Document your observations as completely as possible to help to make your error correction tasks more efficient and less likely to introduce new errors. 
 
 Next -> [Correcting OCR Errors with OpenRefine](https://scds.github.io/text-analysis-1/ocr-correction.html)
