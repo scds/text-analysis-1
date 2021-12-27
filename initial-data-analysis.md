@@ -23,13 +23,15 @@ The two are not neatly separated, however; you are likely to notice some feature
 
 VIDEO
 
-# IDA Step 1: Remove extraneous text
+### IDA Step 1: Remove extraneous text
 
 Working with [sample corpus A](https://scds.github.io/text-analysis-1/preparation.html), open the .txt file in MS Word. 
 
 Before any other step, we may first want to delete the preamble at the beginning of the document as it is not relevant to our text analysis. There are also figures and appendices at the end of the document that can also be deleted; anything after section 10.0 ("References") or page 39 in the document is similarly "noisy."
 
-# IDA Step 2: Run spellcheck in 
+Consider doing the same with any other dataset you plan to analyze: remove blocks of extraneous text in the IDA stage. 
+
+### IDA Step 2: Run spellcheck in MS Word
 
 We are using Word because it will highlight errors for us and we can export a list of misspelled words from it using a macro. The software, however, may not recognize errors automatically when working with a .txt file; if you are running MS Word on either a Windows or Mac operating system, refer to the [Microsoft documentation](https://support.microsoft.com/en-us/office/check-spelling-and-grammar-in-office-5cdeced7-d81d-47de-9096-efd0ee909227) ("Turn the automatic spelling and grammar checker on or off"). 
 
@@ -43,13 +45,17 @@ In your initial data analysis, try to identify patterns within the errors:
 
 Document your observations as completely as possible to help to make your error correction tasks more efficient and less likely to introduce new errors. 
 
-### Create a Macro to Export an OCR Error List
+### Create a macro to export an OCR error list
 
 Although seeing the errors in context is helpful, it is of course also useful to isolate the errors. We can create a list of OCR errors using a macro in MS Word.
 
-With the Zwick.txt file open, use the shortcut keys ```Alt``` + ```11``` to open the Visual Basic Editor in Word. go to the Macros in MS Word ("View" tab > Macros > "View Macros"). We will create 
+In MS Word, use the shortcut keys ```Alt``` + ```F11``` to open the Visual Basic Editor. Once the Visual Basic Editor is open, the shortcut key ```F5``` will bring up the "Run Macro" dialog box, which is where we will create the macro.
 
-Copy the macro code below, [created by Allan Wyatt](https://word.tips.net/T001465_Pulling_Out_Spelling_Errors.html), and paste into .
+Name your macro "GetSpellingErrors" and select "Normal" from "Macros In: " which will make your macro available outside of your current document for future use. Create the macro.
+
+\[screenshot highlighting where to enter name, "Normal" and "create"]
+
+Copy the macro code below - [created by Allan Wyatt](https://word.tips.net/T001465_Pulling_Out_Spelling_Errors.html) - and paste into the code area of macro, overwriting any existing text (by default, the editor will "Sub GetSpellingErrors()" and "End Sub" code). 
 
 ```
 'Macro code by Allan Wyatt: https://word.tips.net/T001465_Pulling_Out_Spelling_Errors.html'
@@ -69,7 +75,13 @@ Sub GetSpellingErrors()
 End Sub
 ```
 
+\[screenshot]
+
+Typing the "Run Macro" shortcut key (```F5```) again will run the Macro - you should now have a second MS Word document open that contains the errors words only.
+
 If you are using OpenOffice, you should be able to similarly [create a macro using the same code](https://wiki.openoffice.org/wiki/Documentation/OOoAuthors_User_Manual/Getting_Started/Creating_a_simple_macro).
+
+### Review the OCR error list to inform the design of your pre-processing stage
 
 In [Correcting OCR Errors with OpenRefine](https://scds.github.io/text-analysis-1/ocr-correction.html), we will use the "Word Facet" option in OpenRefine to group the same misspellings together so that each error only appears once in the list.
 
