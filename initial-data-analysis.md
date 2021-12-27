@@ -87,7 +87,7 @@ Error words are likely to duplicated - in fact, we are depending on the same wor
 
 While it may be tempting to create a table containing the misspelled word and its corrected version for use with a find-and-replace technique, a manual approach will be unsustainable for all but the smallest of datasets. We will instead focus our efforts on misspelled groups of letters repeated across numerous words and allow for some margin of error.
 
-One exception to the above is any words that are particularly significant to your analysis; you can safely ignore misspellings of "the," "this," and other commonly used words but, to take an example from our dataset, you would probably want to correct "Mimicipal."
+One exception to the above is any words that are particularly significant to your analysis; you can safely ignore misspellings of "the," "this," and other commonly used words but - to take an example from our Zwick dataset - you would probably want to correct "Mimicipal."
 
 Document your observations as completely as possible to help to make your error correction tasks more efficient and less likely to introduce new errors.
 
