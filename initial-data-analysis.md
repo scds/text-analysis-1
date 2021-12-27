@@ -23,9 +23,15 @@ The two are not neatly separated, however; you are likely to notice some feature
 
 VIDEO
 
-Working with [sample corpus A](https://scds.github.io/text-analysis-1/preparation.html), open the .txt file in MS Word. We are using Word because it will highlight errors for us and we can export a list of misspelled words from it using a macro. 
+# IDA Step 1: Remove extraneous text
 
-The software, however, may not recognize errors automatically when working with a .txt file. If you are running MS Word on either a Windows or Mac operating system, you can ^^^ under the "Review" spell check tool on your .txt file.
+Working with [sample corpus A](https://scds.github.io/text-analysis-1/preparation.html), open the .txt file in MS Word. 
+
+Before any other step, we may first want to delete the preamble at the beginning of the document as it is not relevant to our text analysis. There are also figures and appendices at the end of the document that can also be deleted; anything after section 10.0 ("References") or page 39 in the document is similarly "noisy."
+
+# IDA Step 2: Run spellcheck in 
+
+We are using Word because it will highlight errors for us and we can export a list of misspelled words from it using a macro. The software, however, may not recognize errors automatically when working with a .txt file; if you are running MS Word on either a Windows or Mac operating system, refer to the [Microsoft documentation](https://support.microsoft.com/en-us/office/check-spelling-and-grammar-in-office-5cdeced7-d81d-47de-9096-efd0ee909227) ("Turn the automatic spelling and grammar checker on or off"). 
 
 Once you have made spelling errors visible in your document, take some time to review them - they are now easy to find! Although we are about to export a list of misspelled words, it is helpful to see the errors in context as it can at times be difficult to infer the correct spelling of the error without knowing how they are being used.
 
@@ -41,9 +47,27 @@ Document your observations as completely as possible to help to make your error 
 
 Although seeing the errors in context is helpful, it is of course also useful to isolate the errors. We can create a list of OCR errors using a macro in MS Word.
 
-With the Zwick.txt file open, go to the Macros in MS Word.
+With the Zwick.txt file open, use the shortcut keys ```Alt``` + ```11``` to open the Visual Basic Editor in Word. go to the Macros in MS Word ("View" tab > Macros > "View Macros"). We will create 
 
-Copy the macro code from the , written by Allan Wyatt (https://word.tips.net/T001465_Pulling_Out_Spelling_Errors.html)).
+Copy the macro code below, [created by Allan Wyatt](https://word.tips.net/T001465_Pulling_Out_Spelling_Errors.html), and paste into .
+
+```
+'Macro code by Allan Wyatt: https://word.tips.net/T001465_Pulling_Out_Spelling_Errors.html'
+Sub GetSpellingErrors()
+    Dim DocThis As Document
+    Dim iErrorCnt As Integer
+    Dim J As Integer
+
+    Set DocThis = ActiveDocument
+    Documents.Add
+
+    iErrorCnt = DocThis.SpellingErrors.Count
+    For J = 1 To iErrorCnt
+        Selection.TypeText Text:=DocThis.SpellingErrors(J)
+        Selection.TypeParagraph
+    Next J
+End Sub
+```
 
 If you are using OpenOffice, you should be able to similarly [create a macro using the same code](https://wiki.openoffice.org/wiki/Documentation/OOoAuthors_User_Manual/Getting_Started/Creating_a_simple_macro).
 
