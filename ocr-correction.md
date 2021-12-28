@@ -23,11 +23,11 @@ There is no need to worry about overwriting your data in the event that you acci
 
 OpenRefine is not a purpose-built tool for correcting OCR errors, but it can be used... creatively. There will be text analysis projects for which OpenRefine is a viable approach to error correction and others for which it is not.
 
-The techniques demonstrated in the current lesson work best with high quality scans of typewritten documents, such as reports, typed correspondence, book pages, journal articles and so on. Essentially, documents with relatively few and consistent errors after OCR is performed. 
+The techniques demonstrated in the current lesson work best with high quality scans of typewritten documents, such as reports, typed correspondence, book pages, journal articles and so on. Documents with relatively few, consistently-occurring errors after OCR is performed. 
 
-You may also wish to use OpenRefine if you are already familiar with it and / or new to writing code. If you are comfortable working in Python or willing to learn, you might find the Advanced Error Correction tutorial more suitable for your needs. 
+You may also wish to use OpenRefine if you are already familiar with it and / or new to writing code. If you are comfortable working in Python or willing to learn, you might find the [Advanced Error Correction with Python tutorial](advanced-correction.html) more suitable for your needs. 
 
-You may also have to use Python if you are working with handwritten documents or other texts with many unique errors following OCR. From the IDA stage, you should 
+You may also have to use Python if you are working with handwritten documents or other texts with many unique errors following OCR. From the IDA stage, you should have a sense of whether to a programmatic approach is more appropriate.
 
 ## Using OpenRefine to Correct OCR Errors
 
@@ -43,4 +43,4 @@ Using OpenRefine to correct OCR errors involves:
 * Correcting individual words using a variety of correction strategies
 * "Reconstituting" the words into a text file that can be used for computation analysis or another purpose
 
-
+Next -> [Correcting OCR Errors with OpenRefine: Preparing the Data](or-prep.html)
