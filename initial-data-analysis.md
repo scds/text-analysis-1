@@ -83,7 +83,7 @@ In your initial data analysis, try to identify patterns within the errors:
 * does an error often occur in relation to another character or characters (like "m" for "in" when following "f" or "tiy" for "tly" in the sample text)?
 * etc.
   
-Error words are likely to duplicated - in fact, we are depending on the same words being misspelled in the same ways for the error correction techniques we will be using shortly. If IDA becomes challenging because there are so many duplicates, however, you can use the "Word Facet" option in OpenRefine to group the same misspellings together which will be described in [Correcting OCR Errors with OpenRefine](https://scds.github.io/text-analysis-1/ocr-correction.html).
+Error words are likely to duplicated - in fact, we are depending on the same words being misspelled in the same ways for the error correction techniques we will be using shortly. If IDA becomes challenging because there are so many duplicates, however, you can use the "Word Facet" option in OpenRefine to group the same misspellings together which will be described in [Correcting OCR Errors with OpenRefine: Strategies](or-strat.html).
 
 While it may be tempting to create a table containing the misspelled word and its corrected version for use with a find-and-replace technique, a manual approach will be unsustainable for all but the smallest of datasets. We will instead focus our efforts on misspelled groups of letters repeated across numerous words and not let perfect be the enemy of good.
 
@@ -91,4 +91,4 @@ One exception to the above is any words that are particularly significant to you
 
 Document your observations as completely as possible to help to make your error correction tasks more efficient and less likely to introduce new errors.
 
-Next -> [Correcting OCR Errors with OpenRefine](https://scds.github.io/text-analysis-1/ocr-correction.html)
+Next -> [Correcting OCR Errors with OpenRefine](ocr-correction.html)
