@@ -38,9 +38,9 @@ Recall that you will probably be working with a subset of your entire corpus to 
 ### Overview of lesson tasks
 
 Using OpenRefine to correct OCR errors involves:
-* Importing your text file(s)
-* Breaking down the unstructured text into words that we can operate on individually (tokenization) 
-* Correcting individual words using a variety of correction strategies
-* "Reconstituting" the words into a text file that can be used for computation analysis or another purpose
+1. Importing your text file(s)
+2. Breaking down the unstructured text into words that we can operate on individually (tokenization) 
+3. Correcting individual words using a variety of correction strategies
+4. "Reconstituting" the words into a text file that can be used for computation analysis or another purpose
 
 Next -> [Correcting OCR Errors with OpenRefine: Preparing the Data](or-prep.html)
