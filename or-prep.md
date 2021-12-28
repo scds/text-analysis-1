@@ -74,4 +74,5 @@ Here, instead of the "Tokens" column, we will use the menu in the "All" column t
 
 \[screenshot]
 
+Next -> [Correcting OCR Errors with OpenRefine: Strategies](or-strat.html)
 
