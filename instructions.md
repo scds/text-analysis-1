@@ -11,12 +11,13 @@ has_toc: false
 
 # Lesson Roadmap
 
-1. An overview of the textual data analysis pipeline
+1. An overview of the textual data analysis workflow
 2. Data provenance
-3. Initial Data Analysis
-4. VIDEO: Correcting OCR errors with scanned texts with OpenRefine
+3. Initial Data Analysis (IDA)
+4. Correcting OCR errors in scanned documents with OpenRefine
   * Basic tokenization (i.e. to work with unstructured text)
   * Regular Expressions (for consistent errors and removing unwanted characters)
   * Faceting and clustering (for slight misspellings and normalization)
-5. VIDEO: Structuring text with TEI (optional)
-6. Behind the interface: data ‘cleaning’ and the anglo-centric bias of NLP
+5. Advanced error correction with Python 
+6. Structuring text with TEI (optional)
+<!-- 7. Behind the interface: data ‘cleaning’ and the anglo-centric bias of NLP; Born-digital texts -->
