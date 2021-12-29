@@ -9,7 +9,7 @@ nav_order: 2
 <br />
 Preparing for the lesson requires you to:
 
-## 1. Get the data
+## 1. Get the data (sample corpus A)
 The document we will be working with in the lesson is "[Zwick's Island landfill environmental investigations](https://archive.org/details/zwicksislandland00ontauoft/page/12/mode/2up)," available on the Internet Archive. It describes a study undertaken by the Ontario provincial government's Ministry of the Environment (the Sherman Centre is located in Ontario, Canada) in 1991 about the ongoing environmental impact of the closed Zwick's Island landfill site.<!--The landfill site is a source of contaminants Bay of Quinte, including Tyendinaga Mohawk Territory.--> The report was scanned from a paper version and then processed through optical character recognition (OCR) to transform the image into text data. <!-- If you would like to read more about how OCR works, read …. -->
 
 OCR output is rarely free of errors: the OCR engine may misinterpret characters, even with a high quality scan that produces a file that looks like a born-digital PDF.  The error rate increases when working with documents that are hand-written, have low contrast between foreground text or are in languages with less robust OCR support.<!-- (read more at [behind the interface])--> The "Zwick's Island" document is no exception; like many documents on the Internet Archive and other repositories for digitized texts, access is prioritized over accuracy - meaning that there is an abundance of sources for us to practice with! The accuracy of the post-OCR text of the "Zwick's Island" document is close to an impressive 99%, however. 
