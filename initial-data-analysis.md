@@ -21,7 +21,7 @@ The two are not neatly separated, however; you are likely to notice some feature
 
 ## Performing Initial Data Analysis (IDA) with Microsoft Word
 
-VIDEO
+<iframe id="kmsembed-1_idpfm6as" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_idpfm6as/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 ### IDA Step 1: Remove extraneous text
 
@@ -83,7 +83,7 @@ In your initial data analysis, try to identify patterns within the errors:
 * does an error often occur in relation to another character or characters (like "m" for "in" when following "f" or "tiy" for "tly" in the sample text)?
 * etc.
   
-Error words are likely to duplicated - in fact, we are depending on the same words being misspelled in the same ways for the error correction techniques we will be using shortly. If IDA becomes challenging because there are so many duplicates, however, you can use the "Word Facet" option in OpenRefine to group the same misspellings together which will be described in [Correcting OCR Errors with OpenRefine: Strategies](or-strat.html).
+<!-- Error words are likely to duplicated - in fact, we are depending on the same words being misspelled in the same ways for the error correction techniques we will be using shortly. -->
 
 While it may be tempting to create a table containing the misspelled word and its corrected version for use with a find-and-replace technique, a manual approach will be unsustainable for all but the smallest of datasets. We will instead focus our efforts on misspelled groups of letters repeated across numerous words and not let perfect be the enemy of good.
 
