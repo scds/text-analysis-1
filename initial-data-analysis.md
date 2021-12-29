@@ -77,7 +77,7 @@ If you are using OpenOffice, you should be able to similarly [create a macro](ht
 
 ### IDA Step 4: Review the OCR error list to inform the design of your pre-processing stage
 
-Now that you have the errors separated out from the text, review your data closely. You can toggle back and forth between the error list and the full document, Zwick.txt, or the source document if the correct spelling of some misspelled words is difficult to guess. You may also wish to employ a text analysis tool like [Voyant Tools](https://voyant-tools.org/).
+Now that you have the errors separated out from the text, review your data closely. You can toggle back and forth between the error list and the full document, Zwick.txt, or the [source document](https://archive.org/details/zwicksislandland00ontauoft/page/12/mode/2up) if the correct spelling of some misspelled words is difficult to guess. You may also wish to employ a text analysis tool like [Voyant Tools](https://voyant-tools.org/).
 
 In your initial data analysis, try to identify patterns within the errors:
 * is one character frequently the source of errors (such as "m" in the sample text)?
