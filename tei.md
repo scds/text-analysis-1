@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Structuring Text with TEI
-parent: Lesson
-nav_order: 8
+nav_order: 4
 ---
 
 # Structuring Text with Text Encoding Initiative (TEI) Markup
