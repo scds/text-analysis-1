@@ -25,7 +25,7 @@ The two are not neatly separated, however; you are likely to notice some feature
 
 ### IDA Step 1: Remove extraneous text
 
-Working with [sample corpus A](https://scds.github.io/text-analysis-1/preparation.html), open the .txt file in MS Word. 
+Working with [sample corpus A](https://scds.github.io/text-analysis-1/preparation.html), Zwick.txt, open the .txt file in MS Word. 
 
 Before any other step, we may first want to delete the preamble at the beginning of the document as it is not relevant to our text analysis. There are also figures and appendices at the end of the document that can also be deleted; anything after section 10.0 ("References") or page 39 in the document is similarly "noisy."
 
@@ -45,9 +45,11 @@ In MS Word, use the shortcut keys ```Alt``` + ```F11``` to open the Visual Basic
 
 Name your macro "GetSpellingErrors" and select "Normal" from "Macros In: " which will make your macro available outside of your current document for future use. Create the macro.
 
-<!--[screenshot highlighting where to enter name, "Normal" and "create"] -->
+![](assets/img/IDA-macro-create.png)
 
 Copy the macro code below - [created by Allan Wyatt](https://word.tips.net/T001465_Pulling_Out_Spelling_Errors.html) - and paste into the code area of macro, overwriting any existing text (by default, the editor will "Sub GetSpellingErrors()" and "End Sub" code). 
+
+NB: I don't know Allan Wyatt personally or anything about his political views but I appreciate him sharing the code below freely.
 
 ```
 'Macro code by Allan Wyatt: https://word.tips.net/T001465_Pulling_Out_Spelling_Errors.html'
@@ -67,7 +69,7 @@ Sub GetSpellingErrors()
 End Sub
 ```
 
-<!-- [screenshot] -->
+![]((assets/img/IDA-macro-final.png)
 
 Typing the "Run Macro" shortcut key (```F5```) again will run the Macro - you should now have a second MS Word document open that contains the errors words only.
 
@@ -75,7 +77,7 @@ If you are using OpenOffice, you should be able to similarly [create a macro](ht
 
 ### IDA Step 4: Review the OCR error list to inform the design of your pre-processing stage
 
-Now that you have the errors separated out from the text, review your data closely. You can toggle back and forth between the error list and the full document, Zwick.txt, if the correct spelling of some misspelled words is difficult to guess. You may also wish to employ a text analysis tool like [Voyant Tools](https://voyant-tools.org/).
+Now that you have the errors separated out from the text, review your data closely. You can toggle back and forth between the error list and the full document, Zwick.txt, or the source document if the correct spelling of some misspelled words is difficult to guess. You may also wish to employ a text analysis tool like [Voyant Tools](https://voyant-tools.org/).
 
 In your initial data analysis, try to identify patterns within the errors:
 * is one character frequently the source of errors (such as "m" in the sample text)?
