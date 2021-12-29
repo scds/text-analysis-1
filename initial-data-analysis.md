@@ -69,7 +69,7 @@ Sub GetSpellingErrors()
 End Sub
 ```
 
-![]((assets/img/IDA-macro-final.png)
+![](assets/img/IDA-macro-final.png)
 
 Typing the "Run Macro" shortcut key (```F5```) again will run the Macro - you should now have a second MS Word document open that contains the errors words only.
 
