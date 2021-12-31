@@ -6,9 +6,6 @@ has_children: true
 has_toc: false
 ---
 
-<!-- Edit the content below for the workshop in question. Once you're ready to publish, remove the comment characters e.g. "<!--" at the start and end -->
-
-
 # Lesson Roadmap
 
 1. An overview of the textual data analysis workflow
@@ -18,6 +15,12 @@ has_toc: false
   * Basic tokenization (i.e. to work with unstructured text)
   * Regular Expressions (for consistent errors and removing unwanted characters)
   * Faceting and clustering (for slight misspellings and normalization)
-5. Advanced error correction with Python 
-6. Structuring text with TEI (optional)
+5. OCR Error correction with Python 
+6. Structuring text with TEI
 <!-- 7. Behind the interface: data ‘cleaning’ and the anglo-centric bias of NLP; Born-digital texts -->
+
+# Lesson Format
+
+The hands-on components of the lesson are available as videos with written instructions and screenshots of the video content below. You are encouraged to watch the videos and use the written sections for later reference but feel free to approach the lesson however you prefer!
+
+Next -> [An Overview of the Textual Analysis Workflow](overview.html)
