@@ -20,7 +20,7 @@ Because applying OCR to a scanned document is outside of the scope of the lesson
 2. Copy the text (ctrl/cmd + A to select all, then ctrl/cmd + C to copy) and,
 3. Paste into a text file (create one using Notepad on a Windows OS or TextEdit on a Mac and then ctrl/cmd + V to paste) and save with a .txt extension as Zwick.txt.
 
-**Note that the document is under [Crown copyright](https://www.ontario.ca/page/copyright-information-c-queens-printer-ontario)** (i.e. © Queen’s Printer for Ontario,  1991); please do not reproduce the text outside of your personal use for the purposes of the lesson unless you have determined your use falls under an applicable copyright exception.
+**Note that the document is under [Crown copyright](https://www.ontario.ca/page/copyright-information-c-queens-printer-ontario)** (i.e. © Queen’s Printer for Ontario,  1991); please do not reproduce the text outside of your personal use for the purposes of the lesson unless you have determined your use falls under an applicable copyright exception or is otherwise permitted.
 
 ## 2. Get the software
 We will be using [**OpenRefine**](https://www.openrefine.org/), an open-source spreadsheet-like software, for our post-OCR error correction in the lesson. Please download OpenRefine and use the instructions provided to guide you through installation.
