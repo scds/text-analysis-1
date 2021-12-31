@@ -6,7 +6,9 @@ has_children: true
 has_toc: false
 ---
 
-# Lesson Roadmap
+# Pre-Processing Textual Data
+
+## Lesson roadmap
 
 1. An overview of the textual data analysis workflow
 2. Data provenance
@@ -19,7 +21,7 @@ has_toc: false
 6. Structuring text with TEI
 <!-- 7. Behind the interface: data ‘cleaning’ and the anglo-centric bias of NLP; Born-digital texts -->
 
-# Lesson Format
+## Lesson format
 
 The hands-on components of the lesson are available as videos with written instructions and screenshots of the video content below. You are encouraged to watch the videos and use the written sections for later reference but feel free to approach the lesson however you prefer!
 
