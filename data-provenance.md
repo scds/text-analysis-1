@@ -13,7 +13,7 @@ Anyone who has worked with archival materials before (which we may assume encomp
 
 Documenting the provenance of your data helps to establish the accuracy, reliability and [authenticity of your results](https://www.ands.org.au/working-with-data/publishing-and-reusing-data/data-provenance) and also allows you to trace back and correct errors when you discover them later in the textual data analysis workflow. It is also good practice to make well-named (i.e. easy to identify from the filename alone) copies of the dataset as you move through the stages of the workflow to avoid unintentionally and irreversibly transforming the data.
 
-If you are using a tool like OpenRefine for pre-processing, some of the provenance documentation can be automated; as we will see in "[Correcting OCR Errors with OpenRefine](ocr-correction.html)," OpenRefine keeps track of every operation you perform which can be exported in JSON format.
+If you are using a tool like OpenRefine for pre-processing, some of the provenance documentation can be automated; as we will see in "[Exporting the Data](output.html)," OpenRefine keeps track of every operation you perform which can be exported in JSON format.
 
 A more detailed discussion of data provenance is outside of the scope of the current lesson, but if you wish to pursue the topic further you can explore Paolo Missier's "[Provenance Standards](http://homepages.cs.ncl.ac.uk/paolo.missier/doc/Provenance-standards.pdf)" and the [Provenance Tools page](https://projects.iq.harvard.edu/provenance-at-harvard/tools) created by the Provenance@Harvard group at Harvard University.
 
