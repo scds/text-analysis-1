@@ -6,11 +6,13 @@ nav_order: 5
 ---
 # Correcting OCR Errors with OpenRefine: Preparing the Data
 
-\[video]
-
 ## OpenRefine step 1: Import your texts
 
-Begin by opening OpenRefine; it will open in your default web browser and prompt you to create a project. Use the ```Browse...``` button to locate your text files. OpenRefine will allow you to upload .txt files, treating each line of the text document as a new row.
+\[video]
+
+Begin by opening OpenRefine; it will open in your default web browser and prompt you to create a project. Use the `Browse...` button to locate your text files. OpenRefine will allow you to upload .txt files, treating each line of the text document as a new row.
+
+\[screenshot]
 
 Import options:
 * Store blank rows - leave checked if you want to preserve the paragraph structure of the document; otherwise uncheck*
@@ -18,25 +20,35 @@ Import options:
 
 \* OpenRefine has a ceiling on the number of rows you can work with (~1,000,000) so you may wish to conserve resources by excluding blank rows.
 
-Give your project a name and ```Create Project >>``` to open your document(s) in OpenRefine.
+Give your project a name and `Create Project >>` to open your document(s) in OpenRefine.
 
-### OpenRefine step 2: Initial Data Analysis
+## OpenRefine step 2: Initial Data Analysis
 
 Although you will already have done most of your initial data analysis in another tool, you will often learn something new about how your text files are structured when you upload them to OpenRefine - e.g. where line breaks occur or how characters might be interpreted differently in OpenRefine from the text editor you used for any earlier initial data analysis. There can be consequences for the pre-processing steps you undertake, so take some time to review the data in OpenRefine before performing any transformations. You may discover that you need to do some pre-processing tasks with the .txt files in a text editor before re-uploading them to OpenRefine.
 
-For example, longer words in newspapers and other justified typeset texts will sometimes be split over two lines separated with a hyphen or dash - it is usually easier to reconnect them in a text editor like TextEdit or Notepad++ before uploading to OpenRefine using a find-and-replace function in the editor (make a copy of your data first, as it is a destructive edit).
+For example, longer words in newspapers and other justified typeset documents will sometimes be split over two lines separated with a hyphen or dash - it is usually easier to reconnect them in a text editor like TextEdit or Notepad++ before uploading to OpenRefine using a find-and-replace function in the editor (make a copy of your data first, as it is a destructive edit).
 
-You can use text facets 
-
-Once you have performed any additional (pre-)pre-processing steps outside of OpenRefine and re-uploaded your text file(s), rename the column with the contents of your text "Tokens" by visiting the column menu - which can be accessed through the small downward arrow to the left of the column - and selecting Edit column > Rename.
+Once you have performed any additional (pre-)pre-processing steps outside of OpenRefine and re-uploaded your text file(s), rename the column with the contents of your text "Tokens" by visiting the column menu - which can be accessed through the small downward arrow to the left of the column - and selecting `Edit column > Rename`.
 
 \[screenshot of expanded menu and renamed column]
 
-#### Optional: Paragraph placeholders
+### Optional: Paragraph placeholders
 
-If the original paragraph structure of the document is significant your intended use of the text data (e.g. for readability, stylometric analysis), there is another step that must be performed before tokenizing the data - which will result in an output of a giant passage of words. We can maintain the paragraph structure of a document in the output from our error correction in OpenRefine, but it takes an additional step early on in the workflow - before we break the sentences into tokens in the next step.
+\[video]
 
-\[screenshot of <p> tag]
+If the original paragraph structure of the document is significant your intended use of the text data (e.g. for readability, stylometric analysis), there is another step that must be performed before tokenizing the data - which will result in an output of a long block of words. We can maintain the paragraph structure of a document in the output from our error correction in OpenRefine, but it takes an additional step early on in the workflow - before we break the sentences into tokens in the next step.
+
+Provided you left "Store blank rows" checked when importing the document, each blank - or null - row in the data represents a line break. Replace the null rows with a placeholder character that you can later use to replace with a new line.
+
+Create a facet - or grouping of rows - that contains all of the null rows by going 
+
+
+Using the HTML tag for paragraph, or `<p></p>`, will allow us - if HTML output is .
+
+When finding and (so that each blank row closes the previous paragraph tag and opens a new one around the content that follows).
+
+\[screenshot of paragraph tag]
+
 
 ### OpenRefine step 3: Tokenize
 
@@ -55,6 +67,9 @@ For now, we will leave in punctuation. Computational text analysis tools will ty
 > *You can optionally split any punctuation into its own cell to simplify error correction by repeating the steps above using the separator ^^^ with ^^^regex checked off. But you may not wish to if you intend to "reconstitute" the text for purposes other than computational analysis (i.e. to provide a corrected copy of the text to users). When we recombine the text, we will use a space to separate each cell (word) - meaning there will be a space in front of all punctuation marks.
 > 
 > Much of OCR error correction, and data pre-processing in general, is being able to consider the entire data analysis workflow and to anticipate ^^^.*
+  
+You can also use filters to help with your analysis by going to the dropdown menu for the column (which I have renamed "Tokens" in the screenshot below) and selecting "Edit Ce; for example, many errors in the Zwick.txt document involved the letter "m" so you could filter by m (case-sensitive checked). Such a broad **word** or **text facets** 
+
 
 ### OpenRefine step 4: Remove blank rows (and whitespaces)
 
