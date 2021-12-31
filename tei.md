@@ -5,3 +5,5 @@ nav_order: 6
 ---
 
 # Structuring Text with Text Encoding Initiative (TEI) Markup
+
+* Encode unstructured textual data using [TEI markup](https://tei-c.org/guidelines/Customization/Lite/) (optional)
