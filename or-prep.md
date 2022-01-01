@@ -32,7 +32,7 @@ Once you have performed any additional (pre-)pre-processing steps outside of Ope
 
 \[screenshot of expanded menu and renamed column]
 
-### Optional: Paragraph placeholders
+### Optional: Create paragraph placeholders
 
 \[video]
 
@@ -60,52 +60,54 @@ Choose a placeholder character that does not exist anywhere else in the text, as
 
 Once the null rows have been transformed, they should no longer be visible as their value are no longer null. Remove the facet by closing it, and all rows will return. As we tokenize the data in the next step, the placeholders will be treated as another token and preserved for later use to restored the paragraph structure of the text.
 
-### OpenRefine step 3: Tokenize
+## OpenRefine step 3: Tokenize
 
 Tokenization - in the context of computational text analysis - is the dividing of unstructured text into individual words, or *tokens*. Because OpenRefine works most effectively with tabular data (i.e. data stored in tables, like in a spreadsheet), we are artificially creating a tabular structure by putting each word on its own row. This achieves the same effect as tokenization and allows us to group identical or similar words in OpenRefine.
 
-In the "Tokens" column of your OpenRefine file, open the column menu using the small downward arrow to the left of the column title. From the column menu, select Edit cells > Split multi-valued cells....
+ From the column menu of the "Tokens" column, select `Edit cells > Split multi-valued cells...`.
 
 \[screenshot]
 
-By default, the recommended separator character will be a comma (i.e. for comma-separated value, or CSV, files) - delete the comma and hit the space bar once to specify the space character as the separator. We are indicating to OpenRefine to split each cell every time it encounters a space in the text. Although we can think of cases in which a space does not indicate a new word, we will be putting the text back together again with the spaces restored when we have finished with error correction.  
+By default, the recommended separator character will be a comma (i.e. for comma-separated value, or CSV, files) - delete the comma and hit the space bar once to specify the space character as the separator. We are indicating to OpenRefine to split each cell every time it encounters a space in the text. Although we can think of cases in which a space does not indicate a new word, they will not matter for the purposes of OCR error correction. We will be putting the text back together again with the spaces restored when we have finished with error correction.  
 
 \[screenshot]
 
-For now, we will leave in punctuation. Computational text analysis tools will typically remove the punctuation for us, and we may want the punctuation to remain if we are exporting a copy. Bear in mind that OpenRefine will view "bananas" and "bananas!" as two distinct entities, however. 
+For now, we will leave in punctuation. Computational text analysis tools will typically remove the punctuation for us, and we may want the punctuation to remain if we are exporting a copy. Bear in mind that OpenRefine will view "bananas" and "bananas!" as two distinct entities, however.
 
-> *You can optionally split any punctuation into its own cell to simplify error correction by repeating the steps above using the separator ^^^ with ^^^regex checked off. But you may not wish to if you intend to "reconstitute" the text for purposes other than computational analysis (i.e. to provide a corrected copy of the text to users). When we recombine the text, we will use a space to separate each cell (word) - meaning there will be a space in front of all punctuation marks.
-> 
-> Much of OCR error correction, and data pre-processing in general, is being able to consider the entire data analysis workflow and to anticipate ^^^.*
-  
+After performing the split transformation, you should have many more rows as each word is now on its own line. You will also likely have a large number of blank rows again, however.
+\[screenshot]
+
+## OpenRefine step 4: Remove blank rows (and whitespaces, if applicable)
+
+Blank rows are not relevant to our error correction tasks in OpenRefine and, as OpenRefine does have a ceiling on the number of rows it can work with, you may wish to delete them.
+
+**To remove blank rows**, go to `Edit cells` > `Facet` > `Customized facets` > `Facet by blank (null or empty string)` in the column menu for "Tokens"; if you created paragraph placeholders in the previous step, you will be familiar with facets. 
+
+\[screenshot]
+
+From the facet - or grouping of rows with the same contents - that is created, include “True” which temporarily exclude any cells that are not blank. Star any of the rows that remain (they will all be blank cells).
+
+\[screenshot]
+
+Next, instead of the "Tokens" column, we will use the menu in the "All" column to the left of it: `All` > `Edit rows` > `Remove matching rows`. All matching rows - that is, all blank rows - will be removed and the "True" facet will now contain zero results. Close the facet to remove it.
+
+\[screenshot]
+
+Much like punctuation, whitespaces in front of or behind a word will prevent it from being grouped with other instances of the same word in OpenRefine. We can easily remove them using the "Remove leading and trailing whitespaces" function.
+
+**To remove whitespaces**, open the "Tokens" column menu from the previous step and select `Edit cells` > `Commons transforms` > `Trim leading and trailing whitespace`. Once you have done so, OpenRefine will report how many cells were transformed.
+
+\[screenshot]
+
+Because we have used spaces as the separator between rows, no rows are likely to be affected by removing leading and trailing whitespaces. It is nonetheless good practice to ensure that we are indeed comparing like with like, and you may find the feature useful with other datasets.
+
+
+## OpenRefine step 5: Initial Data Analysis (again)
+
+Once more with feeling! With 
+
 You can also use filters to help with your analysis by going to the dropdown menu for the column (which I have renamed "Tokens" in the screenshot below) and selecting "Edit Ce; for example, many errors in the Zwick.txt document involved the letter "m" so you could filter by m (case-sensitive checked). Such a broad **word** or **text facets** 
 
-
-### OpenRefine step 4: Remove blank rows (and whitespaces)
-
-Much like punctuation, whitespaces in front of or behind a word will prevent it from being grouped with other instances of the same word in OpenRefine. Although there are ways to normalize the data in OpenRefine through the "Cluster and Edit" function, we can easily remove them using the "Remove leading and trailing whitespaces" function.
-
-\[video: Remove whitespaces and blank rows]
-
-**To remove whitespaces**, open the "Tokens" column menu from the previous step and select Edit cells → Commons transforms → Trim leading and trailing whitespace. Once you have done so, OpenRefine will report how many cells were transformed.
-
-\[screenshot]
-
-It is possible that no rows will be affected by removing leading and trailing whitespaces, unless additional spaces erroneously appear in the text (i.e. two spaces where there ought to be one). It is nonetheless good practice to ensure that we are indeed comparing like with like!
-
-Optionally, you may also wish to remove blank rows in the dataset. Blank rows are not relevant to our error correction tasks in OpenRefine and, as OpenRefine does have a ceiling on the number of rows it can work with, you may wish to delete. On the other hand, if you want to preserve the formatting in your output - that is, preserve the line breaks in the document you export - then you can leave them in.
-
-**To remove blank rows**, go to Edit cells → Facet → Customized facets → Facet by blank (null or empty string).
-
-\[screenshot]
-
-From the facet that is created, include “True” which temporarily exclude any cells that are not blank. Star any of the rows that remain (they will all be blank cells).
-
-\[screenshot]
-
-Here, instead of the "Tokens" column, we will use the menu in the "All" column to the left of it: All → Edit rows → Remove matching rows. It will remove all of the rows that match; that is, all of the blank rows.
-
-\[screenshot]
 
 Next -> [Correcting OCR Errors with OpenRefine: Strategies](or-strat.html)
 
