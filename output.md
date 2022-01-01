@@ -9,4 +9,7 @@ nav_order: 7
 
 ## 
 
-## Extracting the pre-procesing steps from OpenRefine
+## Extracting the pre-processing steps from OpenRefine
+
+If you notice that you have made an error, you can easily undo it by going to the "Undo / Redo" tab 
+
