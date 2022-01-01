@@ -108,7 +108,7 @@ Once more with feeling! Now that we can perform operations at the level of the w
 
 **Text filters** can be accessed from the "Tokens" column menu, which will help us to isolate results based on our earlier observations with the error list. For example, many errors in the Zwick.txt document involved the letter "m" so you could filter result by *m* (with "case-sensitive" checked). 
 
-Such a broad search strategy can be narrowed by the use of facets, which we used previously when removing blank rows. Here we will use the **word facet** (under "Customized facets") or **text facet** to group the same words together, shortening our list significantly.
+Such a broad search strategy can be narrowed by the use of facets, which we used previously when removing blank rows. Here we will use the `Word facet` (under `Customized facets`) or `Text facet` to group identical words together, shortening our list significantly.
 
 \[screenshot]
 
