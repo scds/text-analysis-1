@@ -24,13 +24,14 @@ Try it out by going to the "Tokens" column menu, selecting `Text filter` and sea
 
 Include "Ontano" and "vanous" to omit the other results, which are not misspelled. From the "Tokens" column menu again, select `Edit cells` > `Replace` to open a dialog box. Type "no" in "Find: " and "rio" in "Replace: " - we use "no" instead of "n" because our actions would transform "Ontano" into "Oritario." 
 
-Before working through your error list with "Replace," however, there is an alternative - and arguably better - approach. Read on...
+Before working through your error list with "Replace," however, there is an alternative - and arguably better - approach. If you notice that you have made an error, you can easily undo it by going to the "Undo / Redo" tab 
+Read on...
 
 ## Strategy 2: Find-and-replace with GREL (Google / General Refine Expression Language)
 
 \[video]
 
-Performing find-and-replace tasks with GREL, or General Refine Expression Language, allows us to use variables and create formulas so that we can correct more errors at once while at the same time not being overly broad in the scope of our transformations. Going the GREL route is a preferred strategy to the “replace” command in OpenRefine because you can preview your changes before you apply them.
+Performing find-and-replace tasks with GREL, or General Refine Expression Language, allows us to use variables and create formulas - we can correct more errors at once while at the same time not being overly broad in the scope of our transformations. Going the GREL route is a preferred strategy to the “replace” command in OpenRefine because you can preview your changes before you apply them.
 
 To use GREL in OpenRefine, go to the "Tokens" column menu and select `Edit cells` > `Transform` to open the custom text transform box that gives us access to the GREL language. We will use the function `value.replace(a, b)` in the “Expression” box to apply a replace transformation, where *a* is what to replace and *b* is what to replace it with.
 
@@ -42,8 +43,30 @@ There are other functions that might be useful to your OCR error correction effo
 
 ## Strategy 3: Find-and-replace with regular expressions (RegEx)
 
-We can build on our find-and-replace toolkit by incorporating regular expressions, or matching sequences of characters.
+We can build on our find-and-replace toolkit by incorporating regular expressions, or RegEx, which offer a way to search for more generalized patterns when we may not know or be able to articulate specifics. For example, performing a search that all results ending in “mg” regardless of what comes before. 
 
+Combined with GREL transformations, filters and facets, we can achieve a balance between speeding up our OCR error efforts while not being so inclusive that we introduce new errors.
+
+To get a sense of RegEx in OpenRefine, create a text filter with "mg" as the criteria to find words where "ing" has been misinterpreted by the OCR engine. Note that, in addition to the words we would like to change, there are a number of correctly spelled results (i.e. "mg/L").
+
+To limit the scope to rows (words) that end in "mg" we can use the regular expression "$mg" as the filter criteria, ensuring that the "regular expression" box is checked. We can now proceed with our text transformation without affecting correctly spelled words.
+
+### Quick RegEx Reference
+
+Other RegEx patterns you might find useful to your OCR error correction efforts include: 
+
+`^` - start of expression
+`$` - end of expression
+E.g. `^T$` will only return cells with “T”
+`^mn` will only return cells that start with “mn”
+`ent$` will only return cells that end with “ent” 
+
+`[string]` - contains any of the letters
+`[^string]` - does not contain the letters
+E.g. `[iou]m` will return words that contain “im,” “om” and “um”
+     `ti[^o]` will exclude “tion”
+
+Familiarity with RegEx will improve your ability to correct OCR errors in OpenRefine considerably; you can seek out other patterns by consulting RegEx references like the [Mozilla RegEx cheatsheet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet) or [RegEx One tutorials](https://regexone.com/).
 
 ## Try it with your own data...
 
