@@ -70,6 +70,8 @@ Familiarity with RegEx will improve your ability to correct OCR errors in OpenRe
 
 ## Try it with your own data...
 
-You can likely appreciate how context-dependent the specific transformations we have made are. Unique combinations of 
+By now, you can likely appreciate how the specific transformations we have made on the Zwick.txt dataset are highly context-dependent. Each corpus will entail a unique set of tranformations to correct the OCR errors within.
+
+With your own dataset, try out the strategies above to correct 5 to 10 error patterns in your corpus before moving on to the next step of the lesson wherein we will export our data from OpenRefine to a text format.
 
 Next -> [Exporting your Data](output.html)
