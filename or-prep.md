@@ -28,7 +28,7 @@ Although you will already have done much of your initial data analysis in anothe
 
 For example, longer words in newspapers and other justified typeset documents will sometimes be split over two lines separated with a hyphen or dash - it is usually easier to reconnect them in a text editor like TextEdit or Notepad++ before uploading to OpenRefine using a find-and-replace function in the editor (make a copy of your data first, as it is a destructive edit).
 
-Once you have performed any additional (pre-)pre-processing steps outside of OpenRefine and re-uploaded your text file(s), rename the column with the contents of your text "Tokens" by visiting the column menu - which can be accessed through the small downward arrow to the left of the column - and selecting `Edit column > Rename`.
+Once you have performed any additional (pre-)pre-processing steps outside of OpenRefine and re-uploaded your text file(s), rename the column with the contents of your text "Tokens" by visiting the column menu - which can be accessed through the small downward arrow to the left of the column - and selecting `Edit column` > `Rename`.
 
 \[screenshot of expanded menu and renamed column]
 
@@ -40,17 +40,17 @@ If the original paragraph structure of the document is significant your intended
 
 Provided you left "Store blank rows" checked when importing the document, each blank - or null - row in the data represents a line break. Replace the null rows with a placeholder character that you can later use to replace with a new line.
 
-Create a facet - or grouping of rows with the same contents - that contains all of the null rows by going back to the dropdown menu, `Facet > Customized facets > Facet by null`. 
+Create a facet - or grouping of rows with the same contents - that contains all of the null rows by going back to the dropdown menu, `Facet` > `Customized facets` > `Facet by null`. 
 
 \[screenshot of facet]
 
 Filter the rows to show null values only by selecting "Include" from the facet menu next to "True" (i.e. those rows that contain null values). With the null values isolated, we can now perform a replace action to fill each blank row with a placeholder character.
 
-Hover over any of the rows and you will notice that an "Edit" message appears, allowing you to edit individual cells. In the cell that you edit, enter a placeholder character and select the "Apply to All Identical Cells" (`ctrl` / `cmd` + `Enter`) option to transform all null rows.
+Hover over any of the rows and you will notice that an "Edit" message appears, allowing you to edit individual cells. In the cell that you edit, enter a placeholder character and select the "Apply to All Identical Cells" (`ctrl` / `cmd` + `enter`) option to transform all null rows.
 
 \[screenshot of edit row]
 
-Choose a placeholder character that does not exist anywhere else in the text, as you will be performing a find-and-replace action later to substitute a line break for the placeholder. We recommend using the HTML tag for paragraph, or `<p></p>`, which will preserve the paragraph structure without any additional actions if the text is output to HTML. Copy the code exactly as it is below:
+Choose a placeholder character that does not exist anywhere else in the text, as you will be performing a find-and-replace action later to substitute a line break for the placeholder. We recommend using the HTML tag for paragraph, or `<p></p>`, which will preserve the paragraph structure without any additional actions if the text is output to HTML. Copy the code exactly as it is below, and paste in the cell you are editing:
 
 `</p><p>`
 
@@ -64,7 +64,7 @@ Once the null rows have been transformed, they should no longer be visible as th
 
 Tokenization - in the context of computational text analysis - is the dividing of unstructured text into individual words, or *tokens*. Because OpenRefine works most effectively with tabular data (i.e. data stored in tables, like in a spreadsheet), we are artificially creating a tabular structure by putting each word on its own row. This achieves the same effect as tokenization and allows us to group identical or similar words in OpenRefine.
 
- From the column menu of the "Tokens" column, select `Edit cells > Split multi-valued cells...`.
+ From the column menu of the "Tokens" column, select `Edit cells` > `Split multi-valued cells...`.
 
 \[screenshot]
 
@@ -89,7 +89,7 @@ From the facet - or grouping of rows with the same contents - that is created, i
 
 \[screenshot]
 
-Next, instead of the "Tokens" column, we will use the menu in the "All" column to the left of it: `All` > `Edit rows` > `Remove matching rows`. All matching rows - that is, all blank rows - will be removed and the "True" facet will now contain zero results. Close the facet to remove it.
+Next, instead of the "Tokens" column, we will use the menu in the "All" column to the left of it: `Edit rows` > `Remove matching rows`. All matching rows - that is, all blank rows - will be removed and the "True" facet will now contain zero results. Close the facet to remove it.
 
 \[screenshot]
 
@@ -102,12 +102,17 @@ Much like punctuation, whitespaces in front of or behind a word will prevent it 
 Because we have used spaces as the separator between rows, no rows are likely to be affected by removing leading and trailing whitespaces. It is nonetheless good practice to ensure that we are indeed comparing like with like, and you may find the feature useful with other datasets.
 
 
-## OpenRefine step 5: Initial Data Analysis (again)
+## OpenRefine step 5: Initial Data Analysis (again) with filters and facets
 
-Once more with feeling! With 
+Once more with feeling! Now that we can perform operations at the level of the word, or token, we'll use OpenRefine to enrich our IDA. 
 
-You can also use filters to help with your analysis by going to the dropdown menu for the column (which I have renamed "Tokens" in the screenshot below) and selecting "Edit Ce; for example, many errors in the Zwick.txt document involved the letter "m" so you could filter by m (case-sensitive checked). Such a broad **word** or **text facets** 
+**Text filters** can be accessed from the "Tokens" column menu, which will help us to isolate results based on our earlier observations with the error list. For example, many errors in the Zwick.txt document involved the letter "m" so you could filter result by *m* (with "case-sensitive" checked). 
 
+Such a broad search strategy can be narrowed by the use of facets, which we used previously when removing blank rows. Here we will use the **word facet** (under "Customized facets") or **text facet** to group the same words together, shortening our list significantly.
+
+\[screenshot]
+
+By now, you should have a good sense of the OCR errors in your dataset. Our next step will be to use OpenRefine to correct them!
 
 Next -> [Correcting OCR Errors with OpenRefine: Strategies](or-strat.html)
 
