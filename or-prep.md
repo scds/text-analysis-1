@@ -18,13 +18,13 @@ Import options:
 * Store blank rows - leave checked if you want to preserve the paragraph structure of the document; otherwise uncheck*
 * Store file source (if using multiple documents) - if you wish to "reconstitute" your documents later (i.e. output them as separate documents), leave checked 
 
-\* OpenRefine has a ceiling on the number of rows you can work with (~1,000,000) so you may wish to conserve resources by excluding blank rows.
+\**OpenRefine has a ceiling on the number of rows you can work with (~1,000,000) so you may wish to conserve resources by excluding blank rows.*
 
 Give your project a name and `Create Project >>` to open your document(s) in OpenRefine.
 
 ## OpenRefine step 2: Initial Data Analysis
 
-Although you will already have done most of your initial data analysis in another tool, you will often learn something new about how your text files are structured when you upload them to OpenRefine - e.g. where line breaks occur or how characters might be interpreted differently in OpenRefine from the text editor you used for any earlier initial data analysis. There can be consequences for the pre-processing steps you undertake, so take some time to review the data in OpenRefine before performing any transformations. You may discover that you need to do some pre-processing tasks with the .txt files in a text editor before re-uploading them to OpenRefine.
+Although you will already have done much of your initial data analysis in another tool, you will often learn something new about how your text files are structured when you upload them to OpenRefine - e.g. where line breaks occur or how characters might be interpreted differently in OpenRefine from the text editor you used for any earlier initial data analysis. There can be consequences for the pre-processing steps you undertake, so take some time to review the data in OpenRefine before performing any transformations. You may discover that you need to do some pre-processing tasks with the .txt files in a text editor before re-uploading them to OpenRefine.
 
 For example, longer words in newspapers and other justified typeset documents will sometimes be split over two lines separated with a hyphen or dash - it is usually easier to reconnect them in a text editor like TextEdit or Notepad++ before uploading to OpenRefine using a find-and-replace function in the editor (make a copy of your data first, as it is a destructive edit).
 
@@ -36,19 +36,29 @@ Once you have performed any additional (pre-)pre-processing steps outside of Ope
 
 \[video]
 
-If the original paragraph structure of the document is significant your intended use of the text data (e.g. for readability, stylometric analysis), there is another step that must be performed before tokenizing the data - which will result in an output of a long block of words. We can maintain the paragraph structure of a document in the output from our error correction in OpenRefine, but it takes an additional step early on in the workflow - before we break the sentences into tokens in the next step.
+If the original paragraph structure of the document is significant your intended use of the text data (e.g. for readability, stylometric analysis), there is another step that must be performed before tokenizing the data. We can maintain the paragraph structure of a document in the output from our error correction in OpenRefine, but it takes an additional step early on in the workflow - before we break the sentences into tokens in the next step.
 
 Provided you left "Store blank rows" checked when importing the document, each blank - or null - row in the data represents a line break. Replace the null rows with a placeholder character that you can later use to replace with a new line.
 
-Create a facet - or grouping of rows - that contains all of the null rows by going 
+Create a facet - or grouping of rows with the same contents - that contains all of the null rows by going back to the dropdown menu, `Facet > Customized facets > Facet by null`. 
 
+\[screenshot of facet]
 
-Using the HTML tag for paragraph, or `<p></p>`, will allow us - if HTML output is .
+Filter the rows to show null values only by selecting "Include" from the facet menu next to "True" (i.e. those rows that contain null values). With the null values isolated, we can now perform a replace action to fill each blank row with a placeholder character.
 
-When finding and (so that each blank row closes the previous paragraph tag and opens a new one around the content that follows).
+Hover over any of the rows and you will notice that an "Edit" message appears, allowing you to edit individual cells. In the cell that you edit, enter a placeholder character and select the "Apply to All Identical Cells" (`ctrl` / `cmd` + `Enter`) option to transform all null rows.
 
-\[screenshot of paragraph tag]
+\[screenshot of edit row]
 
+Choose a placeholder character that does not exist anywhere else in the text, as you will be performing a find-and-replace action later to substitute a line break for the placeholder. We recommend using the HTML tag for paragraph, or `<p></p>`, which will preserve the paragraph structure without any additional actions if the text is output to HTML. Copy the code exactly as it is below:
+
+`</p><p>`
+
+(The order of the markup tags is reversed so that each blank row closes the previous paragraph tag and opens a new one around the content that follows.)
+
+\[screenshot of paragraph tag replacing all]
+
+Once the null rows have been transformed, they should no longer be visible as their value are no longer null. Remove the facet by closing it, and all rows will return. As we tokenize the data in the next step, the placeholders will be treated as another token and preserved for later use to restored the paragraph structure of the text.
 
 ### OpenRefine step 3: Tokenize
 
