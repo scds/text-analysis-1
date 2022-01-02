@@ -6,7 +6,7 @@ has_children: true
 has_toc: false
 ---
 
-# Pre-Processing Textual Data
+# Pre-Processing Digitized Texts
 
 ## Lesson roadmap
 
