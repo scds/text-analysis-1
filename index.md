@@ -5,14 +5,9 @@ description: SCDS Do More with Digital Scholarship workshop series
 nav_order: 1
 ---
 
-<!-- Edit the content below for the workshop in question. Once you're ready to publish, remove the comment characters e.g. "<!--" at the start and end -->
+# Welcome to Pre-Processing Digitized Texts
 
-<!--
-<img src="assets/img/dmds-tableau.png" alt="Workshop Title Slide" width="720"> -->
-
-# Welcome to Pre-Processing Textual Data 
-
-**Pre-Processing Textual Data belongs to a series of workshops on computational text analysis.**
+**Pre-Processing Digitized Texts belongs to a series of workshops on computational text analysis.**
 
 We underestimate our abilities as humans to make sense of orthographic errors and alternative spellings like *thcn* or *shew*. Machines are less capable of making these inferences, meaning that [OCR](https://en.wikipedia.org/wiki/Optical_character_recognition) text output must often be corrected in the pre-processing stage of the textual analysis pipeline to render it legible to computational methods. 
 
