@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Structuring Text with TEI
-nav_order: 6
+nav_order: 7
 ---
 
 # Structuring Text with Text Encoding Initiative (TEI) Markup
