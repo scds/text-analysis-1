@@ -54,7 +54,11 @@ Hover over any of the rows and you will notice that an "Edit" message appears, a
 
 Choose a placeholder character that does not exist anywhere else in the text, as you will be performing a find-and-replace action later to substitute a line break for the placeholder. We recommend using the HTML tag for paragraph, or `<p></p>`, which will preserve the paragraph structure without any additional actions if the text is output to HTML. Copy the code exactly as it is below, and paste in the cell you are editing:
 
-`</p><p>`
+```
+
+  </p><p>
+
+```
 
 (The order of the markup tags is reversed so that each blank row closes the previous paragraph tag and opens a new one around the content that follows.)
 
