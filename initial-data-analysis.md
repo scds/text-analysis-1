@@ -85,12 +85,14 @@ In your initial data analysis, try to identify patterns within the errors:
 * does an error often occur in relation to another character or characters (like "m" for "in" when following "f" or "tiy" for "tly" in the sample text)?
 * etc.
   
-<!-- Error words are likely to duplicated - in fact, we are depending on the same words being misspelled in the same ways for the error correction techniques we will be using shortly. -->
+Error words are likely to duplicated - in fact, we are depending on the same words being misspelled in the same ways for the error correction techniques we will be using shortly. If you would like to streamline the list and remove multiples, you can bring the error list into OpenRefine and use *facets* to group repeated values together (see "[Strategies for OCR Error Correction in OpenRefine](or-strat.html)").
 
 While it may be tempting to create a table containing the misspelled word and its corrected version for use with a find-and-replace technique, a manual approach will be unsustainable for all but the smallest of datasets. We will instead focus our efforts on misspelled groups of letters repeated across numerous words and not let perfect be the enemy of good.
 
 One exception to the above is any words that are particularly significant to your analysis; you can safely ignore misspellings of "the," "this," and other commonly used words but - to take an example from our Zwick dataset - you would probably want to correct "Mimicipal."
 
 Document your observations as completely as possible to help to make your error correction tasks more efficient and less likely to introduce new errors.
+
+<br />
 
 Next -> [Correcting OCR Errors with OpenRefine](ocr-correction.html)
