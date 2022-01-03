@@ -33,5 +33,6 @@ In the current lesson, we will focus on the second and third stages – initial 
 
 Each stage of the workflow that involves a data transformation holds the potential to introduce errors that often have consequences for later stages of the workflow, which may not become evident until you actually arrive at that stage. It is therefore important to document the transformations you perform so that errors can be traced back and corrected. This documentation also contributes to the record of its origins, or its **data provenance**.
 
+<br />
 
 Next -> [Data Provenance](data-provenance.html)
