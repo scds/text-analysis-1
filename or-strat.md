@@ -6,7 +6,7 @@ nav_order: 6
 ---
 # Correcting OCR Errors with OpenRefine: Strategies
 
-\[video]
+<div style="max-width:608px"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_xo1h3x4i" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_xo1h3x4i/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
 
 In the next part of the lesson, we will explore severals strategies you can use in OpenRefine to correct errors produced through optical character recognition more efficiently than replacing individual words. Together, they form the basis for a unique error correction program that OpenRefine helps you to write - as we will learn in [Exporting your Data](output.html). 
 
@@ -14,7 +14,7 @@ Though still a manual process of creating find-and-replace commands, the correct
 
 ## Strategy 1: Find-and-replace with text filters
 
-\[video]
+<div style="max-width:608px"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_8f8gstrm" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_8f8gstrm/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
 
 Find-and-replace is at the heart of the other OCR error correction strategies discussed in the lesson. While find-and-replace commands can automate error correction to some extent, it can also lead to the introduction of new errors if not applied precisely. Text filters in OpenRefine allow us to apply find-and-replace transformations in a targeted manner. 
 
@@ -29,7 +29,7 @@ Read on...
 
 ## Strategy 2: Find-and-replace with GREL (Google / General Refine Expression Language)
 
-\[video]
+<div style="max-width:608px"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_4df746o0" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_4df746o0/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
 
 Performing find-and-replace tasks with GREL, or General Refine Expression Language, allows us to use variables and create formulas - we can correct more errors at once while at the same time not being overly broad in the scope of our transformations. Going the GREL route is a preferred strategy to the “replace” command in OpenRefine because you can preview your changes before you apply them.
 
@@ -42,6 +42,8 @@ In the custom text transform box, type `value.replace(“oim”, “oun”)` exa
 There are other functions that might be useful to your OCR error correction efforts if you would like to read over the [reference for GREL](https://docs.openrefine.org/manual/grelfunctions) in greater depth.
 
 ## Strategy 3: Find-and-replace with regular expressions (RegEx)
+
+<div style="max-width:608px"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_eb68oxh5" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_eb68oxh5/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
 
 We can build on our find-and-replace toolkit by incorporating regular expressions, or RegEx, which offer a way to search for more generalized patterns when we may not know or be able to articulate specifics. For example, performing a search that all results ending in “mg” regardless of what comes before. 
 
@@ -73,5 +75,7 @@ Familiarity with RegEx will improve your ability to correct OCR errors in OpenRe
 By now, you can likely appreciate how the specific transformations we have made on the Zwick.txt dataset are highly context-dependent. Each corpus will entail a unique set of tranformations to correct the OCR errors within.
 
 With your own dataset, try out the strategies above to correct 5 to 10 error patterns in your corpus before moving on to the next step of the lesson wherein we will export our data from OpenRefine to a text format.
+
+<br />
 
 Next -> [Exporting your Data](output.html)
