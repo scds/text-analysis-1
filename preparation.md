@@ -17,8 +17,8 @@ OCR output is rarely free of errors: the OCR engine may misinterpret characters,
 Because applying OCR to a scanned document is outside of the scope of the lesson, we are going to work with the post-OCR text: 
 
 1. Go to the [full text version of the document](https://archive.org/stream/zwicksislandland00ontauoft/zwicksislandland00ontauoft_djvu.txt), 
-2. Copy the text (ctrl/cmd + A to select all, then ctrl/cmd + C to copy) and,
-3. Paste into a text file (create one using Notepad on a Windows OS or TextEdit on a Mac and then ctrl/cmd + V to paste) and save with a .txt extension as Zwick.txt.
+2. Copy the text (ctrl / cmd + A to select all, then ctrl / cmd + C to copy) and,
+3. Paste into a text file (create one using Notepad on a Windows OS or TextEdit on a Mac and then ctrl / cmd + V to paste) and save with a .txt extension as Zwick.txt.
 
 **Note that the document is under [Crown copyright](https://www.ontario.ca/page/copyright-information-c-queens-printer-ontario)** (i.e. © Queen’s Printer for Ontario,  1991); please do not reproduce the text outside of your personal use for the purposes of the lesson unless you have determined your use falls under an applicable copyright exception or is otherwise permitted.
 
