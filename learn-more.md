@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Behind the Interface
-nav_order: 8
+title: Learn More
+nav_order: 9
 ---
 
 # Behind the Interface: The Language of Data Analysis
