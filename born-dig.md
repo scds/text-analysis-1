@@ -16,14 +16,16 @@ A few additional features of OpenRefine may assist your pre-processing of born-d
 
 ## Removing columns
 
+If your data source outputs fields 
 
+## Transpose rows across columns
+
+Just as we can remove columns, we can also add them based on existing cell contents; for example, objects with multiple properties.
 
 ## Clustering similar cells
 
 Clustering is useful where there are small but possibly (back to 
 
-## Transpose rows across columns
 
-Just as we can remove columns, we can also add them based on existing cell contents; for example, objects with multiple properties.
 
 
