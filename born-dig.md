@@ -31,11 +31,11 @@ Just as we can remove columns, we can also add them based on existing cell conte
 
 Go to the column menu of the column you would like to split: `Edit columns` > `Split into several columns...`.
 
-![](assets/img/borndig_remove-split-1.png)
+![](assets/img/borndig_split-1.png)
 
-Choose a column separator on which to split the column (e.g. comma); you can use regular expressions as well, as depicted in the image below. Leave the "Split into _______ columns at most" blank if you are not sure how many times the separator will occur in the cells - you can always undo if you unexpected end up with dozens of rows!
+Choose a column separator on which to split the column (e.g. comma); you can use regular expressions as well, as depicted in the image below. Leave the "Split into ______ columns at most" blank if you are not sure how many times the separator will occur in the cells - you can always undo if you unexpected end up with dozens of rows!
 
-![](assets/img/borndig_remove-split-2.png)
+![](assets/img/borndig_split-2.png)
 
 ## Clustering similar cells
 
