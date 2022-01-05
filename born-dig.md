@@ -30,7 +30,16 @@ Choose a column separator to split the column on (e.g. comma); you can use regul
 
 ## Clustering similar cells
 
-Clustering is useful where there are small but possibly (back to 
+Sometimes (human-made) spelling errors can interfere with data analysis as well. Clustering is useful when there are small variances between similar values, such as typos, differences in case or punctuation. OpenRefine will treat "Ammonia" and "ammonia" as distinct values.
+
+You can access clustering from the column menu: `Edit cells` > `Cluster and edit...`.
+
+OpenRefine will present you with groups of very similar values. You can choose to merge them to normalize the values.
+
+The above image shows a
+
+
+. You may wish to narrow down your 
 
 
 
