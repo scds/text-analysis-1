@@ -18,11 +18,11 @@ A few additional features of OpenRefine may assist your pre-processing of born-d
 
 If your data source outputs fields (features) that are not relevant to your analysis, you can remove columns using the "All" column menu: `Edit columns` > `Reorder / remove columns`.
 
-![](assets/img/borndig_remove-columns-1.png)
+![](assets/img/borndig_remove-column-1.png)
 
 You can drag rows over to the "Drop columns here remove" area to remove them from the dataset. Because the action must be performed on each of the columns to remove, a programmatic approach is likely more efficient if you have a large number of rows to remove.
 
-![](assets/img/borndig_remove-columns-2.png)
+![](assets/img/borndig_remove-column-2.png)
 
 
 ## Transpose rows across columns
@@ -45,11 +45,11 @@ You can access clustering from the column menu: `Edit cells` > `Cluster and edit
 
 ![](assets/img/borndig_cluster-1.png)
 
-OpenRefine will present you with sets of very similar values. You can choose to merge them to normalize the values.
+OpenRefine will present you with grouped sets of very similar cell contents. You can choose to merge them to normalize the values. The image below shows slight misspellings of Twitter account names, which would affect the ability to get an accurate count of them.
 
 ![](assets/img/borndig_cluster-2.png)
 
-The above image shows 
+In the next image, OpenRefine has clustered values in differing cases. 
 
 ![](assets/img/borndig_cluster-3.png)
 
