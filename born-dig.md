@@ -16,11 +16,17 @@ A few additional features of OpenRefine may assist your pre-processing of born-d
 
 ## Removing columns
 
-If your data source outputs fields 
+If your data source outputs fields (features) that are not relevant to your analysis, you can remove columns using the "All" column menu: `Edit columns` > `Reorder / remove columns`.
+
+It may be more efficient to use a programmatic approach if you have a large number of rows to remove.
 
 ## Transpose rows across columns
 
-Just as we can remove columns, we can also add them based on existing cell contents; for example, objects with multiple properties.
+Just as we can remove columns, we can also add them based on existing cell contents; for example, objects with multiple properties or strings containing more than one value (e.g. LastName, FirstName).
+
+Go to the column menu of the column you would like to split: `Edit columns` > `Split into several columns...`.
+
+Choose a column separator to split the column on (e.g. comma); you can use regular expressions as well. Leave the "Split into _______ columns at most" blank if you are not sure how many times the separator will occur in the cells - you can always undo if you unexpected end up with dozens of rows!
 
 ## Clustering similar cells
 
