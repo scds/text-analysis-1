@@ -18,7 +18,12 @@ A few additional features of OpenRefine may assist your pre-processing of born-d
 
 If your data source outputs fields (features) that are not relevant to your analysis, you can remove columns using the "All" column menu: `Edit columns` > `Reorder / remove columns`.
 
-It may be more efficient to use a programmatic approach if you have a large number of rows to remove.
+![](assets/img/borndig_remove-columns-1.png)
+
+You can drag rows over to the "Drop columns here remove" area to remove them from the dataset. Because the action must be performed on each of the columns to remove, a programmatic approach is likely more efficient if you have a large number of rows to remove.
+
+![](assets/img/borndig_remove-columns-2.png)
+
 
 ## Transpose rows across columns
 
@@ -26,7 +31,11 @@ Just as we can remove columns, we can also add them based on existing cell conte
 
 Go to the column menu of the column you would like to split: `Edit columns` > `Split into several columns...`.
 
-Choose a column separator to split the column on (e.g. comma); you can use regular expressions as well. Leave the "Split into _______ columns at most" blank if you are not sure how many times the separator will occur in the cells - you can always undo if you unexpected end up with dozens of rows!
+![](assets/img/borndig_remove-split-1.png)
+
+Choose a column separator on which to split the column (e.g. comma); you can use regular expressions as well, as depicted in the image below. Leave the "Split into _______ columns at most" blank if you are not sure how many times the separator will occur in the cells - you can always undo if you unexpected end up with dozens of rows!
+
+![](assets/img/borndig_remove-split-2.png)
 
 ## Clustering similar cells
 
@@ -34,9 +43,17 @@ Sometimes (human-made) spelling errors can interfere with data analysis as well.
 
 You can access clustering from the column menu: `Edit cells` > `Cluster and edit...`.
 
-OpenRefine will present you with groups of very similar values. You can choose to merge them to normalize the values.
+![](assets/img/borndig_cluster-1.png)
 
-The above image shows a
+OpenRefine will present you with sets of very similar values. You can choose to merge them to normalize the values.
+
+![](assets/img/borndig_cluster-2.png)
+
+The above image shows 
+
+![](assets/img/borndig_cluster-3.png)
+
+![](assets/img/borndig_cluster-4.png)
 
 
 . You may wish to narrow down your 
