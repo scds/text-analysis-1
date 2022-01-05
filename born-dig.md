@@ -45,19 +45,17 @@ You can access clustering from the column menu: `Edit cells` > `Cluster and edit
 
 ![](assets/img/borndig_cluster-1.png)
 
-OpenRefine will present you with grouped sets of very similar cell contents. You can choose to merge them to normalize the values. The image below shows slight misspellings of Twitter account names, which would affect the ability to get an accurate count of them.
+OpenRefine will present you with grouped sets of very similar cell contents. You can choose to merge them to normalize the values. You can also select ( The image below shows slight misspellings of Twitter account names, which would affect the ability to get an accurate count of them.
 
 ![](assets/img/borndig_cluster-2.png)
 
-In the next image, OpenRefine has clustered values in differing cases. 
+In the next image, OpenRefine has clustered values with differing letter cases and punctuation. If using clustering to correct OCR errors for computational text analysis, punctuation may not matter to your output - and therefore, can be overwritten by merging - with many types of natural language processing tasks. 
 
 ![](assets/img/borndig_cluster-3.png)
 
+Generally, there are too many clusters in tokenized, post-OCR texts to make merging a viable strategy to correct errors. You can, however, narrow down the number of clusters by using filters and facets - OpenRefine allows you to open the clustering menu directly from the facet area.
+
 ![](assets/img/borndig_cluster-4.png)
-
-
-. You may wish to narrow down your 
-
 
 
 
