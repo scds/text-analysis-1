@@ -58,7 +58,7 @@ In the two screenshots above, the same clustering methods and parameters are use
 
 ### Using clustering for post-OCR correction
 
-Generally, there tend to be too many clusters in tokenized, post-OCR texts to make merging a viable strategy to correct errors. You can, however, narrow down the number of clusters by using filters and facets - OpenRefine allows you to open the clustering menu directly from the facet area.
+Generally, there tend to be too many clusters in tokenized, post-OCR texts to make merging a viable strategy to correct errors. Numerous "false positives" will be returned: tokens that are correctly spelled but may include punctuation in the cell, for example. You can, however, narrow down the number of clusters by using filters and facets - OpenRefine allows you to open the clustering menu directly from the facet area.
 
 <img src="assets/img/borndig_cluster-4.png" style="width: 50%; height: auto;" />
 
