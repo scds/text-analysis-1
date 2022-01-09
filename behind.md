@@ -16,7 +16,7 @@ In associating source data with messiness, a value-laden binary is created betwe
 
 > But what might be lost in the process of dominating and disciplining data? Whose perspectives might be lost in that process? And, conversely, whose perspectives might be additionally imposed? (131) [[1]](#1)
 
-D'Ignacio and Klein go on to (132)
+D'Ignacio and Klein go on to link the concepts of cleanliness and orderliness to earlier scientific discourses of  (132)
 
 In "[Invisible Defaults and Perceived Limitations: Processing the Juan Gelman Files](https://medium.com/on-archivy/invisible-defaults-and-perceived-limitations-processing-the-juan-gelman-files-4187fdd36759)," Elvia Arroyo Ramirez recounts the experience of trying to image floppy disks containing the records of Argentinian poet and human rights activist Juan Gelman. Running into a barrier when filenames containing Spanish-language diacritics raised an "invalid encoding" error within the disk imaging software, she reached out to the digital preservation community for advice on how to approach the challenge; many of the responses, she notes, used the language of needing to "clean" or "scrub" the diacritic glyphs and - in at least one instance - even refer to the diacritics as "illegal characters." 
 
