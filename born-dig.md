@@ -45,7 +45,7 @@ Sometimes (human-made) spelling errors can interfere with data analysis as well.
 
 You can access clustering from the column menu: `Edit cells` > `Cluster and edit...`.
 
-![](assets/img/borndig_cluster-1.png)
+<img src="assets/img/borndig_cluster-1.png" style="width: 50%; height: auto;" />
 
 OpenRefine will present you with grouped sets of very similar cell contents. You can choose to merge them to normalize the values. You can also select ( The image below shows slight misspellings of Twitter account names, which would affect the ability to get an accurate count of them.
 
@@ -61,7 +61,7 @@ In the two screenshots above, the same clustering methods and parameters are use
 
 Generally, there tend to be too many clusters in tokenized, post-OCR texts to make merging a viable strategy to correct errors. You can, however, narrow down the number of clusters by using filters and facets - OpenRefine allows you to open the clustering menu directly from the facet area.
 
-<img scr="assets/img/borndig_cluster-4.png" style="width: 50%; height: auto;" />
+<img src="assets/img/borndig_cluster-4.png" style="width: 50%; height: auto;" />
 
 Next -> [Behind the Interface](behind.html)
 
