@@ -16,6 +16,8 @@ In associating source data with messiness, a value-laden binary is created betwe
 
 > But what might be lost in the process of dominating and disciplining data? Whose perspectives might be lost in that process? And, conversely, whose perspectives might be additionally imposed? (131) [[1]](#1)
 
+D'Ignacio and Klein go on to (132)
+
 In "[Invisible Defaults and Perceived Limitations: Processing the Juan Gelman Files](https://medium.com/on-archivy/invisible-defaults-and-perceived-limitations-processing-the-juan-gelman-files-4187fdd36759)," Elvia Arroyo Ramirez recounts the experience of trying to image floppy disks containing the records of Argentinian poet and human rights activist Juan Gelman. Running into a barrier when filenames containing Spanish-language diacritics raised an "invalid encoding" error within the disk imaging software, she reached out to the digital preservation community for advice on how to approach the challenge; many of the responses, she notes, used the language of needing to "clean" or "scrub" the diacritic glyphs and - in at least one instance - even refer to the diacritics as "illegal characters." 
 
 Implicitly aligning diacritics with messiness or invalidity works to create an "invisible default" by privileging English language texts, reflecting the biases of the disk imaging software's creators. Arroyo goes on to reveal her solution - which did not involve removing diacritics - and urges her readers to think critically about how these invisible defaults influence perceptions of what is possible and about what further work needs to be done.
