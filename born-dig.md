@@ -31,11 +31,13 @@ Just as we can remove columns, we can also add them based on existing cell conte
 
 Go to the column menu of the column you would like to split: `Edit columns` > `Split into several columns...`.
 
-![](assets/img/borndig_split-1.png)
+<img src="assets/img/borndig_split-1.png" style="width: 50%; height: auto;" />
 
 Choose a column separator on which to split the column (e.g. comma); you can use regular expressions as well, as depicted in the image below. Leave the "Split into ______ columns at most" blank if you are not sure how many times the separator will occur in the cells - you can always undo if you unexpected end up with dozens of rows!
 
 ![](assets/img/borndig_split-2.png)
+
+The above screenshot demonstrates using the `\d` regular expression to create a new column every time it encounters a digit (\[0-9]) in the cell.
 
 ## Clustering similar cells
 
@@ -50,12 +52,16 @@ OpenRefine will present you with grouped sets of very similar cell contents. You
 ![](assets/img/borndig_cluster-2.png)
 
 In the next image, OpenRefine has clustered values with differing letter cases and punctuation. If using clustering to correct OCR errors for computational text analysis, punctuation may not matter to your output - and therefore, can be overwritten by merging - with many types of natural language processing tasks. 
-
+)
 ![](assets/img/borndig_cluster-3.png)
 
-Generally, there are too many clusters in tokenized, post-OCR texts to make merging a viable strategy to correct errors. You can, however, narrow down the number of clusters by using filters and facets - OpenRefine allows you to open the clustering menu directly from the facet area.
+In the two screenshots above, the same clustering methods and parameters are used. You may want to experiment with other methods, such as the "metaphone3" phoentic algorithm (accessible from the keying function drop-down menu when "key collision" is set as the method) which groups cells together with words that sound alike. You can explore other methods in the [Clustering in Depth](https://github.com/OpenRefine/OpenRefine/wiki/Clustering-In-Depth) resource created by Owen Stephens. 
 
-![](assets/img/borndig_cluster-4.png)
+### Using clustering for post-OCR correction
 
+Generally, there tend to be too many clusters in tokenized, post-OCR texts to make merging a viable strategy to correct errors. You can, however, narrow down the number of clusters by using filters and facets - OpenRefine allows you to open the clustering menu directly from the facet area.
 
+<img scr="assets/img/borndig_cluster-4.png" style="width: 50%; height: auto;" />
+
+Next -> [Behind the Interface](behind.html)
 
