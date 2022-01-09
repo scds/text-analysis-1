@@ -4,29 +4,36 @@ title: Behind the Interface
 nav_order: 7
 ---
 
-# Behind the Interface: The Language of Data Pre-processing
+# Behind the Interface: The Loaded Lingo of Data Pre-processing
 
-> **Behind the interface** examines the technocultural dimensions of working with (text) data, recognizing that computing infrastructure and practices are not neutral but historically constituted. By peering behind the interface at the power inequities , open up the field to critique and change.
+> **Behind the interface** examines the technocultural dimensions of working with (text) data, recognizing that computing infrastructure and practices are not neutral but historically constituted. By peering behind the interface at the structures of inequality that are hard-coded into  , open up those sites of to critique and change.
 
 ## On "data cleaning"
 
-Correcting a variety of errors in the dataset is often referred to as "data cleaning," suggesting that data - in the form it is received from its source - is disorderly or chaotic. In fact, OpenRefine advertises itself as a "powerful tool for cleaning messy data." 
+Correcting errors in the dataset is often referred to as "data cleaning," suggesting that data - in the form it is received from its source - is disorderly or chaotic. OpenRefine, for example, advertises itself as a "powerful tool for cleaning messy data." 
 
-In associating source data with messiness, a value-laden binary is created between data before pre-processing takes place and after. But, as we have already encountered in the "Pre-processing Digitized Texts" lesson, our pre-processing actions do not necessarily leave the data set improved: we may accidentally introduce new errors or make decisions to omit certain information from our analysis.
+In associating source data with messiness, a value-laden binary is created between data before pre-processing takes place and after. But, as we have already encountered in the "Pre-processing Digitized Texts" lesson, our pre-processing actions do not necessarily leave the data set improved: we may accidentally introduce new errors or make decisions to omit certain information from our analysis. As D'Ignacio and Klein ask in their book, [Data Feminism](https://mitpress.mit.edu/books/data-feminism):
 
-D'Ignacio and Klein, 
+> But what might be lost in the process of dominating and disciplining data? Whose perspectives might be lost in that process? And, conversely, whose perspectives might be additionally imposed? (131) [[1]](#1)
 
-In "[Invisible Defaults and Perceived Limitations: Processing the Juan Gelman Files](https://medium.com/on-archivy/invisible-defaults-and-perceived-limitations-processing-the-juan-gelman-files-4187fdd36759)," Elvia Arroyo Ramirez describes . calls out the use of the prevalent term “data cleaning,” though prevalent, has been critized by scholars like Elvia Arroyo.  , because it often involves removing diacritics and . 
+In "[Invisible Defaults and Perceived Limitations: Processing the Juan Gelman Files](https://medium.com/on-archivy/invisible-defaults-and-perceived-limitations-processing-the-juan-gelman-files-4187fdd36759)," Elvia Arroyo Ramirez recounts the experience of trying to image floppy disks containing the records of Argentinian poet and human rights activist Juan Gelman. Running into a barrier when filenames containing Spanish-language diacritics raised an "invalid encoding" error within the disk imaging software, she reached out to the digital preservation community for advice on how to approach the challenge; many of the responses, she notes, used the language of needing to "clean" or "scrub" the diacritic glyphs and - in at least one instance - even refer to the diacritics as "illegal characters." 
+
+Implicitly aligning diacritics with messiness or invalidity works to create an "invisible default" by privileging English language texts, reflecting the biases of the disk imaging software's creators. Arroyo goes on to reveal her solution - which did not involve removing diacritics - and urges her readers to think critically about how these invisible defaults influence perceptions of what is possible and about what further work needs to be done.
 
 ## Data is the new oil
 
-You may also notice the use of metaphorical language that aligns data with unprocessed natural resources like oil or ore. For example, data mining or raw data or describing the data processing workflow as a pipeline.
+The powerful metaphors invoked by the use of language are not just limited to the binary of messy / clean: a related is the reference to . You may also notice the use of metaphorical language that aligns data with unprocessed natural resources like oil or ore. For example, data mining or raw data or describing the data processing workflow as a pipeline.
 
 In fact, data are never “raw” – they are always already determined by the choices we make in selecting them and the processes we use to transform them. And while we may use the language of the discipline in order to communicate with other practitioners, it is important to consider how language is used to frame thinking about data in particular ways that are grounded in a colonial paradigm of extraction.
 
 When working with data, you may notice the use of metaphorical language that aligns data with unprocessed natural resources like oil or ore. For example, data mining, or raw data or describing the data processing workflow as a pipeline. 
 
 You can read more about the language and metaphors of data in the "Learn More" 
+
+## References
+<a id="1">[1]</a>
+D’Ignazio, C., & Klein, L. F. (2020). Data Feminism. The MIT Press. https://doi.org/10.7551/mitpress/11805.001.0001
+
 
 <br />
 
