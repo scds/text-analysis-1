@@ -1,20 +1,24 @@
 ---
 layout: default
 title: Behind the Interface
-nav_order: 8
+nav_order: 7
 ---
 
-# Behind the Interface: The Language of Data Analysis
+# Behind the Interface: The Language of Data Pre-processing
 
-> **Behind the interface** examines the technocultural dimensions of working with (text) data.
+> **Behind the interface** examines the technocultural dimensions of working with (text) data, recognizing that computing infrastructure and practices are not neutral but historically constituted. By peering behind the interface at the power inequities , open up the field to critique and change.
 
-## Loaded Lingo
+## On "data cleaning"
 
-### Data "cleaning"
+Correcting a variety of errors in the dataset is often referred to as "data cleaning," suggesting that data - in the form it is received from its source - is disorderly or chaotic. In fact, OpenRefine advertises itself as a "powerful tool for cleaning messy data." 
 
-Preparing data for analysis is referred to by many names: data pre-processing, data munging etc. In "[Invisible Defaults and Perceived Limitations: Processing the Juan Gelman Files](https://medium.com/on-archivy/invisible-defaults-and-perceived-limitations-processing-the-juan-gelman-files-4187fdd36759)," Elvia Arroyo Ramirez describes . calls out the use of the prevalent term “data cleaning,” though prevalent, has been critized by scholars like Elvia Arroyo.  , because it often involves removing diacritics and 
+In associating source data with messiness, a value-laden binary is created between data before pre-processing takes place and after. But, as we have already encountered in the "Pre-processing Digitized Texts" lesson, our pre-processing actions do not necessarily leave the data set improved: we may accidentally introduce new errors or make decisions to omit certain information from our analysis.
 
-### Data is the new oil
+D'Ignacio and Klein, 
+
+In "[Invisible Defaults and Perceived Limitations: Processing the Juan Gelman Files](https://medium.com/on-archivy/invisible-defaults-and-perceived-limitations-processing-the-juan-gelman-files-4187fdd36759)," Elvia Arroyo Ramirez describes . calls out the use of the prevalent term “data cleaning,” though prevalent, has been critized by scholars like Elvia Arroyo.  , because it often involves removing diacritics and . 
+
+## Data is the new oil
 
 You may also notice the use of metaphorical language that aligns data with unprocessed natural resources like oil or ore. For example, data mining or raw data or describing the data processing workflow as a pipeline.
 
