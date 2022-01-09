@@ -22,8 +22,7 @@ If your data source outputs fields (features) that are not relevant to your anal
 
 You can drag rows over to the "Drop columns here remove" area to remove them from the dataset. Because the action must be performed on each of the columns to remove, a programmatic approach is likely more efficient if you have a large number of rows to remove.
 
-![](assets/img/borndig_remove-column-2.png)
-
+<img src="assets/img/borndig_remove-column-2.png" style="width: 50%; height: auto;" />
 
 ## Transpose rows across columns
 
@@ -51,8 +50,8 @@ OpenRefine will present you with grouped sets of very similar cell contents. You
 
 ![](assets/img/borndig_cluster-2.png)
 
-In the next image, OpenRefine has clustered values with differing letter cases and punctuation. If using clustering to correct OCR errors for computational text analysis, punctuation may not matter to your output - and therefore, can be overwritten by merging - with many types of natural language processing tasks. 
-)
+In the next image, OpenRefine has clustered values with differing letter cases and punctuation. If using clustering to correct OCR errors for computational text analysis, punctuation may not matter to your output - and therefore, can be overwritten by merging - with many types of natural language processing tasks.
+
 ![](assets/img/borndig_cluster-3.png)
 
 In the two screenshots above, the same clustering methods and parameters are used. You may want to experiment with other methods, such as the "metaphone3" phoentic algorithm (accessible from the keying function drop-down menu when "key collision" is set as the method) which groups cells together with words that sound alike. You can explore other methods in the [Clustering in Depth](https://github.com/OpenRefine/OpenRefine/wiki/Clustering-In-Depth) resource created by Owen Stephens. 
