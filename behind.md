@@ -10,11 +10,13 @@ nav_order: 7
 
 ## On "data cleaning"
 
-Correcting errors in the dataset is often referred to as "data cleaning," suggesting that data - in the form it is received from its source - is disorderly or chaotic. OpenRefine, for example, advertises itself as a "powerful tool for cleaning messy data." 
+Correcting errors in the dataset is often referred to as "data cleaning," suggesting that data - in the form received from its source - is disorderly or chaotic. OpenRefine, for example, advertises itself as a "powerful tool for cleaning messy data." 
 
 In associating source data with messiness, a value-laden binary is created between data before pre-processing takes place and after. But, as we have already encountered in the "Pre-processing Digitized Texts" lesson, our pre-processing actions do not necessarily leave the dataset improved: we may accidentally introduce new errors or make decisions to omit certain information from our analysis. As D'Ignazio and Klein ask in their book, [Data Feminism](https://mitpress.mit.edu/books/data-feminism):
 
-> But what might be lost in the process of dominating and disciplining data? Whose perspectives might be lost in that process? And, conversely, whose perspectives might be additionally imposed? (131) [[1]](#1)
+> \[W]hat might be lost in the process of dominating and disciplining data? Whose perspectives might be lost in that process? And, conversely, whose perspectives might be additionally imposed? (131) [[1]](#1)
+
+To make data amenable to our analyses, then, can involve reducing complexity; data pre-processing is therefore not the unequivocal good suggested by the term "cleaning."
 
 D'Ignazio and Klein, citing the work of postcolonial science studies scholar Banu Subramaniam, go on to remind the reader that "certain core principles -- like a generalized belief in the benefit of control and cleanliness" are inextricable from historical scientific discourses influenced by eugenics (132). Although they emphatically clarify that describing data pre-processing tasks as "cleaning" is not tantamount to perpetuating eugenics, they illustrate how certain ideas are "tidied up" in ways that efface their troubling origins.  
 
