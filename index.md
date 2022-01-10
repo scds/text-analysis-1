@@ -21,6 +21,8 @@ By the end of the workshop, you will be able to:
 * Apply computational techniques to correct common OCR errors
 * Identify an appropriate data pre-processing approach
 
+<br />
+
 Next -> [Preparation](preparation.html) 
 
 
