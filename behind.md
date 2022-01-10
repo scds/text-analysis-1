@@ -4,7 +4,7 @@ title: Behind the Interface
 nav_order: 7
 ---
 
-# Behind the Interface: The Loaded Lingo of Data Pre-processing
+# Behind the Interface: The Loaded Lingo of Data Pre-Processing
 
 > **Behind the interface** examines the technocultural dimensions of working with (text) data, recognizing that computing infrastructure and practices are not neutral but historically constituted. By peering behind the interface at the structures of inequality that are hard-coded into  , open up those sites of to critique and change.
 
@@ -16,13 +16,15 @@ In associating source data with messiness, a value-laden binary is created betwe
 
 > \[W]hat might be lost in the process of dominating and disciplining data? Whose perspectives might be lost in that process? And, conversely, whose perspectives might be additionally imposed? (131) [[1]](#1)
 
-To make data amenable to our analyses, then, can involve reducing complexity; data pre-processing is therefore not the unequivocal good suggested by the term "cleaning."
+To make data amenable to our analyses, then, can involve reducing intrinsic complexity and other trade-offs; data pre-processing is therefore not the unequivocal good suggested by the term "cleaning."
 
 D'Ignazio and Klein, citing the work of postcolonial science studies scholar Banu Subramaniam, go on to remind the reader that "certain core principles -- like a generalized belief in the benefit of control and cleanliness" are inextricable from historical scientific discourses influenced by eugenics (132). Although they emphatically clarify that describing data pre-processing tasks as "cleaning" is not tantamount to perpetuating eugenics, they illustrate how certain ideas are "tidied up" in ways that efface their troubling origins.  
 
-The fraught binaries in the language of data pre-processing - order / disorder, clean / messy, wrangled / unruly - manifest in more contemporary contexts as well. In "[Invisible Defaults and Perceived Limitations: Processing the Juan Gelman Files](https://medium.com/on-archivy/invisible-defaults-and-perceived-limitations-processing-the-juan-gelman-files-4187fdd36759)," Elvia Arroyo Ramirez recounts the experience of trying to image floppy disks containing the records of Argentinian poet and human rights activist Juan Gelman. Running into a barrier when filenames containing Spanish-language diacritics raised an "invalid encoding" error within the disk imaging software, she reached out to the digital preservation community for advice on how to approach the challenge; many of the responses, she notes, used the language of needing to "clean" or "scrub" the diacritic glyphs and - in at least one instance - even refer to the diacritics as "illegal characters." 
+The fraught binaries in the language of data pre-processing - disorder / order, messy / clean, unruly / wrangled - manifest in more contemporary contexts as well. In "[Invisible Defaults and Perceived Limitations: Processing the Juan Gelman Files](https://medium.com/on-archivy/invisible-defaults-and-perceived-limitations-processing-the-juan-gelman-files-4187fdd36759)," Elvia Arroyo Ramirez recounts the experience of trying to image floppy disks containing the records of Argentinian poet and human rights activist Juan Gelman. Running into a barrier when filenames containing Spanish-language diacritics raised an "invalid encoding" error within the disk imaging software, she reached out to the digital preservation community for advice on how to approach the challenge; many of the responses, she notes, used the language of needing to "clean" or "scrub" the diacritic glyphs and - in at least one instance - even refer to the diacritics as "illegal characters." 
 
-Implicitly aligning diacritics with messiness or invalidity works to create an "invisible default" by privileging English language texts, reflecting the biases of the disk imaging software's creators. The reference to "illegal characters" in particular, though likely unintentional on the part of the respondent, cannot help but also invoke current debates around immigration in the United States - who belongs and who does not. Arroyo goes on to reveal her solution - which did not involve removing diacritics - and urges her readers to think critically about how these invisible defaults influence perceptions of what is possible and about what further work needs to be done.
+Implicitly aligning diacritics with messiness or invalidity works to create an "invisible default" by privileging English language texts, reflecting the biases of the disk imaging software's creators. The reference to "illegal characters" in particular, though likely unintentional on the part of the respondent, cannot help but also invoke current debates around immigration in the United States - who belongs and who does not. Arroyo reveals her solution - which did not involve removing diacritics - and urges her readers to think critically about how these invisible defaults influence perceptions of what is possible:
+
+>Perceiving diacritics as a compromise on an ideal born-digital processing scenario thinking it is an acceptable practice to purge, sanitize, or cleanse file and folder names of them is representative of the amount of work the \[archival] profession needs to do" [[2]](#2)
 
 ## Data is the new oil
 
@@ -36,7 +38,11 @@ You can read more about the language and metaphors of data in the "Learn More"
 
 ## References
 <a id="1">[1]</a>
-D’Ignazio, C., & Klein, L. F. (2020). Data Feminism. The MIT Press. https://doi.org/10.7551/mitpress/11805.001.0001
+D’Ignazio, C., & Klein, L. F. (2020). *Data Feminism*. The MIT Press. https://doi.org/10.7551/mitpress/11805.001.0001.
+
+<a id="2">[2]</a>
+Arroyo-Ramirez, E. (2016, October 30). Invisible Defaults and Perceived Limitations: Processing the Juan Gelman Files. *Medium*. https://medium.com/on-archivy/invisible-defaults-and-perceived-limitations-processing-the-juan-gelman-files-4187fdd36759.
+
 
 
 <br />
