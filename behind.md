@@ -24,7 +24,7 @@ The fraught binaries in the language of data pre-processing - disorder / order, 
 
 Implicitly aligning diacritics with messiness or invalidity works to create an "invisible default" by privileging English language texts, reflecting the biases of the disk imaging software's creators. The reference to "illegal characters" in particular, though likely unintentional on the part of the respondent, cannot help but also invoke current debates around immigration in the United States - who belongs and who does not. Arroyo reveals her solution - which did not involve removing diacritics - and urges her readers to think critically about how these invisible defaults influence perceptions of what is possible:
 
->Perceiving diacritics as a compromise on an ideal born-digital processing scenario thinking it is an acceptable practice to purge, sanitize, or cleanse file and folder names of them is representative of the amount of work the \[archival] profession needs to do. [[2]](#2)
+>Perceiving diacritics as a compromise on an ideal born-digital processing scenario, or thinking it is an acceptable practice to purge, sanitize, or cleanse file and folder names of them is representative of the amount of work the \[archival] profession needs to do. [[2]](#2)
 
 ## Data is the new oil
 
