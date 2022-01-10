@@ -10,7 +10,7 @@ nav_order: 7
 
 ## On "data cleaning"
 
-Correcting errors in the dataset is often referred to as "data cleaning," suggesting that data - in the form received from its source - is disorderly or chaotic. OpenRefine, for example, advertises itself as a "powerful tool for cleaning messy data." 
+Correcting errors in the dataset is often referred to as "data cleaning," suggesting that data - as received from its source - is disorderly or chaotic. OpenRefine, for example, advertises itself as a "powerful tool for cleaning messy data." 
 
 In associating source data with messiness, a value-laden binary is created between data before pre-processing takes place and after. But, as we have already encountered in the "Pre-processing Digitized Texts" lesson, our pre-processing actions do not necessarily leave the dataset improved: we may accidentally introduce new errors or make decisions to omit certain information from our analysis. As D'Ignazio and Klein ask in their book, [Data Feminism](https://mitpress.mit.edu/books/data-feminism):
 
