@@ -13,13 +13,16 @@ We underestimate our abilities as humans to make sense of orthographic errors an
 
 In this workshop, we’ll use several approaches to correcting errors in the OCR text output and discuss when to use them. We’ll also introduce the concepts of initial data analysis (IDA) and data provenance, as well as the structuring of textual data with XML tags according to the Text Encoding Initiative (TEI) specifications.
 
-## Learning Outcomes
+## Learning outcomes
 
 By the end of the workshop, you will be able to:
 * Perform initial data analysis on OCR text output
 * Explain the importance of data provenance 
 * Apply computational techniques to correct common OCR errors
 * Identify an appropriate data pre-processing approach
+
+## Workshop duration
+
 
 <br />
 
