@@ -61,11 +61,11 @@ Generally, there tend to be too many clusters in tokenized, post-OCR texts to ma
 
 ![](assets/img/borndig_cluster-3.png)
 
-If you do not intend to reconstitute your text as a human-readable document - that is, you just want to output a bag of words for computational analysis - you can, of course, remove punctuation and change all letters to the same case to have more success with finding genuine OCR errors through clustering. To remove punctuation and make the case consistent, do a text transform in GREL using the `value.fingerprint()` operation to both remove punctuation and change all letters to lower case. But you may find now that you get a lot of clusters that contain different words and not misspellings of the same word, or false positives. 
+If you do not intend to reconstitute your text as a human-readable document - that is, you just want to output a bag of words for computational analysis - you can, of course, remove punctuation and change all letters to the same case to have more success with finding genuine OCR errors through clustering. To remove punctuation and make the case consistent, do a text transform in GREL using the `value.fingerprint()` operation to both remove punctuation and change all letters to lower case. But you may find now that you get a lot of clusters that contain "false positives" or different words that should not be merged rather than misspellings of the same word. 
 
 ![](assets/img/borndig_fingerprint.png)
 
-You can further narrow down the number of clusters by using filters and facets - OpenRefine allows you to open the clustering menu directly from the facet area.
+You can, however, further narrow down the number of clusters by using filters and facets - OpenRefine allows you to open the clustering menu directly from the facet area. Depending on your corpus, you may be able to surface some OCR errors if you know a character is regularly substituted for others - like "m" in the Zwick dataset.
 
 <img src="assets/img/borndig_cluster-4.png" style="width: 50%; height: auto;" />
 
