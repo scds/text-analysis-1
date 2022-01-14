@@ -32,7 +32,7 @@ The powerful metaphors invoked by the use of language in data science are not ju
 
 In fact, data are never “raw” – they are always already determined by the choices we make in collecting and selecting them, which are in turn influenced by the social, political and historical forces that shape our work. Much like computational tools and processes themselves, data are situated and partial, one of many rather than authoritative.
 
-And while we may use the language of the discipline in order to communicate with other practitioners, it is important to consider how language is used to frame thinking about data in particular ways that are grounded in a colonial paradigm of extraction.
+While we may use the language of the discipline in order to communicate with other practitioners, it is important to consider how language is used to frame thinking about data in particular ways that are grounded in a colonial paradigm of extraction.
 
 ## References
 <a id="1">[1]</a>
