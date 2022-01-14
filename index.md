@@ -23,7 +23,7 @@ By the end of the workshop, you will be able to:
 
 ## Workshop duration
 
-If you go through the workshop from start to finish (and you need not necessarily!), it will take you approximately 2 to 3 hours to complete, depending on your familiarity with OpenRefine and/or Python and whether you are also working with your own dataset alongside the sample corpus. 
+To go through the workshop from start to finish (and you need not necessarily!) will take you approximately 2 to 3 hours to complete, depending on your familiarity with OpenRefine and/or Python and whether you are working with your own dataset alongside the sample corpus. 
 
 <br />
 
