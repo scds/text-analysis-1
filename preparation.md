@@ -29,6 +29,12 @@ We will be using [**OpenRefine**](https://www.openrefine.org/), an open-source s
 
    [OpenRefine installation instructions](https://docs.openrefine.org/manual/installing)
 
+### Software versions
+
+For the lesson as it is currently written, the software versions are as follows:
+
+**OpenRefine:** 3.5.2
+
 Please contact the [Sherman Centre](mailto:scds@mcmaster.ca) if you have any difficulties downloading or opening the software.
 
 ## 3. Assemble your own corpus (optional)
