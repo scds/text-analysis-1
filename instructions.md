@@ -23,6 +23,10 @@ has_toc: false
 
 The hands-on components of the lesson are available as videos with written instructions and screenshots of the video content below. You are encouraged to watch the videos and use the written sections for later reference but feel free to approach the lesson however you prefer!
 
+## Lesson prerequisites
+
+Basic computer literacy, e.g. creating and working with different file types, navigating interfaces, using shortcut keys and so on. In the lesson, we will use a spreadsheet-like software called OpenRefine; experience with OpenRefine, of course, would be an asset! If you are very familiar with spreadsheet software, on the oher hand, you will find some differences in working with OpenRefine.
+
 <br />
 
 Next -> [An Overview of the Textual Analysis Workflow](overview.html)
