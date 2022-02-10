@@ -25,8 +25,8 @@ The hands-on components of the lesson are available as videos with written instr
 
 ## Lesson prerequisites
 
-Basic computer literacy, e.g. creating and working with different file types, navigating interfaces, using shortcut keys and so on. In the lesson, we will use a spreadsheet-like software called OpenRefine; experience with OpenRefine, of course, would be an asset! If you are very familiar with spreadsheet software, on the oher hand, you will find some differences in working with OpenRefine.
+Basic computer literacy, e.g. creating and working with different file types, navigating interfaces, using shortcut keys and so on. In the lesson, we will use a spreadsheet-like software called OpenRefine; experience with OpenRefine, of course, would be an asset! If you are very familiar with spreadsheet software, on the other hand, you will find some differences in working with OpenRefine.
 
 <br />
 
-Next -> [An Overview of the Textual Analysis Workflow](overview.html)
+Next --> [An Overview of the Textual Analysis Workflow](overview.html)
