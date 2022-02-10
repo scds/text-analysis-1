@@ -7,7 +7,7 @@ nav_order: 1
 
 # Welcome to Pre-Processing Digitized Texts
 
-**Pre-Processing Digitized Texts belongs to a series of workshops on computational text analysis.**
+***Pre-Processing Digitized Texts* belongs to a series of workshops on computational text analysis.**
 
 We underestimate our abilities as humans to make sense of orthographic errors and alternative spellings like *thcn* or *shew*. Machines are less capable of making these inferences, meaning that [OCR](https://en.wikipedia.org/wiki/Optical_character_recognition) text output must often be corrected in the pre-processing stage of the textual analysis pipeline to render it legible to computational methods. 
 
@@ -23,11 +23,11 @@ By the end of the workshop, you will be able to:
 
 ## Workshop duration
 
-Going through the workshop from start to finish (and you need not necessarily!) will take you approximately 2 to 3 hours to complete, depending on your familiarity with OpenRefine and/or Python and whether you are working with your own dataset alongside the sample corpus. 
+Going through the workshop from start to finish (and you need not do so necessarily!) will take you approximately 2 to 3 hours to complete, depending on your familiarity with OpenRefine and/or Python and whether you are working with your own dataset alongside the sample corpus. 
 
 <br />
 
-Next -> [Preparation](preparation.html) 
+Next --> [Preparation](preparation.html) 
 
 
 
