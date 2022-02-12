@@ -18,7 +18,12 @@ You may also wish to refer to [the documentation for OpenRefine](https://docs.op
 
 ## Regular Expressions
 
-Likewise, since one of the major OCR error correction strategies discussed involves using regular expressions (regex), a strong grasp of regex will help you make the most of OpenRefine. In addition to the resources listed on the "[Correcting OCR Errors with OpenRefine: Strategies](https://scds.github.io/text-analysis-1/or-strat.html#33-find-and-replace-with-regular-expressions-regex)" page, the [Rex Egg website](https://www.rexegg.com/regex-quickstart.html) offers both cheatsheets and comprehensive tutorials. Peter Green of Princeton University Library has developed a [regex cheatsheet tailored to OpenRefine](https://gist.github.com/pmgreen/6e133c5dcde65762d29c). Another helpful resource, of course, is the [OpenRefine documentation](https://docs.openrefine.org/manual/expressions#regular-expressions).
+Likewise, since one of the major OCR error correction strategies discussed involves using regular expressions (regex), a strong grasp of regex will help you make the most of OpenRefine. In addition to the resources listed on the "[Correcting OCR Errors with OpenRefine: Strategies](https://scds.github.io/text-analysis-1/or-strat.html#33-find-and-replace-with-regular-expressions-regex)" page: 
+
+* Library Carpentries has also developed a [workshop on regex](https://librarycarpentry.org/lc-data-intro/),
+* the [Rex Egg website](https://www.rexegg.com/regex-quickstart.html) offers both cheatsheets and comprehensive tutorials,
+* Peter Green of Princeton University Library has developed a [regex cheatsheet tailored to OpenRefine](https://gist.github.com/pmgreen/6e133c5dcde65762d29c),
+* another helpful resource, of course, is the [OpenRefine documentation](https://docs.openrefine.org/manual/expressions#regular-expressions).
 
 You can also dynamically test your regex patterns with [Regular Expressions 101](https://regex101.com/) or [Regexr](https://regexr.com/).
 
