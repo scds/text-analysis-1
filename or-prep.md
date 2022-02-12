@@ -16,11 +16,11 @@ Jump to step in 2. >
 
 [2.2. Initial Data Analysis (again)](#22-initial-data-analysis-again)
 
-[2.3. Tokenize the language data](#23-tokenize)
+[2.3. Tokenize the language data](#23-tokenize-the-language-data)
 
 [2.4. Remove blank rows (and whitespaces, if applicable)](#24-remove-blank-rows-and-whitespaces-if-applicable)
 
-[2.5. Initial Data Analysis (yet again) with filters and facets](#25-initial-data-analysis-again-with-filters-and-facets)
+[2.5. Initial Data Analysis (yet again) with filters and facets](#25-initial-data-analysis-yet-again-with-filters-and-facets)
 
 <hr />
 
