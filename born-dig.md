@@ -33,7 +33,7 @@ If your data source outputs fields (features) that are not relevant to your anal
 You can drag rows over to the "Drop columns here remove" area to remove them from the dataset. Because the action must be performed on each of the columns to remove, a programmatic approach is likely more efficient if you have a large number of rows to remove.
 
 <div align="center">
-<img src="assets/img/borndig_remove-column-2.png" style="width: 50%; height: auto;" />
+<img src="assets/img/borndig_remove-column-2.png" style="width: 75%; height: auto;" />
 </div>
 
 <hr />
@@ -56,14 +56,14 @@ The above screenshot demonstrates using the `\d` regular expression to create a 
 
 ## Clustering similar cells
 
-<div style="max-width:608px; align: center"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_izyqu34i" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_izyqu34i/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
+<div style="max-width:608px" align="center"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_izyqu34i" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_izyqu34i/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
 
 <br />
 Sometimes (human-made) spelling errors can interfere with data analysis as well. Clustering is useful when there are small variances between similar values, such as typos, differences in case or punctuation. OpenRefine will treat "Ammonia" and "ammonia" as distinct values, for example.
 
 You can access clustering from the column menu: `Edit cells` > `Cluster and edit...`.
 
-<div style="align: center">
+<div align="center">
 <img src="assets/img/borndig_cluster-1.png" style="width: 50%; height: auto;" />
 </div>
 
@@ -87,7 +87,7 @@ If you do not intend to reconstitute your text as a human-readable document - th
 
 You can, however, further narrow down the number of clusters by using filters and facets - OpenRefine allows you to open the clustering menu directly from the facet area. Depending on your corpus, you may be able to surface some OCR errors if you know a character is regularly substituted for others - like "m" in the Zwick dataset.
 
-<div style="align: center">
+<div align="center">
 <img src="assets/img/borndig_cluster-4.png" style="width: 50%; height: auto;" />
 </div>
 
