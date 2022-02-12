@@ -29,7 +29,7 @@ The following steps use the spell-check function within Microsoft Word and a mac
 
 <hr />
 
-### 1.1: Remove extraneous text
+### **1.1:** Remove extraneous text
 
 Working with [sample corpus A](https://scds.github.io/text-analysis-1/preparation.html), Zwick.txt, open the .txt file in MS Word. 
 
@@ -39,7 +39,7 @@ Consider doing the same with any other dataset you plan to analyze: remove block
 
 <hr />
 
-### 1.2: Run spellcheck in MS Word
+### **1.2:** Run spellcheck in MS Word
 
 We are using Word because it will highlight errors for us and we can export a list of misspelled words from it using a macro. The software, however, may not recognize errors automatically when working with a .txt file; if you are running MS Word on either a Windows or Mac operating system, refer to the [Microsoft documentation](https://support.microsoft.com/en-us/office/check-spelling-and-grammar-in-office-5cdeced7-d81d-47de-9096-efd0ee909227) ("Turn the automatic spelling and grammar checker on or off"). 
 
@@ -47,7 +47,7 @@ Once you have made spelling errors visible in your document, take a bit of time 
 
 <hr />
 
-### 1.3: Create a macro to export an OCR error list
+### **1.3:** Create a macro to export an OCR error list
 
 Although seeing the errors in context is helpful, it is of course also useful to isolate the errors. We can create a list of OCR errors using a macro in MS Word.
 
@@ -87,7 +87,7 @@ If you are using OpenOffice, you should be able to similarly [create a macro](ht
 
 <hr />
 
-### 1.4: Review the OCR error list to inform the design of your pre-processing stage
+### **1.4:** Review the OCR error list to inform the design of your pre-processing stage
 
 Now that you have the errors separated out from the text, review your data closely. You can toggle back and forth between the error list and the full document, Zwick.txt, or the [source document](https://archive.org/details/zwicksislandland00ontauoft/page/12/mode/2up) if the correct spelling of some misspelled words is difficult to guess. You may also wish to employ a text analysis tool like [Voyant Tools](https://voyant-tools.org/).
 
