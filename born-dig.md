@@ -14,6 +14,16 @@ Although writing a program in Python or R will accomplish some tasks more effici
 
 A few additional features of OpenRefine may assist your pre-processing of born-digital text data:
 
+[Removing columns]
+
+[Transposing rows across columns]
+
+[Clustering similar cells]
+
+[Reconciling data with authoritative sources]
+
+<hr />
+
 ## Removing columns
 
 If your data source outputs fields (features) that are not relevant to your analysis, you can remove columns using the "All" column menu: `Edit columns` > `Reorder / remove columns`.
@@ -22,15 +32,21 @@ If your data source outputs fields (features) that are not relevant to your anal
 
 You can drag rows over to the "Drop columns here remove" area to remove them from the dataset. Because the action must be performed on each of the columns to remove, a programmatic approach is likely more efficient if you have a large number of rows to remove.
 
+<div align="center">
 <img src="assets/img/borndig_remove-column-2.png" style="width: 50%; height: auto;" />
+</div>
 
-## Transpose rows across columns
+<hr />
+
+## Transposing rows across columns
 
 Just as we can remove columns, we can also add them based on existing cell contents; for example, objects with multiple properties or strings containing more than one value (e.g. LastName, FirstName).
 
 Go to the column menu of the column you would like to split: `Edit columns` > `Split into several columns...`.
 
+<div align="center">
 <img src="assets/img/borndig_split-1.png" style="width: 50%; height: auto;" />
+</div>
 
 Choose a column separator on which to split the column (e.g. comma); you can use regular expressions as well, as depicted in the image below. Leave the "Split into ______ columns at most" blank if you are not sure how many times the separator will occur in the cells - you can always undo if you unexpected end up with dozens of rows!
 
@@ -40,7 +56,7 @@ The above screenshot demonstrates using the `\d` regular expression to create a 
 
 ## Clustering similar cells
 
-<div style="max-width:608px"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_izyqu34i" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_izyqu34i/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
+<div style="max-width:608px; align: center"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_izyqu34i" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_izyqu34i/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
 
 <br />
 Sometimes (human-made) spelling errors can interfere with data analysis as well. Clustering is useful when there are small variances between similar values, such as typos, differences in case or punctuation. OpenRefine will treat "Ammonia" and "ammonia" as distinct values, for example.
@@ -54,6 +70,8 @@ OpenRefine will present you with grouped sets of very similar cell contents. You
 ![](assets/img/borndig_cluster-2.png)
 
 In the screenshot, the levenshtein clustering method is used. You may want to experiment with other methods, such as the "metaphone3" phoentic algorithm (accessible from the keying function drop-down menu when "key collision" is set as the method) which groups cells together with words that sound alike. You can explore other methods in the [Clustering in Depth](https://github.com/OpenRefine/OpenRefine/wiki/Clustering-In-Depth) resource created by Owen Stephens. 
+
+<hr />
 
 ### Using clustering for post-OCR correction
 
@@ -69,5 +87,11 @@ You can, however, further narrow down the number of clusters by using filters an
 
 <img src="assets/img/borndig_cluster-4.png" style="width: 50%; height: auto;" />
 
-Next -> [Behind the Interface](behind.html)
+## Reconciling data with controlled vocabularies
+
+If normalization, or standardizing the spelling of terms in your corpus, is important for your purposes, [John Little](https://www.johnlittle.info/) of Duke University Libraries has created [a helpful guide](https://libjohn.github.io/openrefine/hands-on-reconciliation.html) on using OpenRefine's reconciliation services to match to controlled vocabularies like the [Virtual International Authority File](https://viaf.org/) (VIAF), which includes links to further reconciliation resources developed by Oween Stephens.
+
+<br />
+
+Next --> [Behind the Interface](behind.html)
 
