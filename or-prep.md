@@ -14,13 +14,13 @@ nav_order: 5
 
 > [2.1. Import your texts](#21-import-your-texts)
 
-> [2.2. Initial Data Analysis (again)](https://scds.github.io/text-analysis-1/or-prep.html#22-initial-data-analysis-again)
+> [2.2. Initial Data Analysis (again)](#22-initial-data-analysis-again)
 
-> [2.3. Tokenize the language data](https://scds.github.io/text-analysis-1/or-prep.html#23-tokenize)
+> [2.3. Tokenize the language data](#23-tokenize)
 
-> [2.4. Remove blank rows (and whitespaces, if applicable)](https://scds.github.io/text-analysis-1/or-prep.html#24-remove-blank-rows-and-whitespaces-if-applicable)
+> [2.4. Remove blank rows (and whitespaces, if applicable)](#24-remove-blank-rows-and-whitespaces-if-applicable)
 
-> [2.5. Initial Data Analysis (yet again) with filters and facets](https://scds.github.io/text-analysis-1/or-prep.html#25-initial-data-analysis-again-with-filters-and-facets)
+> [2.5. Initial Data Analysis (yet again) with filters and facets](#25-initial-data-analysis-again-with-filters-and-facets)
 
 <hr />
 
