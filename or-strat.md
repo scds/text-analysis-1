@@ -17,9 +17,11 @@ Though still a manual process of creating find-and-replace commands, the correct
 
 Jump to step >
 
-[3.1. Find-and-replace with text filters]
-[3.2. Find-and-replace with GREL (Google / General Refine Expression Language)]
-[3.3. Find-and-replace with regular expressions (RegEx)]
+[3.1. Find-and-replace with text filters](l#31-find-and-replace-with-text-filters)
+
+[3.2. Find-and-replace with GREL (Google / General Refine Expression Language)](#32-find-and-replace-with-grel-google--general-refine-expression-language)
+
+[3.3. Find-and-replace with regular expressions (RegEx)](#33-find-and-replace-with-regular-expressions-regex)
 
 <hr />
 
