@@ -27,10 +27,17 @@ The following steps use the spell-check function within Microsoft Word and a mac
 
 <iframe id="kmsembed-1_idpfm6as" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_idpfm6as/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
-> Jump to step:
-> 
-> [1.1. Remove extraneous text](#11-remove-extraneous-text)
-> [1.2. Run spellcheck in MS Word](#12-run-spellcheck-in-ms-word)
+<hr />
+
+Jump to step >
+ 
+[1.1. Remove extraneous text](#11-remove-extraneous-text)
+
+[1.2. Run spellcheck in MS Word](#12-run-spellcheck-in-ms-word)
+
+[1.3. Create a macro to export an OCR error list](#13-create-a-macro-to-export-an-ocr-error-list)
+
+[1.4. Review the OCR error list to inform the design of your pre-processing stage](#14-review-the-ocr-error-list-to-inform-the-design-of-your-pre-processing-stage)
 
 <hr />
 
