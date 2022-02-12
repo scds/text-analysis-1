@@ -63,7 +63,9 @@ Sometimes (human-made) spelling errors can interfere with data analysis as well.
 
 You can access clustering from the column menu: `Edit cells` > `Cluster and edit...`.
 
+<div style="align: center">
 <img src="assets/img/borndig_cluster-1.png" style="width: 50%; height: auto;" />
+</div>
 
 OpenRefine will present you with grouped sets of very similar cell contents. You can choose to merge them to normalize the values. You can also supply a new value in the "New Cell Value" column to the right of the cluster. The screenshot below shows slight misspellings of Twitter account names, which would affect the ability to get an accurate count of them.
 
@@ -85,7 +87,11 @@ If you do not intend to reconstitute your text as a human-readable document - th
 
 You can, however, further narrow down the number of clusters by using filters and facets - OpenRefine allows you to open the clustering menu directly from the facet area. Depending on your corpus, you may be able to surface some OCR errors if you know a character is regularly substituted for others - like "m" in the Zwick dataset.
 
+<div style="align: center">
 <img src="assets/img/borndig_cluster-4.png" style="width: 50%; height: auto;" />
+</div>
+
+<hr />
 
 ## Reconciling data with controlled vocabularies
 
