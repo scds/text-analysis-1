@@ -5,7 +5,7 @@ parent: Lesson
 nav_order: 6
 ---
 
-# Correcting OCR Errors with OpenRefine: Strategies
+# 3. Correcting OCR Errors with OpenRefine: Strategies
 <br />
 <div style="max-width:608px"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_xo1h3x4i" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_xo1h3x4i/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
 
@@ -13,7 +13,17 @@ In the next part of the lesson, we will explore severals strategies you can use 
 
 Though still a manual process of creating find-and-replace commands, the corrections you make are likely to be (far) more accurate than a machine learning approach (for the time being).
 
-## Strategy 1: Find-and-replace with text filters
+<hr />
+
+Jump to step >
+
+[3.1. Find-and-replace with text filters]
+[3.2. Find-and-replace with GREL (Google / General Refine Expression Language)]
+[3.3. Find-and-replace with regular expressions (RegEx)]
+
+<hr />
+
+## **3.1.** Find-and-replace with text filters
 <br />
 <div style="max-width:608px"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_8f8gstrm" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_8f8gstrm/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
 
@@ -34,7 +44,9 @@ Type "no" in "Find: " and "rio" in "Replace: " - we use "no" instead of "n" beca
 Before working through your error list with "Replace," however, there is an alternative - and arguably better - approach. If you notice that you have made an error, you can easily undo it by going to the "Undo / Redo" tab 
 Read on...
 
-## Strategy 2: Find-and-replace with GREL (Google / General Refine Expression Language)
+<hr />
+
+## **3.2** Find-and-replace with GREL (Google / General Refine Expression Language)
 <br />
 <div style="max-width:608px"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_4df746o0" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_4df746o0/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
 
@@ -54,7 +66,9 @@ After you have applied the tranformation, OpenRefine will notify you that 15 row
 
 There are other functions that might be useful to your OCR error correction efforts if you would like to read over the [reference for GREL](https://docs.openrefine.org/manual/grelfunctions) in greater depth.
 
-## Strategy 3: Find-and-replace with regular expressions (RegEx)
+<hr />
+
+## **3.3** Find-and-replace with regular expressions (RegEx)
 <br />
 <div style="max-width:608px"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_eb68oxh5" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_eb68oxh5/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
 
@@ -91,6 +105,8 @@ E.g.<br />
 
 Familiarity with RegEx will improve your ability to correct OCR errors in OpenRefine considerably; you can seek out other patterns by consulting RegEx references like the [Mozilla RegEx cheatsheet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet) or [RegEx One tutorials](https://regexone.com/).
 
+<hr />
+
 ## Try it with your own data...
 
 By now, you can likely appreciate how the specific transformations we have made on the Zwick.txt dataset are highly context-dependent. Each corpus will entail a unique set of tranformations to correct the OCR errors within.
@@ -99,4 +115,4 @@ With your own dataset, try out the strategies above to correct 5 to 10 error pat
 
 <br />
 
-Next -> [Exporting your Data](output.html)
+Next --> [Exporting your Data](output.html)
