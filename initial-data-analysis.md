@@ -13,17 +13,23 @@ Initial data analysis gives us a sense of the errors that exist within the corpu
 
 For example, if you notice that errors in the document tend to be consistent and few in number (i.e. 95-99% accuracy) then using OpenRefine may be a feasible approach to automate some of the tasks while retaining greater control over the corrections that occur. A higher number of unpredictable errors may require using a machine learning system that you train yourself. 
 
+<hr />
+
 ## Initial Data Analysis (IDA) and Exploratory Data Analysis (EDA)
 
 Initial data analysis informs the pre-processing stage while exploratory data analysis concerns testing hypotheses and identifying salient features of the data to communicate in the output stage.
 
 The two are not neatly separated, however; you are likely to notice some features and characteristics of the data as you are performing your initial data analysis (and in other stages of the workflow). But generally, exploratory data analysis will largely occur towards the end of the workflow when we are performing natural language processing tasks such as named entity recognition and topic modelling.
 
-## Performing Initial Data Analysis (IDA) with Microsoft Word
+The following steps use the spell-check function within Microsoft Word and a macro to perform inital data analysis. If you prefer, you can alternative [use Python to create a list of misspelled words](https://jasonbrodeur.github.io/dsi-text-prep/python.html#lesson-basic-text-prep-with-python).
+
+## 1. Performing Initial Data Analysis (IDA) with Microsoft Word
 
 <iframe id="kmsembed-1_idpfm6as" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_idpfm6as/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
-### IDA Step 1: Remove extraneous text
+<hr />
+
+### 1.1: Remove extraneous text
 
 Working with [sample corpus A](https://scds.github.io/text-analysis-1/preparation.html), Zwick.txt, open the .txt file in MS Word. 
 
@@ -31,13 +37,17 @@ Before any other step, we may first want to delete the preamble at the beginning
 
 Consider doing the same with any other dataset you plan to analyze: remove blocks of extraneous text in the IDA stage. 
 
-### IDA Step 2: Run spellcheck in MS Word
+<hr />
+
+### 1.2: Run spellcheck in MS Word
 
 We are using Word because it will highlight errors for us and we can export a list of misspelled words from it using a macro. The software, however, may not recognize errors automatically when working with a .txt file; if you are running MS Word on either a Windows or Mac operating system, refer to the [Microsoft documentation](https://support.microsoft.com/en-us/office/check-spelling-and-grammar-in-office-5cdeced7-d81d-47de-9096-efd0ee909227) ("Turn the automatic spelling and grammar checker on or off"). 
 
 Once you have made spelling errors visible in your document, take a bit of time to review them - they are now easy to find! Although we are about to export a list of misspelled words, it is helpful to see the errors in context as it can at times be difficult to infer the correct spelling of the error without knowing how they are being used.
 
-### IDA Step 3: Create a macro to export an OCR error list
+<hr />
+
+### 1.3: Create a macro to export an OCR error list
 
 Although seeing the errors in context is helpful, it is of course also useful to isolate the errors. We can create a list of OCR errors using a macro in MS Word.
 
@@ -75,7 +85,9 @@ Typing the "Run Macro" shortcut key (```F5```) again will run the Macro - you sh
 
 If you are using OpenOffice, you should be able to similarly [create a macro](https://wiki.openoffice.org/wiki/Documentation/OOoAuthors_User_Manual/Getting_Started/Creating_a_simple_macro) using the same code.
 
-### IDA Step 4: Review the OCR error list to inform the design of your pre-processing stage
+<hr />
+
+### 1.4: Review the OCR error list to inform the design of your pre-processing stage
 
 Now that you have the errors separated out from the text, review your data closely. You can toggle back and forth between the error list and the full document, Zwick.txt, or the [source document](https://archive.org/details/zwicksislandland00ontauoft/page/12/mode/2up) if the correct spelling of some misspelled words is difficult to guess. You may also wish to employ a text analysis tool like [Voyant Tools](https://voyant-tools.org/).
 
@@ -95,4 +107,4 @@ Document your observations as completely as possible to help to make your error 
 
 <br />
 
-Next -> [Correcting OCR Errors with OpenRefine](ocr-correction.html)
+Next --> [Correcting OCR Errors with OpenRefine](ocr-correction.html)
