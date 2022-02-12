@@ -17,7 +17,7 @@ Once finished, you will need to export your data for use outside of OpenRefine. 
 
 Before exporting the data, remove any active filters or facets - the current number of rows is what will be exported. The `Export` menu is found at the top right of the screen; from it, select `Custom tabular exporter...` which will open up a dialog box with export options. 
 
-<img src="assets/img/output_custom-export.png" width="50%" height="auto" align="center" />
+<img src="assets/img/output_custom-export.png" style="width: 50%; height: auto; align: center" />
 
 Select the "Download" tab and:
 
@@ -41,7 +41,7 @@ If the paragraph structure of the document does matter for your purposes and you
 
 One of the best features in OpenRefine for OCR error correction is the history it keeps of your actions in the "Undo / Redo" tab on the left-side pane (where filters and facets are displayed). Not only is OpenRefine's documentation of your data transformations critical for data provenance, you can also create a program from them that you can run again and again.
 
-<img src="assets/img/output_undo.png" width="50%" height="auto" align="center" />
+<img src="assets/img/output_undo.png" style="width: 50%; height: auto; margin: 0 auto 0 auto;" />
 
 From the "Undo / Redo" tab, select `Extract...` to open a dialog box with all of the actions you performed rendered in JSON format. You can copy the text to a new document for data provenance purposes. If you wish to run the program again, you can deselect steps that you will not need to repeat before copying the text.
 
