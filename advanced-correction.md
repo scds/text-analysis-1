@@ -12,4 +12,4 @@ The Sherman Centre's [Jay Brodeur](https://experts.mcmaster.ca/display/brodeujj)
 
 <br />
 
-Next -> [Pre-Processing Born-Digital Texts](born-dig.html)
+Next --> [Pre-Processing Born-Digital Texts](born-dig.html)
