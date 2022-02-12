@@ -5,7 +5,7 @@ parent: Lesson
 nav_order: 3
 ---
 
-# Initial Data Analysis
+# 1. Initial Data Analysis
 
 Initial data analysis (IDA) is performed early in the textual analysis workflow in order to better understand the reliability and completeness of the data. It may be done with a number of tools, such as text editors and visualization software like [Voyant](https://voyant-tools.org/). In the lesson that follows, we will use Microsoft Word to perform initial data analysis given its available functionality and ubiquity; [Apache OpenOffice](https://www.openoffice.org/download/index.html) is an open-source alternative if you do not have access to MS Word.
 
@@ -23,7 +23,7 @@ The two are not neatly separated, however; you are likely to notice some feature
 
 The following steps use the spell-check function within Microsoft Word and a macro to perform inital data analysis. If you prefer, you can alternative [use Python to create a list of misspelled words](https://jasonbrodeur.github.io/dsi-text-prep/python.html#lesson-basic-text-prep-with-python).
 
-## 1. Performing Initial Data Analysis (IDA) with Microsoft Word
+## Performing Initial Data Analysis (IDA) with Microsoft Word
 
 <iframe id="kmsembed-1_idpfm6as" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_idpfm6as/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
