@@ -74,11 +74,11 @@ There are other functions that might be useful to your OCR error correction effo
 <br />
 <div style="max-width:608px"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_eb68oxh5" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_eb68oxh5/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
 
-We can build on our find-and-replace toolkit by incorporating regular expressions, or RegEx, which offer a way to search for more generalized patterns when we may not know or be able to articulate specifics. For example, performing a search that all results ending in “mg” regardless of what comes before. 
+We can build on our find-and-replace toolkit by incorporating regular expressions, or regex, which offer a way to search for more generalized patterns when we may not know or be able to articulate specifics. For example, performing a search that all results ending in “mg” regardless of what comes before. 
 
 Combined with GREL transformations, filters and facets, we can achieve a balance between speeding up our OCR error efforts while not being so inclusive that we introduce new errors.
 
-To get a sense of RegEx in OpenRefine, create a text filter with "mg" as the criteria to find words where "ing" has been misinterpreted by the OCR engine. Note that, in addition to the words we would like to change, there are a number of correctly spelled results (i.e. "mg/L").
+To get a sense of regex in OpenRefine, create a text filter with "mg" as the criteria to find words where "ing" has been misinterpreted by the OCR engine. Note that, in addition to the words we would like to change, there are a number of correctly spelled results (i.e. "mg/L").
 
 ![](assets/img/strategy_mg-filter.png)
 
@@ -88,7 +88,7 @@ To limit the scope to rows (words) that end in "mg" we can use the regular expre
 
 ### Quick RegEx Reference
 
-Other RegEx patterns you might find useful to your OCR error correction efforts include: 
+Other regex patterns you might find useful to your OCR error correction efforts include: 
 
 `^` - start of expression<br />
 `$` - end of expression
@@ -105,7 +105,7 @@ E.g.<br />
 `[iou]m` will return words that contain “im,” “om” and “um”<br />
 `ti[^o]` will exclude “tion”
 
-Familiarity with RegEx will improve your ability to correct OCR errors in OpenRefine considerably; you can seek out other patterns by consulting RegEx references like the [Mozilla RegEx cheatsheet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet) or [RegEx One tutorials](https://regexone.com/).
+Familiarity with regex will improve your ability to correct OCR errors in OpenRefine considerably; you can seek out other patterns by consulting regex references like the [Mozilla regex cheatsheet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet) or [Regex One tutorials](https://regexone.com/).
 
 <hr />
 
