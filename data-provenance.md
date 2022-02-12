@@ -15,7 +15,7 @@ Documenting the provenance of your data helps to establish the accuracy, reliabi
 
 If you are using a tool like OpenRefine for pre-processing, some of the provenance documentation can be automated; as we will see in "[Exporting the Data](output.html)," OpenRefine keeps track of every operation you perform which can be exported in JSON format.
 
-A more detailed discussion of data provenance is outside of the scope of the current lesson, but if you wish to pursue the topic further you can explore Paolo Missier's "[Provenance Standards](http://homepages.cs.ncl.ac.uk/paolo.missier/doc/Provenance-standards.pdf)" and the [Provenance Tools page](https://projects.iq.harvard.edu/provenance-at-harvard/tools) created by the Provenance@Harvard group at Harvard University.
+A more detailed discussion of data provenance is outside of the scope of the current lesson, but if you wish to pursue the topic further, "[Datasheets for Datasets](https://arxiv.org/abs/1803.09010)" by Gebru et al. offers a thorough introduction - and a thoughtful approach - to the topic. For provenance tools, you can explore Paolo Missier's "[Provenance Standards](http://homepages.cs.ncl.ac.uk/paolo.missier/doc/Provenance-standards.pdf)" and the [Provenance Tools page](https://projects.iq.harvard.edu/provenance-at-harvard/tools) created by the Provenance@Harvard group at Harvard University.
 
 <br />
 
