@@ -8,17 +8,17 @@ nav_order: 5
 
 <div style="max-width:608px"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_oa7u1zml" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_oa7u1zml/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
 
-Jump to step:
+> Jump to step:
 
-[2.1. Import your texts](https://scds.github.io/text-analysis-1/or-prep.html#21-import-your-texts)
+> [2.1. Import your texts](https://scds.github.io/text-analysis-1/or-prep.html#21-import-your-texts)
 
-[2.2. Initial Data Analysis (again)](https://scds.github.io/text-analysis-1/or-prep.html#22-initial-data-analysis-again)
+> [2.2. Initial Data Analysis (again)](https://scds.github.io/text-analysis-1/or-prep.html#22-initial-data-analysis-again)
 
-[2.3. Tokenize the language data](https://scds.github.io/text-analysis-1/or-prep.html#23-tokenize)
+> [2.3. Tokenize the language data](https://scds.github.io/text-analysis-1/or-prep.html#23-tokenize)
 
-[2.4. Remove blank rows (and whitespaces, if applicable)](https://scds.github.io/text-analysis-1/or-prep.html#24-remove-blank-rows-and-whitespaces-if-applicable)
+> [2.4. Remove blank rows (and whitespaces, if applicable)](https://scds.github.io/text-analysis-1/or-prep.html#24-remove-blank-rows-and-whitespaces-if-applicable)
 
-[2.5. Initial Data Analysis (yet again) with filters and facets](https://scds.github.io/text-analysis-1/or-prep.html#25-initial-data-analysis-again-with-filters-and-facets)
+> [2.5. Initial Data Analysis (yet again) with filters and facets](https://scds.github.io/text-analysis-1/or-prep.html#25-initial-data-analysis-again-with-filters-and-facets)
 
 <hr />
 
