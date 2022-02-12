@@ -4,11 +4,13 @@ title: Preparing the Data in OpenRefine
 parent: Lesson
 nav_order: 5
 ---
-# Correcting OCR Errors with OpenRefine: Preparing the Data
-
-## OpenRefine step 1: Import your texts
+# 2. Correcting OCR Errors with OpenRefine: Preparing the Data
 
 <div style="max-width:608px"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_oa7u1zml" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_oa7u1zml/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
+
+<hr />
+
+## **2.1.** Import your texts
 
 Begin by opening OpenRefine; it will open in your default web browser and prompt you to create a project. Use the `Browse...` button to locate your text files. OpenRefine will allow you to upload .txt files, treating each line of the text document as a new row.
 
@@ -22,7 +24,9 @@ Import options:
 
 Give your project a name and `Create Project >>` to open your document(s) in OpenRefine.
 
-## OpenRefine step 2: Initial Data Analysis
+<hr />
+
+## **2.2.** Initial Data Analysis (again)
 
 Although you will already have done much of your initial data analysis in another tool, you will often learn something new about how your text files are structured when you upload them to OpenRefine - e.g. where line breaks occur or how characters might be interpreted differently in OpenRefine from the text editor you used for any earlier initial data analysis. There can be consequences for the pre-processing steps you undertake, so take some time to review the data in OpenRefine before performing any transformations. You may discover that you need to do some pre-processing tasks with the .txt files in a text editor before re-uploading them to OpenRefine.
 
@@ -70,7 +74,9 @@ Once the null rows have been transformed, they should no longer be visible as th
 
 If you change your mind about the placeholder character or otherwise notice that you have made an error, you can easily undo it by going to the "Undo / Redo" tab in the left-side pane of the interface. You will notice that a full history of all of the steps you have performed is preserved there, which we will return to in "[Extracting the pre-processing steps from OpenRefine](https://scds.github.io/text-analysis-1/output.html#extracting-the-pre-processing-steps-from-openrefine)."
 
-## OpenRefine step 3: Tokenize
+<hr />
+
+## **2.3.** Tokenize
 
 Tokenization - in the context of computational text analysis - is the dividing of unstructured text into individual words, or *tokens*. Because OpenRefine works most effectively with tabular data (i.e. data stored in tables, like in a spreadsheet), we are artificially creating a tabular structure by putting each word on its own row. This achieves the same effect as tokenization and allows us to group identical or similar words in OpenRefine.
 
@@ -88,7 +94,9 @@ After performing the split transformation, you should have many more rows as eac
 
 ![](assets/img/prep_tokenize-post.png)
 
-## OpenRefine step 4: Remove blank rows (and whitespaces, if applicable)
+<hr />
+
+## **2.4.** Remove blank rows (and whitespaces, if applicable)
 
 Blank rows are not relevant to our error correction tasks in OpenRefine and, as OpenRefine does have a ceiling on the number of rows it can work with, you may wish to delete them.
 
@@ -116,8 +124,9 @@ Much like punctuation, whitespaces in front of or behind a word will prevent it 
 
 Because we have used spaces as the separator between rows, no rows are likely to be affected by removing leading and trailing whitespaces. It is nonetheless good practice to ensure that we are indeed comparing like with like, and you may find the feature useful with other datasets.
 
+<hr />
 
-## OpenRefine step 5: Initial Data Analysis (again) with filters and facets
+## **2.5.** Initial Data Analysis (again) with filters and facets
 
 Once more with feeling! Now that we can perform operations at the level of the word, or token, we'll use OpenRefine to enrich our IDA. 
 
@@ -137,5 +146,5 @@ By now, you should have a good sense of the OCR errors in your dataset. Our next
 
 <br />
 
-Next -> [Correcting OCR Errors with OpenRefine: Strategies](or-strat.html)
+Next --> [Correcting OCR Errors with OpenRefine: Strategies](or-strat.html)
 
