@@ -37,6 +37,8 @@ Benjamin, Ruha. *Race after technology: Abolitionist tools for the new Jim code*
 
 Boyd, Danah, and Kate Crawford. "Critical questions for big data: Provocations for a cultural, technological, and scholarly phenomenon." *Information, communication & society* 15.5 (2012): 662-679.
 
+Fordyce, Robbie, and Suneel Jethani. "Critical data provenance as a methodology for studying how language conceals data ethics." *Continuum* 35.5 (2021): 775-787.
+
 Gitelman, Lisa, ed. *"Raw data" is an oxymoron*. MIT press, 2013.
 
 
