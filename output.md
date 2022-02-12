@@ -5,9 +5,9 @@ parent: Lesson
 nav_order: 7
 ---
 
-# Exporting Your Transformed Data for Further Use
+# 4. Exporting Your Transformed Data for Further Use
 
-## Reconstituting your document
+## **4.1.** Reconstituting your document
 <br />
 <div style="max-width:608px"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_ynl6f1t7" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_ynl6f1t7/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
 
@@ -35,7 +35,7 @@ If the paragraph structure of the document does matter for your purposes and you
 
 ![](assets/img/output_html.png)
 
-## Extracting the pre-processing steps from OpenRefine
+## **4.2.** Extracting the pre-processing steps from OpenRefine
 <br />
 <div style="max-width:608px"><div style="position:relative;padding-bottom:66.118421052632%"><iframe id="kmsembed-1_1aa1yvgs" width="608" height="402" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_1aa1yvgs/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe></div></div>
 
@@ -57,6 +57,6 @@ You could also perform your OCR post-correction on the [error list you created i
 
 ## Congratulations!
 
-You have reached the end of the hands-on lesson component of the workshop. Read on, however, if you would like to learn more about OCR error correction in Python, pre-processing born-digital texts, structuring unstructured text with the Text Encoding Initiative (TEI) format and why the use of terms like "cleaning" or "extracting" in relation to data is loaded. 
+You have reached the end of the hands-on lesson component of the workshop. Read on, however, if you would like to learn more about OCR error correction in Python, pre-processing born-digital texts, and why the use of terms like "cleaning" or "extracting" in relation to data is loaded. 
  
 
