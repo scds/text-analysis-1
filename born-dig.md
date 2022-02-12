@@ -14,13 +14,13 @@ Although writing a program in Python or R will accomplish some tasks more effici
 
 A few additional features of OpenRefine may assist your pre-processing of born-digital text data:
 
-[Removing columns]
+[Removing columns](#removing-columns)
 
-[Transposing rows across columns]
+[Transposing rows across columns](#transposing-rows-across-columns)
 
-[Clustering similar cells]
+[Clustering similar cells](#clustering-similar-cells)
 
-[Reconciling data with authoritative sources]
+[Reconciling data with controlled vocabularies](#reconciling-data-with-controlled-vocabularies)
 
 <hr />
 
