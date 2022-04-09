@@ -10,7 +10,7 @@ nav_order: 5
 
 <hr />
 
-Jump to step in 2. >
+Jump to step >
 
 [2.1. Import your texts](#21-import-your-texts)
 
