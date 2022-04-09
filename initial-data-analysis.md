@@ -103,14 +103,20 @@ If you are using OpenOffice, you should be able to similarly [create a macro](ht
 
 Now that you have the errors separated out from the text, review your data closely. You can toggle back and forth between the error list and the full document, Zwick.txt, or the [source document](https://archive.org/details/zwicksislandland00ontauoft/page/12/mode/2up) if the correct spelling of some misspelled words is difficult to guess. You may also wish to employ a text analysis tool like [Voyant Tools](https://voyant-tools.org/).
 
+You will notice that most of the OCR errors fall under one or a combination of the following:
+* misinterpreted characters
+* omitted characters
+* extra characters
+* split words (two words that are meant to be one, or where one of the characters has been misinterpreted as a space)
+
+Error words are likely to duplicated - in fact, we are depending on the same words being misspelled in the same ways for the error correction techniques we will be using shortly. If you would like to streamline the list and remove multiples, you can bring the error list into OpenRefine and use *facets* to group repeated values together (see "[Strategies for OCR Error Correction in OpenRefine](or-strat.html)").
+
 In your initial data analysis, try to identify patterns within the errors:
 * is one character frequently the source of errors (such as "m" in the sample text)?
 * is one or a set of characters regularly substituted for another ("oim" for "oun" in the sample text)?
 * does an error often occur in relation to another character or characters (like "m" for "in" when following "f" or "tiy" for "tly" in the sample text)?
 * etc.
   
-Error words are likely to duplicated - in fact, we are depending on the same words being misspelled in the same ways for the error correction techniques we will be using shortly. If you would like to streamline the list and remove multiples, you can bring the error list into OpenRefine and use *facets* to group repeated values together (see "[Strategies for OCR Error Correction in OpenRefine](or-strat.html)").
-
 While it may be tempting to create a table containing the misspelled word and its corrected version for use with a find-and-replace technique, a manual approach will be unsustainable for all but the smallest of datasets. We will instead focus our efforts on misspelled groups of letters repeated across numerous words and not let perfect be the enemy of good.
 
 One exception to the above is any words that are particularly significant to your analysis; you can safely ignore misspellings of "the," "this," and other commonly used words but - to take an example from our Zwick dataset - you would probably want to correct "Mimicipal."
