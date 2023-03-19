@@ -25,7 +25,7 @@ Because applying OCR to a scanned document is outside of the scope of the lesson
 **Note that the document is under [Crown copyright](https://www.ontario.ca/page/copyright-information-c-queens-printer-ontario)** (i.e. © Queen’s Printer for Ontario,  1991); please do not reproduce the text outside of your personal use for the purposes of the lesson unless you have determined your use falls under an applicable copyright exception or is otherwise permitted.
 
 ## 2. Get the software
-We will be using [**OpenRefine**](https://www.openrefine.org/), an open-source spreadsheet-like software, for our post-OCR error correction in the lesson. Please download OpenRefine and use the instructions provided to guide you through installation.
+We will be using [**OpenRefine**](https://www.openrefine.org/), an open-source spreadsheet-like software, for our post-OCR error correction in the lesson. Please download OpenRefine and use the instructions provided to guide you through installation. OpenRefine will open in your default web browser using localhost (i.e. Internet access is not required to run OpenRefine).
 
    [Download OpenRefine](https://openrefine.org/download.html)
 
@@ -37,7 +37,7 @@ For the lesson as it is currently written, the software versions are as follows:
 
 **OpenRefine:** 3.5.2
 
-Please contact the [Sherman Centre](mailto:scds@mcmaster.ca) if you have any difficulties downloading or opening the software.
+Java must be installed on your system to run OpenRefine. Please contact the [Sherman Centre](mailto:scds@mcmaster.ca) if you have any difficulties downloading or opening the software; you can also consult the [troubleshooting guidance on the OpenRefine FAQ page](https://github.com/OpenRefine/OpenRefine/wiki/FAQ).
 
 ## 3. Assemble your own corpus (optional)
 In advance of the workshop, we also recommend that you assemble a collection of documents to work with for the *Try it with your data* sections. We will use the text collection, or corpus, provided above to practice the techniques demonstrated in the lesson but each dataset brings its own unique set of challenges. Even if you are not going through the lesson with a specific project in mind, having a different corpus to experiment with will help to reinforce the concepts and enrich your knowledge of the topic.
