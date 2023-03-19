@@ -97,6 +97,8 @@ Typing the "Run Macro" shortcut key (```F5```) again will run the Macro - you sh
 
 If you are using OpenOffice, you should be able to similarly [create a macro](https://wiki.openoffice.org/wiki/Documentation/OOoAuthors_User_Manual/Getting_Started/Creating_a_simple_macro) using the same code.
 
+Some workshop participants have reported issues with the macro stalling; you can refer to [a copy of the error list](assets/zwick-errors.txt) for the purposes of the workshop. The step of generating an error list is not essential for the steps that follow, but it is a big help in isolating and recognizing patterns in the errors.
+
 <hr />
 
 ### **1.4.** Review the OCR error list to inform the design of your pre-processing stage
