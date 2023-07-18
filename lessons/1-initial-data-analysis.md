@@ -9,8 +9,6 @@ has_toc: false
 {: .no_toc }
 # Lesson 1 - Initial Data Analysis
 
-TODO: small description
-
 <details markdown="block" class="toc">
   <summary>
     Table of Contents

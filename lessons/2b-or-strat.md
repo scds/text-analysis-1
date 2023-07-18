@@ -9,8 +9,6 @@ nav_order: 2
 {: .no_toc }
 # Lesson 2.2 - Correcting OCR Errors with OpenRefine: Strategies
 
-TODO: small description
-
 <details markdown="block" class="toc">
   <summary>
     Table of Contents
@@ -21,8 +19,8 @@ TODO: small description
 </details>
 
 ## Lesson Objectives
-TODO:
-* lesson obj
+* Explore the different find-and-replace tools OpenRefine has to offer
+* Use simple RegEx to replace words
 
 ## Lesson Video
 The following video demonstrates each of the steps outlined below in text.
@@ -128,4 +126,5 @@ By now, you can likely appreciate how the specific transformations we have made 
 With your own dataset, try out the strategies above to correct 5 to 10 error patterns in your corpus before moving on to the next step of the lesson wherein we will export our data from OpenRefine to a text format.
 
 ## Key Points / Summary
-- TODO
+* Using GREL is preferred over the "replace" command in OpenRefine
+* RegEx allows you to do more powerful and specific search queries

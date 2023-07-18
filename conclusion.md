@@ -10,7 +10,10 @@ nav_order: 9
 **Congratulations!** You've just finished this workshop.
 
 You should now be able to:
-* List everything out
+* Perform initial data analysis on OCR text output
+* Explain the importance of data provenance
+* Apply computational techniques to correct common OCR errors
+* Identify an appropriate data pre-processing approach
 
 
 # Additional Resources

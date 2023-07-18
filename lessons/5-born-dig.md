@@ -18,8 +18,7 @@ nav_order: 5
 </details>
 
 ## Lesson Objectives
-TODO:
-* lesson obj
+* Learn about other pre-processing features provided by OpenRefine
 
 ## Pre-Processing Born-Digital Texts
 
@@ -72,7 +71,6 @@ You can access clustering from the column menu: `Edit cells` > `Cluster and edit
 
 OpenRefine will present you with grouped sets of very similar cell contents. You can choose to merge them to normalize the values. You can also supply a new value in the "New Cell Value" column to the right of the cluster. The screenshot below shows slight misspellings of Twitter account names, which would affect the ability to get an accurate count of them.
 
-![](assets/img/borndig_cluster-2.png)
 <img src="../assets/img/borndig/borndig_cluster-2.png" width="100%" alt="" style="border: solid 2px black">
 
 In the screenshot, the levenshtein clustering method is used. You may want to experiment with other methods, such as the "metaphone3" phoentic algorithm (accessible from the keying function drop-down menu when "key collision" is set as the method) which groups cells together with words that sound alike. You can explore other methods in the [Clustering in Depth](https://openrefine.org/docs/technical-reference/clustering-in-depth) resource created by Owen Stephens. 
@@ -96,4 +94,5 @@ You can, however, further narrow down the number of clusters by using filters an
 If normalization, or standardizing the spelling of terms in your corpus, is important for your purposes, [John Little](https://www.johnlittle.info/) of Duke University Libraries has created [a helpful guide](https://libjohn.github.io/openrefine/hands-on-reconciliation.html) on using OpenRefine's reconciliation services to match to controlled vocabularies like the [Virtual International Authority File](https://viaf.org/) (VIAF), which includes links to further reconciliation resources developed by Oween Stephens.
 
 ## Key Points / Summary
-- TODO
+* There tend to be too many clusters in tokenized, post-OCR texts to make merging a viable strategy to correct errors for human-readable documents
+* 

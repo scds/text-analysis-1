@@ -8,8 +8,6 @@ nav_order: 3
 {: .no_toc }
 # Lesson 3 - Exporting Your Transformed Data
 
-TODO: small description
-
 <details markdown="block" class="toc">
   <summary>
     Table of Contents
@@ -20,8 +18,8 @@ TODO: small description
 </details>
 
 ## Lesson Objectives
-TODO:
-* lesson obj
+* Export data as a text file
+* Extract operation history as a JSON file 
 
 ## 3.1 - Reconstituting your document {#step1}
 
@@ -72,7 +70,8 @@ You may find the ability to run the steps again helpful if you are working parts
 You could also perform your OCR post-correction on the [error list you created in the initial data analysis stage](1-initial-data-analysis#step3) and then apply the program to full document without the need to tokenize it (note that some RegEx transformations could be affected, however).
 
 ## Key Points / Summary
-- TODO
+* Your text data output will not preserve its paragraph structure if you didn't make paragraph placeholders.
+* For the purposes of computational text analysis, the lack of paragraphs should not affect your work in most cases.
 
 ## Congratulations!
 

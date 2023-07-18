@@ -9,8 +9,6 @@ nav_order: 1
 {: .no_toc }
 # Lesson 2.1 - Correcting OCR Errors with OpenRefine: Preparing the Data
 
-TODO: small description
-
 <details markdown="block" class="toc">
   <summary>
     Table of Contents
@@ -21,8 +19,9 @@ TODO: small description
 </details>
 
 ## Lesson Objectives
-TODO:
-* lesson obj
+* Create an OpenRefine project and import your text
+* Perform initial data analysis through OpenRefine
+* Prepare the text data for OCR error correction
 
 ## Lesson Video
 
@@ -168,4 +167,6 @@ Such a broad search strategy can be narrowed by the use of facets, which we used
 By now, you should have a good sense of the OCR errors in your dataset. Our next step will be to use OpenRefine to correct them!
 
 ## Key Points / Summary
-- TODO
+* OpenRefine can only work with ~1,000,000 rows at once
+* Despite having done initial data analysis in Microsoft Word, you will often learn something new when doing it in OpenRefine too
+* Since OpenRefine works best with tabular data, it's important to tokenize your text
