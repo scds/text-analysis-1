@@ -95,4 +95,3 @@ If normalization, or standardizing the spelling of terms in your corpus, is impo
 
 ## Key Points / Summary
 * There tend to be too many clusters in tokenized, post-OCR texts to make merging a viable strategy to correct errors for human-readable documents
-* 
