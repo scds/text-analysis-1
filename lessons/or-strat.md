@@ -37,11 +37,11 @@ Try it out by going to the "Tokens" column menu, selecting `Text filter` and sea
 
 Include "Ontano" and "vanous" to omit the other results, which are not misspelled. From the "Tokens" column menu again, select `Edit cells` > `Replace` to open a dialog box. 
 
-<img src="../assets/img/strategy/strategy_replace-1.png" width="100%" alt="" style="border: solid 2px black">
+<img src="../assets/img/strategy/strategy_replace-1.png" width="100%" alt="an arrow pointing to the replace button in OpenRefine" style="border: solid 2px black">
 
 Type "no" in "Find: " and "rio" in "Replace: " - we use "no" instead of "n" because our actions would transform "Ontano" into "Oritario." 
 
-<img src="../assets/img/strategy/strategy_replace-2.png" width="100%" alt="" style="border: solid 2px black">
+<img src="../assets/img/strategy/strategy_replace-2.png" width="100%" alt="finding all occurences of 'no' and replacing it with 'rio' in the replace window" style="border: solid 2px black">
 
 If you notice that you have made an error, you can easily undo it by going to the "Undo / Redo" tab. Before working through your error list with "Replace," however, there is an alternative – and arguably better – approach. Read on...
 
@@ -52,13 +52,13 @@ Performing find-and-replace tasks with GREL, or General Refine Expression Langua
 
 To use GREL in OpenRefine, go to the "Tokens" column menu and select `Edit cells` > `Transform` to open the custom text transform box that gives us access to the GREL language. We will use the function `value.replace(a, b)` in the “Expression” box to apply a replace transformation, where *a* is what to replace and *b* is what to replace it with.
 
-<img src="../assets/img/strategy/strategy_transform.png" width="100%" alt="" style="border: solid 2px black">
+<img src="../assets/img/strategy/strategy_transform.png" width="100%" alt="an arrow pointing to the transform button" style="border: solid 2px black">
 
 As in our earlier replace actions, start by filtering rows to limit the extent of our transformations. Practice with “oim” - which we know has replaced “oun” in numerous words.
 
 In the custom text transform box, type `value.replace(“oim”, “oun”)` exactly - remember to include the quotations marks around the letters to indicate that we are working with text strings and not numbers or other data types. A preview will show you the results of your transformation. 
 
-<img src="../assets/img/strategy/strategy_grel.png" width="75%" alt="" style="border: solid 2px black">
+<img src="../assets/img/strategy/strategy_grel.png" width="75%" alt="using a function to replace all occurences of text and review the effects using GREL" style="border: solid 2px black">
 
 After you have applied the tranformation, OpenRefine will notify you that 15 rows have been changed and you should no longer have any rows visible (because they will no longer contain "oim"). You can either close the filter to remove it or clear its contents to return all rows.
 
@@ -73,11 +73,11 @@ Combined with GREL transformations, filters and facets, we can achieve a balance
 
 To get a sense of RegEx in OpenRefine, create a text filter with "mg" as the criteria to find words where "ing" has been misinterpreted by the OCR engine. Note that, in addition to the words we would like to change, there are a number of correctly spelled results (i.e. "mg/L").
 
-<img src="../assets/img/strategy/strategy_mg-filter.png" width="60%" alt="" style="border: solid 2px black">
+<img src="../assets/img/strategy/strategy_mg-filter.png" width="60%" alt="finding all occurences of mg and showcasing them. many 'mg/L' rows are shown" style="border: solid 2px black">
 
 To limit the scope to rows (words) that end in "mg" we can use the regular expression "$mg" as the filter criteria, ensuring that the "regular expression" box is checked. We can now proceed with our text transformation without affecting correctly spelled words.
 
-<img src="../assets/img/strategy/strategy_regex.png" width="100%" alt="" style="border: solid 2px black">
+<img src="../assets/img/strategy/strategy_regex.png" width="100%" alt="the regular expression checkbox is ticked, and the search bar uses a regular expression for search. no 'mg/L' rows are shown" style="border: solid 2px black">
 
 ### Quick RegEx Reference
 

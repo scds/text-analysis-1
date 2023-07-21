@@ -59,7 +59,7 @@ In MS Word, use the shortcut keys ```Alt``` + ```F11``` to open the Visual Basic
 
 Name your macro "GetSpellingErrors" and select "Normal" from "Macros In: " which will make your macro available outside of your current document for future use. Create the macro.
 
-<img src="../assets/img/initial-data-analysis/IDA-macro-create.png" width="75%" alt="">
+<img src="../assets/img/initial-data-analysis/IDA-macro-create.png" width="75%" alt="creating a normal macro named 'GetSpellingErrors'">
 
 Copy the macro code below - [created by Allan Wyatt](https://word.tips.net/T001465_Pulling_Out_Spelling_Errors.html) - and paste into the code area of macro, overwriting any existing text (by default, the editor will "Sub GetSpellingErrors()" and "End Sub" code). 
 
@@ -83,7 +83,7 @@ Sub GetSpellingErrors()
 End Sub
 ```
 
-<img src="../assets/img/initial-data-analysis/IDA-macro-final.png" width="75%" alt="">
+<img src="../assets/img/initial-data-analysis/IDA-macro-final.png" width="75%" alt="an image of the macro code given above">
 
 Typing the "Run Macro" shortcut key (```F5```) again will run the Macro - you should now have a second MS Word document open that contains the errors words only.
 

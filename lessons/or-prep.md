@@ -47,7 +47,7 @@ For example, longer words in newspapers and other justified typeset documents wi
 
 Once you have performed any additional (pre-)pre-processing steps outside of OpenRefine and re-uploaded your text file(s), rename the column with the contents of your text "Tokens" by visiting the column menu - which can be accessed through the small downward arrow to the left of the column - and selecting `Edit column` > `Rename`.
 
-<img src="../assets/img/or-prep/prep_rename-column.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_rename-column.png" width="100%" alt="renaming a column in OpenRefine" style="border: solid 2px black">
 
 ### Optional: Create paragraph placeholders
 
@@ -59,15 +59,15 @@ Provided you left "Store blank rows" checked when importing the document, each b
 
 Create a facet - or grouping of rows with the same contents - that contains all of the null rows by going back to the dropdown menu, `Facet` > `Customized facets` > `Facet by null`. 
 
-<img src="../assets/img/or-prep/prep_facet-by-null.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_facet-by-null.png" width="100%" alt="creating a null facet" style="border: solid 2px black">
 
 Filter the rows to show null values only by selecting "Include" from the facet menu next to "True" (i.e. those rows that contain null values). With the null values isolated, we can now perform a replace action to fill each blank row with a placeholder character.
 
-<img src="../assets/img/or-prep/prep_facet-include-true.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_facet-include-true.png" width="100%" alt="including all null rows" style="border: solid 2px black">
 
 Hover over any of the rows and you will notice that an "Edit" message appears, allowing you to edit individual cells. In the cell that you edit, enter a placeholder character and select the "Apply to All Identical Cells" (`ctrl` / `cmd` + `enter`) option to transform all null rows.
 
-<img src="../assets/img/or-prep/prep_edit-null-cell.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_edit-null-cell.png" width="100%" alt="editing a cell" style="border: solid 2px black">
 
 Choose a placeholder character that does not exist anywhere else in the text, as you will be performing a find-and-replace action later to substitute a line break for the placeholder. We recommend using the HTML tag for paragraph, or `<p></p>`, which will preserve the paragraph structure without any additional actions if the text is output to HTML. Copy the code exactly as it is below, and paste in the cell you are editing:
 
@@ -79,11 +79,11 @@ Choose a placeholder character that does not exist anywhere else in the text, as
 
 (The order of the markup tags is reversed so that each blank row closes the previous paragraph tag and opens a new one around the content that follows.)
 
-<img src="../assets/img/or-prep/prep_p-tag.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_p-tag.png" width="100%" alt="replacing null row with paragraph placeholder" style="border: solid 2px black">
 
 Once the null rows have been transformed, they should no longer be visible as their value are no longer null. Remove the facet by closing it, and all rows will return. As we tokenize the data in the next step, the placeholders will be treated as another token and preserved for later use to restored the paragraph structure of the text.
 
-<img src="../assets/img/or-prep/prep_p-in-situ.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_p-in-situ.png" width="100%" alt="screenshot of paragraph placeholders in the text" style="border: solid 2px black">
 
 If you change your mind about the placeholder character or otherwise notice that you have made an error, you can easily undo it by going to the "Undo / Redo" tab in the left-side pane of the interface. You will notice that a full history of all of the steps you have performed is preserved there, which we will return to in "[Extracting the pre-processing steps from OpenRefine](output#step2)."
 
@@ -93,17 +93,17 @@ Tokenization - in the context of computational text analysis - is the dividing o
 
  From the column menu of the "Tokens" column, select `Edit cells` > `Split multi-valued cells...`.
 
-<img src="../assets/img/or-prep/prep_split.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_split.png" width="100%" alt="splitting rows with multiple words" style="border: solid 2px black">
 
 By default, the recommended separator character will be a comma (i.e. for comma-separated value, or CSV, files) - delete the comma and hit the space bar once to specify the space character as the separator. We are indicating to OpenRefine to split each cell every time it encounters a space in the text. Although we can think of cases in which a space does not indicate a new word, they will not matter for the purposes of OCR error correction. We will be putting the text back together again with the spaces restored when we have finished with error correction.  
 
-<img src="../assets/img/or-prep/prep_tokenize.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_tokenize.png" width="100%" alt="using a space delimiter" style="border: solid 2px black">
 
 For now, we will leave in punctuation. Computational text analysis tools will typically remove the punctuation for us, and we may want the punctuation to remain if we are exporting a copy. Bear in mind that OpenRefine will view "bananas" and "bananas!" as two distinct entities, however.
 
 After performing the split transformation, you should have many more rows as each word is now on its own line. You will also likely have a large number of blank rows again, however.
 
-<img src="../assets/img/or-prep/prep_tokenize-post.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_tokenize-post.png" width="100%" alt="screenshot of tokenized rows" style="border: solid 2px black">
 
 ## 2.4. Remove blank rows (and whitespaces, if applicable) {#step4}
 
@@ -111,25 +111,25 @@ Blank rows are not relevant to our error correction tasks in OpenRefine and, as 
 
 **To remove blank rows**, go to `Edit cells` > `Facet` > `Customized facets` > `Facet by blank (null or empty string)` in the column menu for "Tokens"; if you created paragraph placeholders in the previous step, you will be familiar with facets. 
 
-<img src="../assets/img/or-prep/prep_facet-by-blank.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_facet-by-blank.png" width="100%" alt="creating a null facet" style="border: solid 2px black">
 
 From the facet - or grouping of rows with the same contents - that is created, include “True” which temporarily exclude any cells that are not blank. 
 
-<img src="../assets/img/or-prep/prep_include-blank.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_include-blank.png" width="100%" alt="including all null or blank rows" style="border: solid 2px black">
 
 Star any one of the rows that remain (they will all be blank cells).
 
-<img src="../assets/img/or-prep/prep_star-row.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_star-row.png" width="100%" alt="adding a star to one of the blank rows" style="border: solid 2px black">
 
 Next, instead of the "Tokens" column, we will use the menu in the "All" column to the left of it: `Edit rows` > `Remove matching rows`. All matching rows - that is, all blank rows - will be removed and the "True" facet will now contain zero results. Close the facet to remove it.
 
-<img src="../assets/img/or-prep/prep_remove-matching.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_remove-matching.png" width="100%" alt="removing all blank rows" style="border: solid 2px black">
 
 Much like punctuation, whitespaces in front of or behind a word will prevent it from being grouped with other instances of the same word in OpenRefine. We can easily remove them using the "Remove leading and trailing whitespaces" function.
 
 **To remove whitespaces**, open the "Tokens" column menu from the previous step and select `Edit cells` > `Commons transforms` > `Trim leading and trailing whitespace`. Once you have done so, OpenRefine will report how many cells were transformed.
 
-<img src="../assets/img/or-prep/prep_trim.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_trim.png" width="100%" alt="removing trailing and leading whitespaces" style="border: solid 2px black">
 
 Because we have used spaces as the separator between rows, no rows are likely to be affected by removing leading and trailing whitespaces. It is nonetheless good practice to ensure that we are indeed comparing like with like, and you may find the feature useful with other datasets.
 
@@ -139,15 +139,15 @@ Once more with feeling! Now that we can perform operations at the level of the w
 
 **Text filters** can be accessed from the "Tokens" column menu, which will help us to isolate results based on our earlier observations with the error list.
 
-<img src="../assets/img/or-prep/prep_text-filter.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_text-filter.png" width="100%" alt="using the OpenRefine text filter" style="border: solid 2px black">
 
 For example, many errors in the Zwick.txt document involved the letter "m" so you could filter result by *m* (with "case-sensitive" checked).
 
-<img src="../assets/img/or-prep/prep_m-filter.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_m-filter.png" width="100%" alt="filtering all rows that have the letter m" style="border: solid 2px black">
 
 Such a broad search strategy can be narrowed by the use of facets, which we used previously when removing blank rows. Here we will use the `Word facet` (under `Customized facets`) or `Text facet` to group identical words together, shortening our list significantly.
 
-<img src="../assets/img/or-prep/prep_word-facet.png" width="100%" alt="screenshot of OpenRefine import page" style="border: solid 2px black">
+<img src="../assets/img/or-prep/prep_word-facet.png" width="100%" alt="creating a word facet" style="border: solid 2px black">
 
 By now, you should have a good sense of the OCR errors in your dataset. Our next step will be to use OpenRefine to correct them!
 

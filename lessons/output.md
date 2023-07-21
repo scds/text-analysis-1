@@ -20,7 +20,7 @@ Once finished, you will need to export your data for use outside of OpenRefine. 
 
 Before exporting the data, remove any active filters or facets - the current number of rows is what will be exported. The `Export` menu is found at the top right of the screen; from it, select `Custom tabular exporter...` which will open up a dialog box with export options. 
 
-<img src="../assets/img/output/output_custom-export.png" width="70%" alt="" style="border: solid 2px black">
+<img src="../assets/img/output/output_custom-export.png" width="70%" alt="arrows pointing to the 'Custom tabular exporter' button" style="border: solid 2px black">
 
 Select the "Download" tab and:
 
@@ -28,30 +28,30 @@ Select the "Download" tab and:
 2. Next to "Line separator," delete the field contents and hit the spacebar once
 3. Download the file
 
-<img src="../assets/img/output/output_download.png" width="100%" alt="" style="border: solid 2px black">
+<img src="../assets/img/output/output_download.png" width="100%" alt="using a custom seperator of a space to split apart words" style="border: solid 2px black">
 
 The output will be a text file (.txt extension). If you did not put in a placeholder to maintain the paragraph structure, the text will be formatted as one long block. For the purposes of computational text analysis, the lack of paragraphs should not affect your work in most cases.
 
-<img src="../assets/img/output/output_text.png" width="100%" alt="" style="border: solid 2px black">
+<img src="../assets/img/output/output_text.png" width="100%" alt="image of text output without paragraphs" style="border: solid 2px black">
 
 If the paragraph structure of the document does matter for your purposes and you used paragraph placeholders as described in "[Optional: Create paragraph placeholders](or-prep#optional-create-paragraph-placeholders)," you can now do a find-and-replace of the placeholder with a newline character in a text editor. Alternatively, if you used paragraph or `<p>` HTML tags, you can simply change the file extension to .html and the paragraph structure will be present when you open the document in a web browser.
 
-<img src="../assets/img/output/output_html.png" width="100%" alt="" style="border: solid 2px black">
+<img src="../assets/img/output/output_html.png" width="100%" alt="image of text output with paragraphs after using paragraph placeholders" style="border: solid 2px black">
 
 ## 4.2 - Extracting the pre-processing steps from OpenRefine {#step2}
 <iframe id="kmsembed-1_1aa1yvgs" width="100%" height="416" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_1aa1yvgs/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 One of the best features in OpenRefine for OCR error correction is the history it keeps of your actions in the "Undo / Redo" tab on the left-side pane (where filters and facets are displayed). Not only is OpenRefine's documentation of your data transformations critical for data provenance, you can also create a program from them that you can run again and again.
 
-<img src="../assets/img/output/output_undo.png" width="50%" alt="" style="border: solid 2px black">
+<img src="../assets/img/output/output_undo.png" width="50%" alt="an arrow pointing to the extract button for change history" style="border: solid 2px black">
 
 From the "Undo / Redo" tab, select `Extract...` to open a dialog box with all of the actions you performed rendered in JSON format. You can copy the text to a new document for data provenance purposes. If you wish to run the program again, you can deselect steps that you will not need to repeat before copying the text.
 
-<img src="../assets/img/output/output_extract.png" width="100%" alt="" style="border: solid 2px black">
+<img src="../assets/img/output/output_extract.png" width="100%" alt="extract operation history window, selecting which operations to export" style="border: solid 2px black">
 
 To run the program of steps you previously performed in OpenRefine again, use the `Apply...` button next to `Extract` and paste the JSON data to the "Apply Operation History" dialog box.
 
-<img src="../assets/img/output/output_apply.png" width="100%" alt="" style="border: solid 2px black">
+<img src="../assets/img/output/output_apply.png" width="100%" alt="apply operation history window, allowing you to repeat operations from a JSON file" style="border: solid 2px black">
 
 You may find the ability to run the steps again helpful if you are working parts of a long document or the OCR errors are similar from one document to another. 
 
