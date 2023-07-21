@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Extra 3 - Behind the Interface
-parent: Lessons
+title: Behind the Interface
 nav_order: 6
 ---
 

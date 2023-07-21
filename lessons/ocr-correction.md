@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Lesson 2 - Correcting OCR Errors with OpenRefine
+title: Correcting OCR Errors with OpenRefine
 parent: Lessons
 has_children: true
 nav_order: 2
 has_toc: false
 ---
 
-# Lesson 2 - Correcting OCR Errors with OpenRefine
+# Correcting OCR Errors with OpenRefine
 
 Correcting OCR Errors is usually the largest task of the data pre-processing stage when working with scanned documents that have had optical character recognition performed on them.
 
@@ -27,7 +27,7 @@ OpenRefine is not a purpose-built tool for correcting OCR errors, but it can be 
 
 The techniques demonstrated in the current lesson work best with high quality scans of typewritten documents, such as reports, typed correspondence, book pages, journal articles and so on. Documents with relatively few, consistently-occurring errors after OCR is performed. 
 
-You may also wish to use OpenRefine if you are already familiar with it and / or new to writing code. If you are comfortable working in Python or willing to learn, you might find the "[OCR Error Correction with Python](4-advanced-correction.html)" tutorial more suitable for your needs. 
+You may also wish to use OpenRefine if you are already familiar with it and / or new to writing code. If you are comfortable working in Python or willing to learn, you might find the "[OCR Error Correction with Python](advanced-correction.html)" tutorial more suitable for your needs. 
 
 You may also have to use Python if you are working with handwritten documents or other texts with many unique errors following OCR. From the IDA stage, you should have a sense of whether to a programmatic approach is more appropriate.
 

@@ -1,46 +1,32 @@
 ---
 layout: default
-title: Lesson 2.2 - Strategies for OCR Error Correction in OpenRefine
-parent: Lesson 2 - Correcting OCR Errors with OpenRefine
+title: Strategies for OCR Error Correction in OpenRefine
+parent: Correcting OCR Errors with OpenRefine
 grand_parent: Lessons
 nav_order: 2
 ---
 
 {: .no_toc }
-# Lesson 2.2 - Correcting OCR Errors with OpenRefine: Strategies
-
-<details markdown="block" class="toc">
-  <summary>
-    Table of Contents
-  </summary>
-  {: .text-delta }
-- TOC
-{:toc}
-</details>
-
-## Lesson Objectives
-* Explore the different find-and-replace tools OpenRefine has to offer
-* Use simple RegEx to replace words
+# 3. Strategies for OCR Error Correction in OpenRefine
 
 ## Lesson Video
 The following video demonstrates each of the steps outlined below in text.
 <iframe id="kmsembed-1_xo1h3x4i" width="100%" height="416" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_xo1h3x4i/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
-In the next part of the lesson, we will explore several strategies you can use in OpenRefine to correct errors produced through optical character recognition more efficiently than replacing individual words. Together, they form the basis for a unique error correction program that OpenRefine helps you to write - as we will learn in [Exporting your Data](3-output.html). 
+In the next part of the lesson, we will explore several strategies you can use in OpenRefine to correct errors produced through optical character recognition more efficiently than replacing individual words. Together, they form the basis for a unique error correction program that OpenRefine helps you to write - as we will learn in [Exporting your Data](output.html). 
 
 Though still a manual process of creating find-and-replace commands, the corrections you make are likely to be (far) more accurate than a machine learning approach (for the time being).
 
-<hr />
+<div markdown="1" style="border: 1px solid #7a003c; border-radius: 6px; margin-bottom: 1em; padding: 0.5em 1em 0; margin-top: 1em;" class="toc">
+<summary style="cursor:default; display: block; border-bottom: 1px solid #302d36; margin-bottom: 0.5em">
+  Jump to step >
+</summary>
+- [3.1. Find-and-replace with text filters](#step1)
+- [3.2. Find-and-replace with GREL (Google / General Refine Expression Language)](#step2)
+- [3.3. Find-and-replace with regular expressions (RegEx)](#step3)
+</div>
 
-Jump to step >
-
-- [2.2.1 - Find-and-replace with text filters](#step1)
-- [2.2.2 - Find-and-replace with GREL (Google / General Refine Expression Language)](#step2)
-- [2.2.3 - Find-and-replace with regular expressions (RegEx)](#step3)
-
-<hr />
-
-## 2.2.1 - Find-and-replace with text filters {#step1}
+## 3.1. Find-and-replace with text filters {#step1}
 <iframe id="kmsembed-1_8f8gstrm" width="100%" height="416" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_8f8gstrm/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 Find-and-replace is at the heart of the other OCR error correction strategies discussed in the lesson. While find-and-replace commands can automate error correction to some extent, it can also lead to the introduction of new errors if not applied precisely. Text filters in OpenRefine allow us to apply find-and-replace transformations in a targeted manner. 
@@ -57,10 +43,9 @@ Type "no" in "Find: " and "rio" in "Replace: " - we use "no" instead of "n" beca
 
 <img src="../assets/img/strategy/strategy_replace-2.png" width="100%" alt="" style="border: solid 2px black">
 
-Before working through your error list with "Replace," however, there is an alternative - and arguably better - approach. If you notice that you have made an error, you can easily undo it by going to the "Undo / Redo" tab 
-Read on...
+If you notice that you have made an error, you can easily undo it by going to the "Undo / Redo" tab. Before working through your error list with "Replace," however, there is an alternative – and arguably better – approach. Read on...
 
-## 2.2.2 - Find-and-replace with GREL (Google / General Refine Expression Language) {#step2}
+## 3.2. Find-and-replace with GREL (Google / General Refine Expression Language) {#step2}
 <iframe id="kmsembed-1_4df746o0" width="100%" height="416" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_4df746o0/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 Performing find-and-replace tasks with GREL, or General Refine Expression Language, allows us to use variables and create formulas - we can correct more errors at once while at the same time not being overly broad in the scope of our transformations. Going the GREL route is a preferred strategy to the “replace” command in OpenRefine because you can preview your changes before you apply them.
@@ -79,7 +64,7 @@ After you have applied the tranformation, OpenRefine will notify you that 15 row
 
 There are other functions that might be useful to your OCR error correction efforts if you would like to read over the [reference for GREL](https://docs.openrefine.org/manual/grelfunctions) in greater depth.
 
-## 2.2.3 - Find-and-replace with regular expressions (RegEx) {#step3}
+## 3.3. Find-and-replace with regular expressions (RegEx) {#step3}
 <iframe id="kmsembed-1_eb68oxh5" width="100%" height="416" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_eb68oxh5/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 We can build on our find-and-replace toolkit by incorporating regular expressions, or RegEx, which offer a way to search for more generalized patterns when we may not know or be able to articulate specifics. For example, performing a search that all results ending in “mg” regardless of what comes before. 

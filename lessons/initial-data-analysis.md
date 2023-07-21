@@ -1,30 +1,12 @@
 ---
 layout: default
-title: Lesson 1 - Initial Data Analysis
+title: Initial Data Analysis with MS Word
 parent: Lessons
 nav_order: 1
 has_toc: false
 ---
 
-{: .no_toc }
-# Lesson 1 - Initial Data Analysis
-
-<details markdown="block" class="toc">
-  <summary>
-    Table of Contents
-  </summary>
-  {: .text-delta }
-- TOC
-{:toc}
-</details>
-
-## Lesson Objectives
-* Understand what initial data analysis is
-* Use the spell-check function in Microsoft Word to perform IDA  
-* Use a macro to export an OCR error list
-* Review the OCR error list
-
-## Initial Data Analysis
+# 1. Initial Data Analysis with MS Word
 
 Initial data analysis (IDA) is performed early in the textual analysis workflow in order to better understand the reliability and completeness of the data. It may be done with a number of tools, such as text editors and visualization software like [Voyant](https://voyant-tools.org/). In the lesson that follows, we will use Microsoft Word to perform initial data analysis given its available functionality and ubiquity; [Apache OpenOffice](https://www.openoffice.org/download/index.html) is an open-source alternative if you do not have access to MS Word.
 
@@ -42,22 +24,20 @@ The following steps use the spell-check function within Microsoft Word and a mac
 
 ## Performing Initial Data Analysis (IDA) with Microsoft Word
 
-TODO: switch to Echo360?
-
 The following video demonstrates each of the steps outlined below in text.
 <iframe id="kmsembed-1_idpfm6as" width="100%" height="416" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_idpfm6as/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
-<hr />
+<div markdown="1" style="border: 1px solid #7a003c; border-radius: 6px; margin-bottom: 1em; padding: 0.5em 1em 0; margin-top: 1em;" class="toc">
+<summary style="cursor:default; display: block; border-bottom: 1px solid #302d36; margin-bottom: 0.5em">
+  Jump to step >
+</summary>
+- [1.1. Remove extraneous text](#step1)
+- [1.2. Run spellcheck in MS Word](#step2)
+- [1.3. Create a macro to export an OCR error list](#step3)
+- [1.4. Review the OCR error list to inform the design of your pre-processing stage](#step4)
+</div>
 
-Jump to step >
-* [1.1 - Remove extraneous text](#step1)
-* [1.2 - Run spellcheck in MS Word](#step2)
-* [1.3 - Create a macro to export an OCR error list](#step3)
-* [1.4 - Review the OCR error list to inform the design of your pre-processing stage](#step4)
-
-<hr />
-
-### 1.1 - Remove extraneous text {#step1}
+### 1.1. Remove extraneous text {#step1}
 
 Working with [sample corpus A](../preparation#1-get-the-data-sample-corpus-a), Zwick.txt, open the .txt file in MS Word. 
 
@@ -65,13 +45,13 @@ Before any other step, we may first want to delete the preamble at the beginning
 
 Consider doing the same with any other dataset you plan to analyze: remove blocks of extraneous text in the IDA stage. 
 
-### 1.2 - Run spellcheck in MS Word {#step2}
+### 1.2. Run spellcheck in MS Word {#step2}
 
 We are using Word because it will highlight errors for us and we can export a list of misspelled words from it using a macro. The software, however, may not recognize errors automatically when working with a .txt file; if you are running MS Word on either a Windows or Mac operating system, refer to the [Microsoft documentation](https://support.microsoft.com/en-us/office/check-spelling-and-grammar-in-office-5cdeced7-d81d-47de-9096-efd0ee909227). 
 
 Once you have made spelling errors visible in your document, take a bit of time to review them - they are now easy to find! Although we are about to export a list of misspelled words, it is helpful to see the errors in context as it can at times be difficult to infer the correct spelling of the error without knowing how they are being used.
 
-### 1.3 - Create a macro to export an OCR error list {#step3}
+### 1.3. Create a macro to export an OCR error list {#step3}
 
 Although seeing the errors in context is helpful, it is of course also useful to isolate the errors. We can create a list of OCR errors using a macro in MS Word.
 
@@ -111,7 +91,7 @@ If you are using OpenOffice, you should be able to similarly [create a macro](ht
 
 Some workshop participants have reported issues with the macro stalling; you can refer to [a copy of the error list](../data/zwick-errors.txt) for the purposes of the workshop. The step of generating an error list is not essential for the steps that follow, but it is a big help in isolating and recognizing patterns in the errors.
 
-### 1.4 - Review the OCR error list to inform the design of your pre-processing stage {#step4}
+### 1.4. Review the OCR error list to inform the design of your pre-processing stage {#step4}
 
 Now that you have the errors separated out from the text, review your data closely. You can toggle back and forth between the error list and the full document, Zwick.txt, or the [source document](https://archive.org/details/zwicksislandland00ontauoft/page/12/mode/2up) if the correct spelling of some misspelled words is difficult to guess. You may also wish to employ a text analysis tool like [Voyant Tools](https://voyant-tools.org/).
 
@@ -121,7 +101,7 @@ You will notice that most of the OCR errors fall under one or a combination of t
 * extra characters
 * split words (two words that are meant to be one, or where one of the characters has been misinterpreted as a space)
 
-Error words are likely to duplicated - in fact, we are depending on the same words being misspelled in the same ways for the error correction techniques we will be using shortly. If you would like to streamline the list and remove multiples, you can bring the error list into OpenRefine and use *facets* to group repeated values together (see "[Strategies for OCR Error Correction in OpenRefine](2b-or-strat.html)").
+Error words are likely to duplicated - in fact, we are depending on the same words being misspelled in the same ways for the error correction techniques we will be using shortly. If you would like to streamline the list and remove multiples, you can bring the error list into OpenRefine and use *facets* to group repeated values together (see "[Strategies for OCR Error Correction in OpenRefine](or-strat.html)").
 
 In your initial data analysis, try to identify patterns within the errors:
 * is one character frequently the source of errors (such as "m" in the sample text)?

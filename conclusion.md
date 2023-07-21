@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Conclusion & Additional Resources
-nav_order: 9
+nav_order: 7
 ---
 
 # Congratulations

@@ -1,27 +1,15 @@
 ---
 layout: default
-title: Lesson 3 - Exporting Your Data
-parent: Lessons
+title: Exporting Your Data
+parent: Correcting OCR Errors with OpenRefine
+grand_parent: Lessons
 nav_order: 3
 ---
 
 {: .no_toc }
-# Lesson 3 - Exporting Your Transformed Data
+# 4. Exporting Your Transformed Data
 
-<details markdown="block" class="toc">
-  <summary>
-    Table of Contents
-  </summary>
-  {: .text-delta }
-- TOC
-{:toc}
-</details>
-
-## Lesson Objectives
-* Export data as a text file
-* Extract operation history as a JSON file 
-
-## 3.1 - Reconstituting your document {#step1}
+## 4.1 - Reconstituting your document {#step1}
 
 The following video demonstrates each of the steps outlined below in text.
 <iframe id="kmsembed-1_ynl6f1t7" width="100%" height="416" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_ynl6f1t7/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
@@ -46,11 +34,11 @@ The output will be a text file (.txt extension). If you did not put in a placeho
 
 <img src="../assets/img/output/output_text.png" width="100%" alt="" style="border: solid 2px black">
 
-If the paragraph structure of the document does matter for your purposes and you used paragraph placeholders as described in "[Optional: Create paragraph placeholders](2a-or-prep#optional-create-paragraph-placeholders)," you can now do a find-and-replace of the placeholder with a newline character in a text editor. Alternatively, if you used paragraph or `<p>` HTML tags, you can simply change the file extension to .html and the paragraph structure will be present when you open the document in a web browser.
+If the paragraph structure of the document does matter for your purposes and you used paragraph placeholders as described in "[Optional: Create paragraph placeholders](or-prep#optional-create-paragraph-placeholders)," you can now do a find-and-replace of the placeholder with a newline character in a text editor. Alternatively, if you used paragraph or `<p>` HTML tags, you can simply change the file extension to .html and the paragraph structure will be present when you open the document in a web browser.
 
 <img src="../assets/img/output/output_html.png" width="100%" alt="" style="border: solid 2px black">
 
-## 3.2 - Extracting the pre-processing steps from OpenRefine {#step2}
+## 4.2 - Extracting the pre-processing steps from OpenRefine {#step2}
 <iframe id="kmsembed-1_1aa1yvgs" width="100%" height="416" src="https://www.macvideo.ca/embed/secure/iframe/entryId/1_1aa1yvgs/uiConfId/39241881" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 One of the best features in OpenRefine for OCR error correction is the history it keeps of your actions in the "Undo / Redo" tab on the left-side pane (where filters and facets are displayed). Not only is OpenRefine's documentation of your data transformations critical for data provenance, you can also create a program from them that you can run again and again.
@@ -67,7 +55,7 @@ To run the program of steps you previously performed in OpenRefine again, use th
 
 You may find the ability to run the steps again helpful if you are working parts of a long document or the OCR errors are similar from one document to another. 
 
-You could also perform your OCR post-correction on the [error list you created in the initial data analysis stage](1-initial-data-analysis#step3) and then apply the program to full document without the need to tokenize it (note that some RegEx transformations could be affected, however).
+You could also perform your OCR post-correction on the [error list you created in the initial data analysis stage](initial-data-analysis#step3) and then apply the program to full document without the need to tokenize it (note that some RegEx transformations could be affected, however).
 
 ## Key Points / Summary
 * Your text data output will not preserve its paragraph structure if you didn't make paragraph placeholders.

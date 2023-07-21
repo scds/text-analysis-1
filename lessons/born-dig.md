@@ -1,26 +1,12 @@
 ---
 layout: default
-title: Extra 2 - Pre-Processing Born-Digital Texts
+title: Pre-Processing Born-Digital Texts (Optional)
 parent: Lessons
 nav_order: 5
 ---
 
 {: .no_toc}
 # Pre-Processing Born-Digital Texts
-
-<details markdown="block" class="toc">
-  <summary>
-    Table of Contents
-  </summary>
-  {: .text-delta }
-- TOC
-{:toc}
-</details>
-
-## Lesson Objectives
-* Learn about other pre-processing features provided by OpenRefine
-
-## Pre-Processing Born-Digital Texts
 
 Not all pre-processing of text data involves correcting OCR errors: working with text created in a digital format presents an entirely different set of challenges.
 

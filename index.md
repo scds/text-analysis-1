@@ -9,7 +9,6 @@ has_children: false
 ---
 
 <img src="assets/img/titleSlide.png" alt="Workshop Title Slide" width="100%">
-TODO: DMDS cover image
 
 # Pre-Processing Digitized Texts
 
@@ -21,7 +20,6 @@ In this workshop, we’ll use several approaches to correcting errors in the OCR
 
 ## Prerequisites
 * Basic computer literacy (creating and working with different file types, navigating interfaces, using shortcut keys and so on)
-* An installation of OpenRefine (this will be covered in the [Preparation](preparation) page)
 
 ## Learning Objectives
 By the end of this workshop, you will be able to:
