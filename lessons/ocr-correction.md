@@ -1,8 +1,10 @@
 ---
 layout: default
 title: Correcting OCR Errors with OpenRefine
-parent: Lesson
-nav_order: 4
+parent: Lessons
+has_children: true
+nav_order: 2
+has_toc: false
 ---
 
 # Correcting OCR Errors with OpenRefine
@@ -31,7 +33,7 @@ You may also have to use Python if you are working with handwritten documents or
 
 ## Using OpenRefine to correct OCR errors
 
-The following lesson will be demonstrated with [sample corpus A](preparation.html), which you may wish to use initially to become familiar with the workflow tasks. Then, reinforce and build upon your learning by replicating the steps you completed in the videos using your own data.
+The following lesson will be demonstrated with [sample corpus A](../preparation#1-get-the-data-sample-corpus-a), which you may wish to use initially to become familiar with the workflow tasks. Then, reinforce and build upon your learning by replicating the steps you completed in the videos using your own data.
 
 You will probably be working with a subset of your entire corpus to start with, unless your corpus is already relatively small - and a subset that is hopefully representative of the larger whole. When working with your own data, you will find that it has idiosyncratic features which require you to design your own workflow or improvise other error correction strategies not discussed in the lesson. Computational text analysis is definitely a skill you learn by doing, and working with numerous distinct corpora will help to enrich your understanding of it.
 
@@ -43,6 +45,3 @@ Using OpenRefine to correct OCR errors involves:
 3. Correcting individual words using a variety of find-and-replace strategies
 4. "Reconstituting" the words into a text file that can be used for computation analysis or another purpose
 
-<br />
-
-Next -> [Correcting OCR Errors with OpenRefine: Preparing the Data](or-prep.html)

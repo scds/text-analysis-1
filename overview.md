@@ -1,12 +1,10 @@
 ---
 layout: default
-title: An Overview of the Textual Data Analysis Workflow
-parent: Lesson
-nav_order: 1
+title: Overview
+nav_order: 3
 ---
 
 # An Overview of the Textual Data Analysis Workflow
-<br />
 
 When performing textual analysis through computational means, we are working with texts as data. Texts, in their unstructured form - and especially if they have been digitized as an image from a physical source - can only be operated upon by a computer in limited ways. Datafied, or transformed into data that is amenable to the tasks and operations we can perform with a computer, allows for new approaches to understanding texts. 
 
@@ -16,23 +14,25 @@ We will become more familiar with what is involved in transforming texts into da
 
 The textual data analysis workflow below describes the stages of taking textual data from its source - be it a scanned document or born-digital data retrieved from an application programming interface (API) - to an output from a computational process. It is a simiplified overview; each stage can be articulated as a series of tasks that will vary depending on the project.
 
-![Graphic depicting high-level computational text analysis workflow; from left: Acquire, Initial Data Analysis, Pre-Processing, Exploratory Data Analysis, Share](assets/img/overview-workflow-pad.svg)
+<img src="assets/img/overview/overview-workflow-pad.svg" width="100%" alt="Graphic depicting high-level computational text analysis workflow; from left: Acquire, Initial Data Analysis, Pre-Processing, Exploratory Data Analysis, Share">
 
 
->Acquisition (Input): the text corpus is assembled in a datafied form that can be operated upon computationally. This may involve running optical character recognition (OCR) on scanned physical texts or downloading from an API.
+Acquisition (Input)
+: The text corpus is assembled in a datafied form that can be operated upon computationally. This may involve running optical character recognition (OCR) on scanned physical texts or downloading from an API.
 
->Initial data analysis (IDA): in the initial data analysis stage, we are attending to potential errors in the data for the most part; that is, to identify features of the data that may impact how we work with it and to inform the steps of the pre-processing stage. Numerous tools exist to support IDA, depending on the type of data you are working with and the kinds of errors you are trying to find. In the IDA step of the current lesson, we use a ubiquitous word processing software to perform IDA (with a little help from a macro). 
+Initial data analysis (IDA)
+: In the initial data analysis stage, we are attending to potential errors in the data for the most part; that is, to identify features of the data that may impact how we work with it and to inform the steps of the pre-processing stage. Numerous tools exist to support IDA, depending on the type of data you are working with and the kinds of errors you are trying to find. In the IDA step of the current lesson, we use a ubiquitous word processing software to perform IDA (with a little help from a macro). 
 
->Pre-processing: the pre-processing stage readies the data for exploratory data analysis by correcting errors or otherwise preparing the data for use with EDA tools. With digitized (scanned) physical documents, pre-processing is typically focused on correcting errors made during OCR. With born-digital texts - such as tweets scraped from Twitter's API - pre-processing may involve converting HTML entities to human-readable symbols or changing the text encoding. Take care in the pre-processing stage not to introduce *new* errors into the data, of course!
+Pre-processing
+: The pre-processing stage readies the data for exploratory data analysis by correcting errors or otherwise preparing the data for use with EDA tools. With digitized (scanned) physical documents, pre-processing is typically focused on correcting errors made during OCR. With born-digital texts - such as tweets scraped from Twitter's API - pre-processing may involve converting HTML entities to human-readable symbols or changing the text encoding. Take care in the pre-processing stage not to introduce *new* errors into the data, of course!
 
->Exporatory data analysis (EDA): in the second round of data analysis, we try to make sense of the data. Exploratory data analysis allows you to test inferences, highlights important features of the data and helps to refine your research question. It is also possible to surface new errors in the data through, which can take you back to the pre-processing stage. You may find yourself looping between the EDA and pre-processing stages a few times as you get more and more acquainted with your dataset.
+Exporatory data analysis (EDA)
+: In the second round of data analysis, we try to make sense of the data. Exploratory data analysis allows you to test inferences, highlights important features of the data and helps to refine your research question. It is also possible to surface new errors in the data through, which can take you back to the pre-processing stage. You may find yourself looping between the EDA and pre-processing stages a few times as you get more and more acquainted with your dataset.
 
->Share (Output): once you have analyzed to the data in the EDA stage, the next stage is to communicating your findings. The output can take the form of a processed dataset, visualization, interactive website and so on. 
+Share (Output)
+: Once you have analyzed to the data in the EDA stage, the next stage is to communicating your findings. The output can take the form of a processed dataset, visualization, interactive website and so on. 
 
 In the current lesson, we will focus on the second and third stages – initial data analysis and pre-processing - to prepare the text for EDA, which will be the focus of the lessons that follow. Pre-processing is unglamorous work, but critically important to ensuring that your EDA stage is not ridden with noisy errors. Pre-processing is also time-consuming relative to the rest of the workflow - it can amount to 70% or 80% of the total labour involved - so remember to account for it when planning a computational text analysis project!
 
 Each stage of the workflow that involves a data transformation holds the potential to introduce errors that often have consequences for later stages of the workflow, which may not become evident until you actually arrive at that stage. It is therefore important to document the transformations you perform so that errors can be traced back and corrected. This documentation also contributes to the record of its origins, or its **data provenance**.
 
-<br />
-
-Next -> [Data Provenance](data-provenance.html)

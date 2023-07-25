@@ -1,16 +1,14 @@
 ---
 layout: default
 title: Behind the Interface
-nav_order: 7
+nav_order: 6
 ---
 
 # Behind the Interface: The Loaded Lingo of Data Pre-Processing
 
-<hr />
+<br>
 
 > ***Behind the interface** examines the technocultural dimensions of working with (text) data, with the understanding that computing infrastructure and practices are not neutral but emerge from complicated historical lineages that often remain hidden to the user. By peering behind the interface at the circumstances, biases and assumptions surrounding the layers of decision-making involved in developing technologies, we encourage you to consider how structures of inequality become hard-coded into the tools and conventions of data science and how we can work towards opening up new sites of resistance and critique.*
-
-<hr />
 
 ## On "data cleaning"
 
@@ -30,8 +28,6 @@ Implicitly aligning diacritics with messiness or invalidity works to create an "
 
 >Perceiving diacritics as a compromise on an ideal born-digital processing scenario, or thinking it is an acceptable practice to purge, sanitize, or cleanse file and folder names of them is representative of the amount of work the \[archival] profession needs to do. [[2]](#2)
 
-<hr />
-
 ## Data is the new oil
 
 The powerful metaphors invoked by the use of language in data science are not just limited to the binary of messy / clean: you may also notice the use of metaphorical language that aligns data with unprocessed natural resources like oil or ore. For example, data mining or raw data or describing the data processing workflow as a pipeline.
@@ -40,17 +36,8 @@ In fact, data are never “raw” – they are always already determined by the 
 
 While we may use the language of the discipline in order to communicate with other practitioners, it is important to consider how language is used to frame thinking about data in particular ways that are grounded in a colonial paradigm of extraction.
 
-<hr />
-
 ## References
-<a id="1">[1]</a>
-D’Ignazio, C., & Klein, L. F. (2020). *Data Feminism*. The MIT Press. https://doi.org/10.7551/mitpress/11805.001.0001.
+<p id="1" markdown="1">[1] D’Ignazio, C., & Klein, L. F. (2020). *Data Feminism*. The MIT Press. https://doi.org/10.7551/mitpress/11805.001.0001.</p>
 
-<a id="2">[2]</a>
-Arroyo-Ramirez, E. (2016, October 30). Invisible Defaults and Perceived Limitations: Processing the Juan Gelman Files. *Medium*. https://medium.com/on-archivy/invisible-defaults-and-perceived-limitations-processing-the-juan-gelman-files-4187fdd36759.
+<p id="2" markdown="1">[2] Arroyo-Ramirez, E. (2016, October 30). Invisible Defaults and Perceived Limitations: Processing the Juan Gelman Files. *Medium*. https://medium.com/on-archivy/invisible-defaults-and-perceived-limitations-processing-the-juan-gelman-files-4187fdd36759.</p>
 
-
-
-<br />
-
-Next --> [Learn More](learn-more.html)
