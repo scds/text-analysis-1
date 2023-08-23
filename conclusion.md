@@ -40,7 +40,7 @@ You can also dynamically test your RegEx patterns with [Regular Expressions 101]
 
 ## Critical Data Studies
 
-If "[Behind the Interface](lessons/6-behind.html)" piqued your curiosity about how language frames our understanding of data, you may be interested in the following texts:
+If "[Behind the Interface](behind.html)" piqued your curiosity about how language frames our understanding of data, you may be interested in the following texts:
 
 * Benjamin, Ruha. *Race after technology: Abolitionist tools for the new Jim code*. Polity, 2019. 
 * Boyd, Danah, and Kate Crawford. "Critical questions for big data: Provocations for a cultural, technological, and scholarly phenomenon." *Information, communication & society* 15.5 (2012): 662-679.
